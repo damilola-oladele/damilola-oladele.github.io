@@ -9,7 +9,7 @@ image:
 
 ## Summary
 
-I have 3 years experience in creating technical documentation, tutorials and content that are aimed at developers. I also have experience writing for non-technical audiences. During my time at Wagtail, I worked on improving the information architecture, writing contribution guidelines, writing tutorials, and improving the Developer and User Guide documentation.
+I have 3 years of experience in creating technical documentation, tutorials and content aimed at developers. I also have experience writing for non-technical audiences. During my time at Wagtail, I worked on improving the information architecture, writing contribution guidelines, writing tutorials, and improving the Developer and User Guide documentation.
 
 ## Skills
 
@@ -53,18 +53,20 @@ I have 3 years experience in creating technical documentation, tutorials and con
 **June 2022 - March 2023**  
 **freeCodeCamp, United States - Technical Writer**
 
-* Authored tutorials on Javascript, Python, and Django concepts, earning recognition as one of the top contributors for freeCodeCamp for 2022 and 2023.
+* Authored tutorials on JavaScript, Python, and Django concepts, earning recognition as one of the top contributors for freeCodeCamp for 2022 and 2023.
 
 **December 2021 - October 2022**  
-**100 Devs, United States - Software Engineer**
+**100 Devs, United States - Software Developer**
 
-* Implemented responsive design across multiple projects, enhancing user experience and across devices.
-* Collaborated with back-end developers and UI/UX designers to create and maintain web applications.
+* Collaborated with back-end developers and designers to create and maintain web applications.
+* Implemented responsive design across multiple projects, enhancing user experience across devices.
 
-**April 2021 - December 2022**  
-**Igates, Lagos, Nigeria - Front-end Engineer**
+**April 2021 - December 2022**
+**iGates, Lagos, Nigeria - Front-end Engineer**
 
-* Collaborated with back-end developers and UI/UX designers at Igates to developed an internal bank application for card issuance.
+* Collaborated with back-end developers and UI/UX designers at Igates to develop an internal bank application for card issuance.
+* Documented APIs.
+* Improved existing technical content and created new content.
 
 ## Education
 
