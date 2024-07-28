@@ -61,7 +61,7 @@ I have 3 years of experience in creating technical documentation, tutorials and 
 * Collaborated with back-end developers and designers to create and maintain web applications.
 * Implemented responsive design across multiple projects, enhancing user experience across devices.
 
-**April 2021 - December 2022**
+**April 2021 - December 2022**  
 **iGates, Lagos, Nigeria - Front-end Engineer**
 
 * Collaborated with back-end developers and UI/UX designers at Igates to develop an internal bank application for card issuance.
