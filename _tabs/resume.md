@@ -56,10 +56,15 @@ I have 3 years experience in creating technical documentation, tutorials and con
 * Authored tutorials on Javascript, Python, and Django concepts, earning recognition as one of the top contributors for freeCodeCamp for 2022 and 2023.
 
 **December 2021 - October 2022**  
-**100 Devs, United States - Software Developer**
+**100 Devs, United States - Software Engineer**
 
-* Collaborated with back-end developers and designers to create and maintain web applications.
-* Implemented responsive design across multiple projects, enhancing user experience across devices.
+* Implemented responsive design across multiple projects, enhancing user experience and across devices.
+* Collaborated with back-end developers and UI/UX designers to create and maintain web applications.
+
+**April 2021 - December 2022**  
+**Igates, Lagos, Nigeria - Front-end Engineer**
+
+* Collaborated with back-end developers and UI/UX designers at Igates to developed an internal bank application for card issuance.
 
 ## Education
 
