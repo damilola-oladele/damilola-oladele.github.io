@@ -9,7 +9,7 @@ image:
 
 ## Summary
 
-I have 3 years of experience in creating technical documentation, tutorials and content aimed at developers. I also have experience writing for non-technical audiences. During my time at Wagtail, I worked on improving the information architecture, writing contribution guidelines, writing tutorials, and improving the Developer and User Guide documentation.
+I have experience creating technical documentation, tutorials, and content aimed at developers. I also have experience writing for non-technical audiences. During my time at Wagtail, I worked on improving the information architecture, writing contribution guidelines, writing tutorials, and improving the Developer and User Guide documentation.
 
 ## Skills
 
@@ -60,13 +60,6 @@ I have 3 years of experience in creating technical documentation, tutorials and 
 
 * Collaborated with back-end developers and designers to create and maintain web applications.
 * Implemented responsive design across multiple projects, enhancing user experience across devices.
-
-**April 2021 - December 2022**  
-**iGates, Lagos, Nigeria - Front-end Engineer**
-
-* Collaborated with back-end developers and UI/UX designers at Igates to develop an internal bank application for card issuance.
-* Documented APIs.
-* Improved existing technical content and created new content.
 
 ## Education
 
