@@ -9,7 +9,7 @@ image:
 
 ## Summary
 
-I have experience creating technical documentation, tutorials, and content aimed at developers. I also have experience writing for non-technical audiences. During my time at Wagtail, I worked on improving the information architecture, writing contribution guidelines, writing tutorials, and improving the Developer and User Guide documentation.
+I have 3 years experience creating technical documentation, tutorials, and content aimed at developers. I also have experience writing for non-technical audiences. During my time at Wagtail, I worked on improving the information architecture, writing contribution guidelines, writing tutorials, and improving the Developer and User Guide documentation.
 
 ## Skills
 
@@ -21,14 +21,7 @@ I have experience creating technical documentation, tutorials, and content aimed
 
 ## Experience
 
-**July 2024 - present**  
-**Quasar AI, Paris, Île-de-France - Documentation Engineer**
-
-* Assumed full ownership of documentation organization and content management.
-* Wrote and maintained code samples to support documentation.
-* Collaborated with multiple teams for documentation and product support.
-
-**October 2022 - June 2024**  
+**October 2022 - March 2024**  
 **Wagtail, United Kingdom - Technical Writer for Google Season of Docs and Outreachy open-source programs**
 
 * Improved user guide's information architecture. This makes it easier for users to find what they need, navigate through content, and understand the relationships between different sections of the documentation.
@@ -60,6 +53,13 @@ I have experience creating technical documentation, tutorials, and content aimed
 
 * Collaborated with back-end developers and designers to create and maintain web applications.
 * Implemented responsive design across multiple projects, enhancing user experience across devices.
+
+**March 2021 - December 2022**
+**iGates, Lagos, Nigeria - Front-end Engineer**
+
+* Collaborated with back-end developers and UI/UX designers at Igates to develop an internal bank application for card issuance.
+* Documented APIs.
+* Improved existing technical content and created new content.
 
 ## Education
 
