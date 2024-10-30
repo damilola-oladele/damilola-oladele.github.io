@@ -26,7 +26,7 @@ description: >- # used by seo meta and the atom feed
 url: "https://damilola-oladele.github.io"
 
 github:
-  username: activus-d # change to your github username
+  username: https://github.com/damilola-oladele # change to your github username
 
 twitter:
   username: activus_d # change to your twitter username
@@ -39,7 +39,7 @@ social:
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/activus_d # change to your twitter homepage
-    - https://github.com/activus-d # change to your github homepage
+    - https://github.com/damilola-oladele # change to your github homepage
     - https://www.linkedin.com/in/damilola-oladele-85310275/
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
@@ -96,11 +96,11 @@ theme_mode: # [light, dark]
 # cdn: "https://chirpy-img.netlify.app"
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "https://github.com/activus-d.png"
+avatar: "https://github.com/damilola-oladele.png"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
-social_preview_image: https://github.com/activus-d.png # string, local or CORS resources
+social_preview_image: https://github.com/damilola-oladele.png # string, local or CORS resources
 
 # boolean type, the global switch for TOC in posts.
 toc: true
