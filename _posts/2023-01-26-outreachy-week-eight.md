@@ -31,4 +31,4 @@ I experienced a mix of emotions while doing this. In the days leading up to the 
 
 My next goal is to learn the core programming language and framework of the Wagtail CMS, which are Python and Django. In the coming week, I will begin my learning by practising Python's fundamentals.
 
-> *Read more about my Outreachy internship experience with Wagtail in* [*my ongoing series of articles*](/categories/outreachy)*.*
+> *Read more about my Outreachy internship experience with Wagtail in my ongoing* [*series of articles*](/categories/outreachy)*.*
