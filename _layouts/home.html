@@ -5,6 +5,12 @@ refactor: true
 
 {% include lang.html %}
 
+<!-- About Me Section -->
+<div class="about-me">
+  <h2>About me</h2>
+  <p>I'm Damilola Oladele, a software engineer and technical writer. I'm keen on open source and community.</p>
+</div>
+
 {% assign pinned = site.posts | where: 'pin', 'true' %}
 {% assign default = site.posts | where_exp: 'item', 'item.pin != true and item.hidden != true' %}
 
