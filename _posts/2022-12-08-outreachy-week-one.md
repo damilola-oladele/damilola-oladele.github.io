@@ -15,7 +15,7 @@ published: true
 
 Yay, I got in for the [Outreachy](https://www.outreachy.org) internship program!
 
-![image of a man dancing](/assets/img/gifs/lKK2qWjVt.gif)
+![image of a man dancing](/assets/img/gifs/2022-12-08-outreachy-week-one.gif)
 
 I would like to share a little bit about my background before I discuss my Outreachy experience so far.
 
