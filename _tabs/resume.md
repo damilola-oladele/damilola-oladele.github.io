@@ -79,8 +79,6 @@ I have 3 years experience creating technical documentation, tutorials, and conte
 
 ## Education
 
-**July 2012 - August 2017**
-
 Obafemi Awolowo University, Nigeria  
 Field of Study: Law  
 Degree: Bachelor of Laws (LLB)
