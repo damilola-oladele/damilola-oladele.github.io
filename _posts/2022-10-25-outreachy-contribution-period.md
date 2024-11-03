@@ -7,11 +7,11 @@ tags: [open-source]
 pin: false
 image:
   path: /assets/img/cover-images/cover-image-outreachy.jpg
-  alt: cover image showing open-source and Outreachy logos.
+  alt: Cover image displaying the logos of Open Source, Wagtail, and Outreachy.
 published: true
 ---
 
-The 8th of October 2022 was a memorable day for me. I received the email after refreshing my inbox many times. The most comforting part was the introductory statement, "Welcome to the contribution period of the Outreachy December 2022 internship round." You might be wondering what [Outreachy](https://www.outreachy.org/docs/community/) is. It is a program that supports underrepresented people in the tech industry. It does so by providing paid remote internships in open source and open science.
+The 8th of October 2022 was a memorable day for me. I received the email after refreshing my inbox many times. The most comforting part was the introductory statement, "Welcome to the contribution period of the [Outreachy](https://www.outreachy.org/docs/community/) December 2022 internship round." You might be wondering what Outreachy is. It is a program that supports underrepresented people in the tech industry. It does so by providing paid remote internships in open source and open science.
 
 The joy of receiving the mail soon faded. "It is the contribution stage," I told myself. This stage allows you to contribute to projects that interest you. To qualify for the internship, you must make at least one contribution to a project of your choice.
 

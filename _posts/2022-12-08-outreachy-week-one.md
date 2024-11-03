@@ -7,15 +7,15 @@ tags: [open-source]
 pin: false
 image:
   path: /assets/img/cover-images/cover-image-outreachy.jpg
-  alt: cover image showing open-source and Outreachy logos.
+  alt: Cover image displaying the logos of Open Source, Wagtail, and Outreachy.
 published: true
 ---
 
 ## Background
 
-Yay, I got in for the Outreachy internship program!
+Yay, I got in for the [Outreachy](https://www.outreachy.org) internship program!
 
-![image of a man dancing](/assets/img/gifs/lKK2qWjVt.gif)
+![image of a man dancing](/assets/img/gifs/2022-12-08-outreachy-week-one.gif)
 
 I would like to share a little bit about my background before I discuss my Outreachy experience so far.
 
@@ -33,7 +33,7 @@ Working within a team requires my final "C," competency. Your team needs to know
 
 Getting an internship opportunity eleven months after transitioning is an incredible accomplishment for me. With the Outreachy internship, I have my first paid opportunity in my new field. This means a lot if you come from a country like Nigeria, where there are very few opportunities at the beginning of your career.
 
-In my [first article](/posts/outreachy-contribution-stage/) on Outreachy, I described what the program is all about and how I got started. I also wrote about the motivation behind my project choice: Improve the user guide documentation for [Wagtail](https://wagtail.org/).
+In my [first article](/posts/outreachy-contribution-period) on Outreachy, I described what the program is all about and how I got started. I also wrote about the motivation behind my project choice: Improve the user guide documentation for [Wagtail](https://wagtail.org/).
 
 As part of its commitment to the smooth completion of the project, Wagtail has enlisted the help of experts. They are [Coen van der Kamp](https://github.com/allcaps) from [Four Digits](https://www.fourdigits.nl/en/), [Storm Heg](https://github.com/Stormheg), Stephanie Brown, [Jonny Peacock](https://github.com/jonnypeaks), and [Thibaud Colas](https://github.com/thibaudcolas) from [Torchbox](https://torchbox.com/).
 
