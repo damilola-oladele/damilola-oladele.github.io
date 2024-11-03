@@ -7,7 +7,7 @@ tags: [open-source]
 pin: false
 image:
   path: /assets/img/cover-images/cover-image-outreachy.jpg
-  alt: cover image showing open-source and Outreachy logos.
+  alt: Cover image displaying the logos of Open Source, Wagtail, and Outreachy.
 published: true
 ---
 
