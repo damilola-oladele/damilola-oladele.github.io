@@ -2,7 +2,7 @@
 title: "Get started with LXC: Explained with installation guide"
 description: Linux containers (LXC) have revolutionized the way applications are packaged and deployed across different environments, offering lightweight virtualization and efficient resource utilization.
 date: 2024-06-28 00:00:00 +0100
-categories: [Software engineering, Linux]
+categories: [Software Engineering, Linux]
 tags: [lxc, lxd, ubuntu]
 pin: false
 image:
