@@ -16,10 +16,4 @@ image:
 
 - [Meet Damilola Oladele, Our First Technical Writer for Google Season of Docs](https://wagtail.org/blog/our-first-google-season-of-docs-2023/)
 
-- [Outreachy: Internship wrap-up](https://activuscode.hashnode.dev/outreachy-internship-wrap-up)
-
-- [Outreachy: Week one](https://activuscode.hashnode.dev/outreachy-week-one)
-
-- [Outreachy: The contribution period](https://activuscode.hashnode.dev/outreachy-the-contribution-period)
-
 - [freeCodeCamp](https://www.freecodecamp.org/news/author/damilola_oladele/)
