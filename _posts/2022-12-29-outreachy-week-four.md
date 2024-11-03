@@ -73,4 +73,4 @@ Following the completion of the content outline and the report on the current st
 
 Next week, I plan to continue restructuring and improving the existing user guide documentation.
 
-> Read more about my [Outreachy](https://www.outreachy.org/) internship experience with [Wagtail](https://wagtail.org/) in my ongoing [series of articles](/categories/outreachy/).
+> Read more about my Outreachy internship experience with Wagtail in my ongoing [series of articles](/categories/outreachy).

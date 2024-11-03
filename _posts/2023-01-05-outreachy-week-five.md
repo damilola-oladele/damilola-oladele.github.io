@@ -44,7 +44,7 @@ You can use Wagtail snippets in various ways to achieve the specific needs of yo
 
 Wagtail allows you to promote certain search results depending on the keyword or phrase entered by the user when searching. This is useful in situations where users of your website search for keywords that aren’t part of the content of your website. This can also be useful when users commonly refer to parts of your organization by an acronym that isn’t in official use.
 
-For example, [Torchbox](https://torchbox.com) has used this feature to direct users who searched for `finances` on a particular website to the website's `Annual budget review` page. The word `finances` isn't mentioned in either the title or the body of the target page, so they created a promoted search result for the word `finances` that pushed the `Annual budget review` page to the top of the search results.
+For example, Torchbox has used this feature to direct users who searched for `finances` on a particular website to the website's `Annual budget review` page. The word `finances` isn't mentioned in either the title or the body of the target page, so they created a promoted search result for the word `finances` that pushed the `Annual budget review` page to the top of the search results.
 
 ## Outreachy: Week five in review
 
@@ -54,4 +54,4 @@ This week I worked on improving the existing content of the Wagtail user guide d
 
 Next week, I intend to implement the recommendations I received from my mentors regarding the improvements I made to the user guide documentation. Also, I plan to discuss with my mentors how to create a quick-start tutorial for new Wagtail users.
 
-> Read more about my Outreachy internship experience with Wagtail in my ongoing [series of articles](/categories/outreachy/).
+> Read more about my Outreachy internship experience with Wagtail in my ongoing [series of articles](/categories/outreachy).

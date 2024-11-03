@@ -13,7 +13,7 @@ published: true
 
 ## Background
 
-Yay, I got in for the Outreachy internship program!
+Yay, I got in for the [Outreachy](https://www.outreachy.org) internship program!
 
 ![image of a man dancing](/assets/img/gifs/lKK2qWjVt.gif)
 

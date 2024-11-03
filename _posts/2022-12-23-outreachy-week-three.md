@@ -32,4 +32,4 @@ This week, I fell short of meeting my targets. The user research still requires 
 
 I hope to discuss how I can complete some of these tasks as soon as possible with my mentors during our next meeting. My goal is to finish the content outline proposal by the weekend and then continue with the rest next week.
 
-> Read more about my [Outreachy](https://www.outreachy.org) internship experience with [Wagtail](https://wagtail.org) in my ongoing [series of articles](/categories/outreachy/).
+> Read more about my [Outreachy](https://www.outreachy.org) internship experience with [Wagtail](https://wagtail.org) in my ongoing [series of articles](/categories/outreachy).

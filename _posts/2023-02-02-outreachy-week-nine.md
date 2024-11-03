@@ -33,4 +33,4 @@ I also solved a [coding challenge](https://github.com/wagtail/guide/issues/296) 
 
 In the coming week, I have the same task as I had this week. There is still a lot to learn in Python before I can move on to learn the [Django](https://www.djangoproject.com/) framework. So I will continue with reading the [Python documentation](https://docs.python.org/3/) and solving Python challenges on Codewars.
 
-> *Read more about my Outreachy internship experience with Wagtail in my ongoing* [*series of articles*](/categories/outreachy/)*.*
+> *Read more about my Outreachy internship experience with Wagtail in my ongoing* [*series of articles*](/categories/outreachy)*.*
