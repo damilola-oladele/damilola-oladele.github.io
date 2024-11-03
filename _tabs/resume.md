@@ -17,9 +17,25 @@ I have 3 years experience creating technical documentation, tutorials, and conte
 | Python                  | technical documentation  | open-source community     |
 | JavaScript              | Git                      | information architecture  |
 | Django                  | GitHub                   | user research             |
-| HTML & CSS              | Markdown                 | reStructuredText          |
+| React                   | Markdown                 | reStructuredText          |
+| HTML & CSS              |                          |                           |
 
 ## Experience
+
+**October 2024 - present**  
+**Social Income, Switzerland - Community Manager and Frontend Developer**
+
+* Spearheaded an initiative to showcase the Social Income community, emphasizing the unity and impact of recipients, contributors, and volunteers.
+* Developed a webpage to display contributors and the total number of their contributions.
+
+**February 2024 - present**  
+**Canonical, United Kingdom - Technical Writer for Open Documentation Academy**
+
+* Improved the information architecture of the Ubuntu public cloud documentation using the Diátaxis framework, thereby making the sections of the documentation more discoverable.
+* Improved the contribution guidelines of the Ubuntu public cloud documentation. This makes it easier for new users to contribute to the documentation.
+* Authored explanatory docs for the the Ubuntu Packaging Guide
+* Improved the LXD and Snapcraft’s documentation.
+
 
 **October 2022 - March 2024**  
 **Wagtail, United Kingdom - Technical Writer for Google Season of Docs and Outreachy open-source programs**
