@@ -33,7 +33,7 @@ Working within a team requires my final "C," competency. Your team needs to know
 
 Getting an internship opportunity eleven months after transitioning is an incredible accomplishment for me. With the Outreachy internship, I have my first paid opportunity in my new field. This means a lot if you come from a country like Nigeria, where there are very few opportunities at the beginning of your career.
 
-In my [first article](https://activuscode.hashnode.dev/outreachy-the-contribution-period) on Outreachy, I described what the program is all about and how I got started. I also wrote about the motivation behind my project choice: Improve the user guide documentation for [Wagtail](https://wagtail.org/).
+In my [first article](/posts/outreachy-contribution-stage/) on Outreachy, I described what the program is all about and how I got started. I also wrote about the motivation behind my project choice: Improve the user guide documentation for [Wagtail](https://wagtail.org/).
 
 As part of its commitment to the smooth completion of the project, Wagtail has enlisted the help of experts. They are [Coen van der Kamp](https://github.com/allcaps) from [Four Digits](https://www.fourdigits.nl/en/), [Storm Heg](https://github.com/Stormheg), Stephanie Brown, [Jonny Peacock](https://github.com/jonnypeaks), and [Thibaud Colas](https://github.com/thibaudcolas) from [Torchbox](https://torchbox.com/).
 
