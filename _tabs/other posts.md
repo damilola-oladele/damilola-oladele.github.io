@@ -16,4 +16,12 @@ image:
 
 - [Meet Damilola Oladele, Our First Technical Writer for Google Season of Docs](https://wagtail.org/blog/our-first-google-season-of-docs-2023/)
 
-- [freeCodeCamp](https://www.freecodecamp.org/news/author/damilola_oladele/)
+- [How to Stay Motivated While Learning to Code](https://www.freecodecamp.org/news/how-to-stay-motivated-while-learning-to-code/)
+
+- [How to Define Relationships Between Django Models](https://www.freecodecamp.org/news/django-model-relationships/)
+
+- [How to Use Object-Oriented Programming in Python – Explained With Examples](https://www.freecodecamp.org/news/how-to-use-oop-in-python/)
+
+- [What is the DOM? The Document Object Model Explained in Plain English](https://www.freecodecamp.org/news/what-is-the-dom-explained-in-plain-english/)
+
+- [Objects in JavaScript – A Beginner's Guide](https://www.freecodecamp.org/news/objects-in-javascript-for-beginners/)
