@@ -23,7 +23,7 @@ I have 3 years experience creating technical documentation, tutorials, and conte
 ## Experience
 
 **October 2024 - present**  
-**Social Income, Switzerland - Community Manager and Frontend Developer**
+**Social Income, Switzerland - Community Manager and Frontend Developer (Open Source)**
 
 * Spearheaded an initiative to showcase the Social Income community, emphasizing the unity and impact of recipients, contributors, and volunteers.
 * Developed a webpage to display contributors and the total number of their contributions.
