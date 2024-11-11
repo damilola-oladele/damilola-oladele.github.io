@@ -1,5 +1,5 @@
 ---
-title: "Why Gaining Documentation Experience in Open Source Is harder Than You Think"
+title: "Why Gaining Documentation Experience in Open Source Is Harder Than You Think"
 description: I've found that gaining documentation experience through open-source contributions is easier said than done.
 date: 2024-11-11 00:09:00 +0100
 categories: [Open Source, Documentation]
@@ -21,7 +21,7 @@ With that in mind, here are some challenges you might face:
 
 The first reality check might be surprising. While many projects have welcoming communities, others maintain a structure that limits substantial contributions from newcomers. It often comes down to the human factor in open-source projects. Remember, these projects are usually a product of people’s hard work and dedication. So some maintainers view their projects more as personal ventures than as community initiatives.
 
-While you will meet maintainers who welcome you with enthusiasm and support, others might not be as accepting. If this happens, don’t take it personal. It’s simply the nature of some projects. The best approach is to thank them for their time and move on to more open communities.
+While you will meet maintainers who welcome you with enthusiasm and support, others might not be as accepting. If this happens, don’t take it personal. It’s simply the nature of some projects. The best approach is to thank them for their time and move on to projects with more open communities.
 
 ## The Irony of Missing Documentation
 
