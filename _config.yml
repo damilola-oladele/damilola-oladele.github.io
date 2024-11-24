@@ -225,3 +225,14 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+# enable Jekyll Google Search Console Verification File Generator Plugin
+plugins:
+  - jekyll-google_search_console_verification_file
+
+# configure Google Search Console Verification File Generator plugin
+# with code from HTML file received from https://search.google.com/search-console?resource_id=https://erikw.me/
+#  Just copy the unique code from the HTML file name e.g. from googlef47733b3288357e4.html copy f47733b3288357e4
+#  For more info on the plugin, see https://github.com/erikw/jekyll-google_search_console_verification_file
+google_search_console:
+  verification_file_code: b2e99ad43c4f2b81
