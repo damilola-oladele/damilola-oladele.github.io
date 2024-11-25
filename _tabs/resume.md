@@ -18,7 +18,7 @@ I have 3 years experience creating technical documentation, tutorials, and conte
 | JavaScript              | Git                      | information architecture  |
 | Django                  | GitHub                   | user research             |
 | React                   | Markdown                 | reStructuredText          |
-| HTML & CSS              |                          |                           |
+| HTML                    | CSS                      |                           |
 
 ## Experience
 
