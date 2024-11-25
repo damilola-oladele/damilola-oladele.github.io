@@ -17,7 +17,7 @@ For months, the idea of making programming videos for YouTube lingered in my min
 
 Then, a thought occurred to me—why not lean into something I already knew? As a technical writer, I’ve written several tutorials and guides using the [Diataxis](https://diataxis.fr) framework. If it could help me write clear and progressive documentation, why not apply it to video creation? So if you don't know what Diataxis is, it's a framework that prescribes a _systematic approach to technical documentation authoring. Diátaxis identifies four distinct needs, and four corresponding forms of documentation - tutorials, how-to guides, technical reference and explanation. Diátaxis solves problems related to documentation content (what to write), style (how to write it) and architecture (how to organise it)_. **Excerpt from https://diataxis.fr**
 
-The moment I adopted the [Diataxis tutorial approach](https://diataxis.fr/tutorials/) as the guide for my video tutorial, everything began to make sense. I didn’t just jump into coding; I started with a clear goal by showing viewers the finished project. I believe this approach helps viewers understand what they’re working toward and keeps them engaged.
+The moment I adopted the [Diataxis tutorial approach](https://diataxis.fr/tutorials/) as the guide for my video tutorial, everything began to make sense. I didn’t just jump into coding, I started with a clear goal by showing viewers the finished project. I believe this approach helps viewers understand what they’re working toward and keeps them engaged.
 
 {% include embed/youtube.html id='HbU0lb0o258?si=JatIEe15E4i4a0Qk' %}
 
