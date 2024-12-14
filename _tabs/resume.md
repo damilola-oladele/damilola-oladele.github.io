@@ -9,7 +9,7 @@ image:
 
 ## Summary
 
-I have 3 years experience creating technical documentation, tutorials, and content aimed at developers. I also have experience writing for non-technical audiences. During my time at Wagtail, I worked on improving the information architecture, writing contribution guidelines, writing tutorials, and improving the Developer and User Guide documentation.
+I have experience creating technical documentation, tutorials, and content aimed at developers. I also have experience writing for non-technical audiences. During my time at Wagtail, I worked on improving the information architecture, writing contribution guidelines, writing tutorials, and improving the Developer and User Guide documentation.
 
 ## Skills
 
