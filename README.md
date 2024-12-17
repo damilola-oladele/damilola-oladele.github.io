@@ -43,6 +43,14 @@
 
 To learn how to use, develop, and upgrade the project, please refer to the [Wiki][wiki].
 
+## Start the Jekyll Server
+
+To run the site locally, use the following command:
+
+```
+$ bundle exec jekyll s
+```
+
 ## Contributing
 
 Contributions (_pull requests_, _issues_, and _discussions_) are what make the open-source community such an amazing place
