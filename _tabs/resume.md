@@ -16,7 +16,7 @@ I have experience creating technical documentation, tutorials, and content aimed
 |-------------------------|--------------------------|---------------------------|
 | Python                  | Technical Documentation  | Editing                   |
 | JavaScript              | Git                      | Information Architecture  |
-| NestJS                  | GitHub                   | User Research             |
+| NextJS                  | GitHub                   | User Research             |
 | React                   | Markdown                 | reStructuredText          |
 | HTML                    | CSS                      | Open-Source Community     |
 
@@ -26,7 +26,7 @@ I have experience creating technical documentation, tutorials, and content aimed
 **Social Income, Switzerland - Community Manager and Frontend Developer (Open Source)**
 
 * Led an initiative to showcase the Social Income community, highlighting the unity and impact of recipients, contributors, and volunteers.
-* Improved and maintained the Social Income website built with NestJS
+* Improved and maintained the Social Income website built with NextJS
 
 **April 2024 - present**
 **Black Python Devs - Documentation Lead (Open Source)**
