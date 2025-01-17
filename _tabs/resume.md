@@ -32,7 +32,6 @@ I have experience creating technical documentation, tutorials, and content aimed
 **Black Python Devs - Documentation Lead (Open Source)**
 
 * Led a team of contributors in creating and maintaining documentation, ensuring clarity, accuracy, and usability for diverse audiences.
-* Authored detailed, user-friendly documentation, balancing depth with accessibility for non-expert audiences.
 * Reviewed and edited documentation contributions.
 
 **February 2024 - present**  
