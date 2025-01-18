@@ -79,7 +79,7 @@ I have experience creating technical documentation, tutorials, and content aimed
 **March 2021 - December 2022**  
 **iGates, Lagos, Nigeria - Software Developer**
 
-* Collaborated with back-end developers and UI/UX designers at iGates to develop an internal bank application for card issuance.
+* Collaborated with a team of developers to develop an internal bank application for card issuance.
 * Documented APIs.
 * Improved existing technical content and created new content.
 
