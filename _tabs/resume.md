@@ -23,7 +23,7 @@ I have experience creating technical documentation, tutorials, and content aimed
 ## Experience
 
 **October 2024 - present**  
-**Social Income, Switzerland - Community Manager and Frontend Developer (Open Source)**
+**Social Income, Switzerland - Community Manager and Software Developer (Open Source)**
 
 * Led an initiative to showcase the Social Income community, highlighting the unity and impact of recipients, contributors, and volunteers.
 * Improved and maintained the Social Income website built with NextJS
@@ -77,7 +77,7 @@ I have experience creating technical documentation, tutorials, and content aimed
 * Implemented responsive design across multiple projects, enhancing user experience across devices.
 
 **March 2021 - December 2022**  
-**iGates, Lagos, Nigeria - Front-end Engineer**
+**iGates, Lagos, Nigeria - Software Developer**
 
 * Collaborated with back-end developers and UI/UX designers at iGates to develop an internal bank application for card issuance.
 * Documented APIs.
