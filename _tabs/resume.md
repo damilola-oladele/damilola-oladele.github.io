@@ -23,13 +23,13 @@ I have experience creating technical documentation, tutorials, and content aimed
 ## Experience
 
 **October 2024 - present**  
-**Social Income, Switzerland - Community Manager and Software Developer (Open Source)**
+**Social Income, Switzerland - Community Manager and Software Developer**
 
 * Led an initiative to showcase the Social Income community, highlighting the unity and impact of recipients, contributors, and volunteers.
 * Improved and maintained the Social Income website built with NextJS
 
 **April 2024 - present**
-**Black Python Devs - Documentation Lead (Open Source)**
+**Black Python Devs - Documentation Lead**
 
 * Led a team of contributors in creating and maintaining documentation, ensuring clarity, accuracy, and usability for diverse audiences.
 * Reviewed and edited documentation contributions.
