@@ -37,10 +37,10 @@ Docs-as-Code, open-source, API docs, SDK docs, technical writing and editing, te
 **Canonical**, United Kingdom (Remote)    	     	                                                                             February 2024 \- present   
 *Technical Writer for Open Documentation Academy (Multiple Open-Source Docs Project)*					
 
-* Improved the information architecture of the Ubuntu public cloud documentation using the Diátaxis framework, thereby making the sections of the documentation more discoverable.   
-* Improved the contribution guidelines of the Ubuntu public cloud documentation, making it easier for new users to contribute to the documentation.   
-* Authored explanatory docs for the Ubuntu Packaging Guide thereby improving its clarity for Ubuntu developers.    
-* Improved the LXD and Scapcraft’s documentation.  
+* Improved the information architecture of the Ubuntu public cloud documentation using the Diátaxis framework, thereby making the sections of the documentation more discoverable.
+* Improved the contribution guidelines of the Ubuntu public cloud documentation, making it easier for new users to contribute to the documentation.
+* Authored explanatory docs for the Ubuntu Packaging Guide thereby improving its clarity for Ubuntu developers.
+* Improved the LXD and Scapcraft’s documentation.
 * Authored glossary definitions for the Ubuntu Server Docs.
 
 **Black Python Devs**       	     	                                                                                                    April 2024 \- present   
