@@ -3,7 +3,7 @@ title: "My Journey into Community Management with Social Income"
 description: I’ve always wanted to explore community management, and this year, I embraced every opportunity.
 date: 2024-12-17 00:00:00 +0100
 categories: [Open Source]
-tags: [career, DPG, tech for good, open source]
+tags: [career, DPG, tech for good, open-source]
 pin: false
 image:
   path: /assets/img/cover-images/journey-into-community-management.png
