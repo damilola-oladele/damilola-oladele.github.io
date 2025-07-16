@@ -19,73 +19,69 @@ Git, GitHub, GitHub Actions, Markdown, Docusaurus, Sphinx, Jekyll, Docusaurus, C
 
 ### **Methodologies:**
 
-Docs-as-Code, open-source, API docs, SDK docs, technical writing and editing, technical content writing, marketing blog posts writing, technical reviews, user research, writing and maintaining code samples, how-to and user guides, information architecture, CI/CD workflows, style guides, content strategy and creation, collaboration, social media content creation, video creation, graphics design
+Docs-as-Code, open-source, API docs, Swagger/OpenAPI, Postman, readme, SDK docs, technical writing and editing, technical reviews, user research, writing and maintaining code samples, user guides, user manuals, reference docs, information architecture, CI/CD workflows, style guides, content strategy and creation
 
-**Languages:**   
+**Language:**   
 *English* (native)
 
 ## **EXPERIENCE** 									  
 **Stormbase**   	     	                                                                                               Oct 2024 \- present   
 *Technical Writer*					
 
-* Planned the creation and long-term maintenance of the Django OTP WebAuthn documentation, ensuring consistency and regular updates as the package continues to evolve.  
-* Set up, customized, and deployed the documentation website, ensuring seamless CI/CD workflows for continuous updates.  
-* Designed and implemented the information architecture for the Django OTP WebAuthn package, improving usability and navigation for developers.  
-* Authored comprehensive documentation, including installation guides, how-to guides, and API references, reducing onboarding time for new users.  
-* Authored a comprehensive style guide and contribution guidelines to improve consistency and onboarding for documentation contributors. 
+* Established and now maintain a sustainable documentation strategy for the Django OTP WebAuthn project, reducing contributor onboarding time and keeping documentation aligned with ongoing development.
+* Designed a developer-focused information architecture and authored a style guide and contribution guide, which improved contributor engagement and reduced PR review time.
+* Migrated and deployed the documentation to ReadTheDocs with automated CI/CD pipelines, ensuring that documentation changes are published alongside code updates without manual intervention.
+* Continuously refine and expand the documentation based on feedback to improve adoption.
+
 
 **Canonical**, United Kingdom (Remote)    	     	                                                                             February 2024 \- present   
-*Technical Writer for Open Documentation Academy (Multiple Open-Source Docs Project)*					
+_(Multiple Open-Source Docs Project)_				
 
-* Improved the information architecture of the Ubuntu public cloud documentation using the Diátaxis framework, thereby making the sections of the documentation more discoverable.
-* Improved the contribution guidelines of the Ubuntu public cloud documentation, making it easier for new users to contribute to the documentation.
-* Authored explanatory docs for the Ubuntu Packaging Guide thereby improving its clarity for Ubuntu developers.
-* Improved the LXD and Scapcraft’s documentation.
-* Authored glossary definitions for the Ubuntu Server Docs.
+* Authored explanatory, reference, and how-to guide docs for the Ubuntu Packaging Guide, helping Ubuntu developers and contributors get started more easily.
+* Improved the structure of the Ubuntu public cloud documentation using the Diátaxis framework, making key topics easier to navigate and reference.
+* Improved LXD and Scapcraft documentation by addressing unclear sections and adding missing context.
 
 **Black Python Devs**       	     	                                                                                                    April 2024 \- present   
 *Documentation Lead*					
 
-* Led a team of contributors in creating and maintaining documentation, ensuring clarity, accuracy, and usability for diverse audiences.  
-* Authored detailed, user-friendly documentation, balancing depth with accessibility for non-technical audiences.  
-* Reviewed and edited documentation contributions.  
-* Created a style guide to aid contributions and ensure consistency across the documentation.
+* Led a volunteer team to produce clear and consistent documentation, helping grow community contributions by making the docs more accessible
+* Noticed recurring inconsistencies in documentation contributions, so I developed a style guide and editorial process that improved clarity and reduced review time.
 
 **Wagtail,** United Kingdom				                                                          October 2022 \- March 2024  
 *Technical Writer for Google Season of Docs and Outreachy*
 
-* Conducted user research to understand users’ pain points and needs better and improve the developer and editors guide documentation based on the analysis of the user research.  
-* Created a tutorial series for advanced Wagtail users to build their own deployable Wagtail website using the newest version of Wagtail.  
-* Collaborated with Wagtail organizers to adapt onboarding tutorials for open-source beginners, to support programs and workshops like Google Summer of Code, Google Season of Docs, Outreachy, and Coders of Colour.  
-* Created quick-starts, how-to guides, and explanation documentation for the Wagtail editors guide documentation.  
-* Interviewed, hired, and mentored technical writers for the Outreachy program.  
-* Authored engaging marketing blog posts to drive audience engagement and brand awareness.
-
+* Conducted user research to understand users’ pain points and needs better and improve the developer and editors guide documentation based on the analysis of the user research.
+* Authored a hands-on tutorial series for experienced Wagtail developers, which became a reference point for Wagtail community deployments and was cited in Wagtail's official [release notes](https://docs.wagtail.org/en/latest/releases/6.0.html#new-developer-tutorial).
+* Collaborated with Wagtail organizers to adapt onboarding tutorials for open-source beginners, to support programs and workshops like Google Summer of Code, Google Season of Docs, Outreachy, and Coders of Colour.
+* Improved and authored how-to guides, and explanation documentation for the Wagtail Editors guide documentation following the Diátaxis framework.
+* Hired and mentored Outreachy interns.
+* Contributed to the Wagtail blog, using storytelling and technical clarity to boost engagement with major feature releases.
 
 **DocumentWrite, United States**						                              April 2023 \- September 2023  
 *Technical Writer*
 
-* Authored all sections of the CoreAI internal engineering documentation, reducing development time and improving cross-team collaboration.  
-* Audited and wrote an audit report of the 8base documentation. The report reveals inaccuracies and significant defects in the information architecture.  
+* Authored all sections of the CoreAI internal engineering documentation, reducing development time and improving cross-team collaboration.
+* Audited and wrote an audit report of the 8base documentation. The report reveals inaccuracies and significant defects in the information architecture.
 * Hosted and spoke on X (Twitter) spaces educating technical writers, founders, and developers on good documentation practices.
 
 **freeCodeCamp, United States**						                                       June 2022 \- March 2023  
 *Technical Writer*
 
-* Authored tutorials on Javascript, Python, and Django concepts
+* Authored articles that were viewed by over 10,000 readers, helping self-taught developers understand core web development concepts.
 
 **100Devs, United States**						                                         December 2021 \- October 2022  
 *Software Developer*
 
-* Developed and maintained full-stack web applications using Node.js for the backend and React for the front end.  
-* Built and optimized RESTful APIs and database interactions to improve data handling efficiency.  
-* Implemented responsive UI/UX designs to guarantee a seamless experience across all devices.
+* Developed and maintained full-stack web applications using Node.js for the backend and React for the front end.
+* Implemented responsive UI/UX designs, guaranteeing seamless web experience across all devices.
 
 **iGates, Nigeria**						                March 2021 \- December 2022  
 *Software Developer*
 
-* Collaborated with a team of developers to develop an internal bank application for card issuance.  
-* Documented RESTful APIs
+* Spearheaded the documentation of an internal banking API used for card issuance, ensuring that both developers and non-technical stakeholders could understand and implement the system with minimal support.
+* Collaborated with product and compliance teams to create API usage guides tailored to partner banks, addressing their unique integration and regulatory needs.
+* Wrote and reviewed compliance documentation in collaboration with legal and product teams, ensuring that internal systems and developer-facing materials aligned with industry regulations and audit requirements.
+* Collaborated with a team of developers to develop an internal bank application for card issuance.
 
 ## **ACCOMPLISHMENTS**						  
 **freeCodeCamp**
