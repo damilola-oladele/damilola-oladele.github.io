@@ -1,5 +1,5 @@
 ---
-title: "My Journey into Community Management with Social Income"
+title: "My journey into community management with Social Income"
 description: I’ve always wanted to explore community management, and this year, I embraced every opportunity.
 date: 2024-12-17 00:00:00 +0100
 categories: [Open Source]

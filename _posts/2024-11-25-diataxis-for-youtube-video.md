@@ -1,5 +1,5 @@
 ---
-title: "How I Used the Diataxis Framework to Create My First YouTube Tutorial"
+title: "How I used the Diataxis framework to create my first YouTube tutorial"
 description: Using the Diataxis tutorial approach was about finding a starting point, not perfection.
 date: 2024-11-25 00:00:00 +0100
 categories: [Documentation]

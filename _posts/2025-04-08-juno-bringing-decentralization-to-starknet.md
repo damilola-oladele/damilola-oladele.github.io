@@ -1,5 +1,5 @@
 ---
-title: "Juno: Bringing Decentralization to Starknet"
+title: "Juno: Bringing decentralization to Starknet"
 description: To mitigate the centralization risk posed by Starknet, Nethermind developed Juno, a Go implementation of Starknet’s full-node client.
 date: 2025-04-07 00:00:00 +0100
 categories: [Blockchain]

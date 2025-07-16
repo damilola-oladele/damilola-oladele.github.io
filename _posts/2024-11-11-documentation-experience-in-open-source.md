@@ -1,5 +1,5 @@
 ---
-title: "Why Gaining Documentation Experience in Open Source Is Harder Than You Think"
+title: "Why gaining documentation experience in open source is hard"
 description: I've found that gaining documentation experience through open-source contributions is easier said than done.
 date: 2024-11-11 00:00:00 +0100
 categories: [Documentation]
