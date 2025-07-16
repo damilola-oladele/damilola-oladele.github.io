@@ -7,8 +7,6 @@ image:
   alt: Damilola Oladele's headshot
 ---
 
-# Links to samples of my documentation work
-
 | Project / Documentation Work                          | Link |
 |--------------------------------------------------------|------|
 | Django OTP WebAuthn documentation                     | [https://django-otp-webauthn.readthedocs.io/en/latest/](https://django-otp-webauthn.readthedocs.io/en/latest/) |
