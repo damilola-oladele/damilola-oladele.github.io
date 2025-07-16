@@ -8,7 +8,7 @@ pin: false
 image:
   path: /assets/img/cover-images/blockchain-trilemma-challenge.png
   alt: Cover image showing the title of post.
-published: false
+published: true
 ---
 
 Blockchain technology is now being adopted across industries like finance, logistics, healthcare, and even government, thanks to its core qualities: decentralization and security.
