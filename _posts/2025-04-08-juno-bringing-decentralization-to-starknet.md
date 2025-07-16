@@ -8,7 +8,7 @@ pin: false
 image:
   path: /assets/img/cover-images/juno-bringing-decentralization-to-starknet.png
   alt: Cover image showing the title of post.
-published: false
+published: true
 ---
 
 Blockchain is continually advancing in terms of scalability, security, and decentralization. However, improving all three at the same time presents a significant challenge. So most blockchains prioritize security and decentralization, often at the expense of scalability. This trade-off is particularly evident in Ethereum, where decentralization and security are maintained, but transaction throughput remains limited.
