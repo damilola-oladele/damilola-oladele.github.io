@@ -8,7 +8,7 @@ pin: false
 image:
   path: /assets/img/cover-images/what-are-smart-contracts.png
   alt: Cover image showing the title of post.
-published: false
+published: true
 ---
 
 Imagine a scenario where you rented an apartment and paid a deposit for damages. The landlord promised to return your deposit when you move out. But when you did, the landlord claimed damages, and you disagreed. You then involved lawyers, and the court process dragged on for months.
