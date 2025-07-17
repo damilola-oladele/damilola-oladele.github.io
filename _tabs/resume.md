@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 3
+order: 2
 image:
   path: /assets/img/favicons/android-chrome-512x512.png
   alt: Damilola Oladele's headshot
