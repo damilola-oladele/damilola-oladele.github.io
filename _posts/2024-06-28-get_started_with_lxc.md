@@ -4,7 +4,7 @@ description: Linux containers (LXC) have revolutionized the way applications are
 date: 2024-06-28 00:00:00 +0100
 categories: [Software Engineering, Linux]
 tags: [lxc, lxd, ubuntu]
-pin: false
+pin: true
 image:
   path: /assets/img/cover-images/cover_image_of_an_article_on_lxc.png
   alt: A container with items in it.
@@ -27,7 +27,7 @@ Each LXC container has its files, processes, network interfaces, and other resou
 
 By combining resource isolation through `namespaces` and resource control through `cgroups`, LXC provides a secure and efficient way to run multiple isolated Linux environments on a single host system.
 
-## How to Install LXC
+## How to install LXC
 
 Most Linux distributions offer recent versions of LXC either directly in their package repositories or through backport channels. For your first LXC experience, it is advisable to use a recent supported release for a smoother experience. If you're using Ubuntu, **Ubuntu 18.04 LTS** is the recommended choice as a container host.
 
@@ -115,11 +115,11 @@ Note : Before booting a new kernel, you can check its configuration
 usage : CONFIG=/path/to/config /usr/bin/lxc-checkconfig
 ```
 
-## Privileged and Unprivileged LXC Containers
+## Privileged and unprivileged LXC containers
 
 There are two methods of using LXC—privileged and unprivileged. These methods determine the level of access and permissions granted to the container processes, affecting their isolation, security, and functionality.
 
-### How to Create Privileged LXC Containers 
+### How to create privileged LXC containers 
 
 Privileged containers are containers created by root and run with root privileges on the host system. This grants them unrestricted access to system resources and the ability to perform operations reserved for the root user. This mode offers greater flexibility and control over system configurations, making it suitable for applications that require direct access to hardware resources or kernel modifications. However, privileged containers pose security risks. Due to their elevated privileges, any actions performed within a privileged container can affect the stability and security of the host system.
 
@@ -188,7 +188,7 @@ sudo lxc-destroy privileged-container
 
 See [LXC / Manpages](https://linuxcontainers.org/lxc/manpages/) for the complete list of LXC commands and their usage.
 
-### How to Create Unprivileged LXC Containers
+### How to create unprivileged LXC containers
 
 Unprivileged LXC containers have limited access and enhanced isolation compared to privileged LXC containers. They are launched without root privileges using features like user namespaces and resource limitations. This improves security and minimizes the risk of breaching the host system.
 
@@ -279,7 +279,7 @@ While LXC pioneered operating system-level virtualization on Linux, providing th
 
 As the adoption of containerization continues to grow, container solutions like LXD that streamline and simplify container management will become increasingly valuable.
 
-## References and Further Reading
+## References and further reading
 
 1. [https://en.wikipedia.org/wiki/LXC](https://en.wikipedia.org/wiki/LXC)
 2. [https://linuxcontainers.org/lxc/getting-started/](https://linuxcontainers.org/lxc/getting-started/)
