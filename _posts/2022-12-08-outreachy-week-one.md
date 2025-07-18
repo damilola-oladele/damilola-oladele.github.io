@@ -1,6 +1,6 @@
 ---
 title: "Outreachy: Week one"
-description: Getting an internship opportunity eleven months after transitioning is an incredible accomplishment for me. With the Outreachy internship, I have my first paid opportunity in my open source.
+description: Yay, I got in for the Outreachy internship program!
 date: 2022-12-08 00:00:00 +0100
 categories: [Open Source, Outreachy]
 tags: [open-source]
