@@ -47,16 +47,16 @@ Docs-as-Code, open-source, API docs, Swagger/OpenAPI, Postman, readme, SDK docs,
 **100Devs, United States**						                                         December 2021 \- October 2022  
 *Software Developer*
 
-* Developed and maintained full-stack web applications using Node.js for the backend and React for the front end.
-* Implemented responsive UI/UX designs, guaranteeing seamless web experience across all devices.
+* Built and maintained full-stack web apps with Node.js and React, delivering scalable backends and responsive user experiences across devices.
 
 **iGates, Nigeria**						                March 2021 \- December 2022  
 *Software Developer*
 
-* Created and owned documentation for an internal banking API used for card issuance, enabling both technical and non-technical stakeholders to implement the system with minimal support.
-* Collaborated with product and compliance teams to create API usage guides tailored to partner banks' integration and regulatory requirements.
-* Wrote and reviewed compliance documentation with legal and product teams, ensuring internal systems and developer materials met industry regulations and audit requirements.
-* Collaborated with developers to build an internal bank application for card issuance.
+* Owned documentation for an internal banking API powering card issuance, enabling smooth adoption across technical and non-technical teams.
+* Partnered with product, compliance, and legal teams to create integration guides and regulatory materials that met audit standards.
+* Wrote and reviewed compliance documentation to ensure systems and developer resources aligned with industry regulations.
+* Built the frontend for a card issuance application, ensuring seamless integration with the backend.
+
 
 ---
 ## **OPEN-SOURCE VOLUNTEER EXPERIENCE**
@@ -75,7 +75,7 @@ Authored a style guide and contribution guide, which improved contributor engage
 
 * Led a volunteer team to produce clear and consistent documentation.
 * Reviewed and edited documentation contributions, ensuring clarity and accuracy.
-* Developed a style guide and editorial process to reduce documentation review time.
+* Developed a style guide and editorial process, reducing documentation review time.
 
 **Canonical Open Documentation Academy**, United Kingdom (Remote)    	     	                                                                             February 2024 \- present   
 
