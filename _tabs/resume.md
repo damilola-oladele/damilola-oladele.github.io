@@ -87,15 +87,15 @@ Authored a style guide and contribution guide, which improved contributor engage
 *Technical Writer*
 
 * Authored articles that were viewed by over 10,000 readers, helping self-taught developers understand core web development concepts.
----
 
-## **ACCOMPLISHMENTS**		
+---
+## **ACCOMPLISHMENTS**
 
 **freeCodeCamp**
 
-* Earned recognition as one of the top contributors for freeCodeCamp for 2022 and 2023\.
----
+* Earned recognition as one of the top contributors for freeCodeCamp for 2022 and 2023.
 
+---
 ## **EDUCATION**						  
 Obafemi Awolowo University, Ile-Ife, Nigeria  
 Field of Study: Law  
