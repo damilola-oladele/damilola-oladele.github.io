@@ -65,7 +65,7 @@ Docs-as-Code, open-source, API docs, Swagger/OpenAPI, Postman, readme, SDK docs,
 *Technical Writer*		
 
 * Created from scratch and maintain ownership of the Django OTP WebAuthn project documentation.
-Authored a style guide and contribution guide, which improved contributor engagement and reduced PR review time.
+* Authored a style guide and contribution guide, which improved contributor engagement and reduced PR review time.
 * Automated documentation deployment to ReadTheDocs via CI/CD pipelines, syncing docs with code updates without manual intervention.
 * Continuously refine and expand the documentation based on feedback to improve adoption.
 
