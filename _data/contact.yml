@@ -10,6 +10,10 @@
 - type: github
   icon: "fab fa-github"
 
+- type: gitlab
+  url: 'https://gitlab.gnome.org/activus' # Fill with your Git
+  icon: "fab fa-gitlab"
+
 - type: email
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
