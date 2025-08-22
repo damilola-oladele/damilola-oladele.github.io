@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 2
+order: 1
 image:
   path: /assets/img/favicons/android-chrome-512x512.png
   alt: Damilola Oladele's headshot
@@ -19,23 +19,25 @@ Git, GitHub, GitHub Actions, Markdown, Docusaurus, Sphinx, Jekyll, CMS, Agile de
 
 ### **Methodologies:**
 
-Docs-as-Code, open-source, API docs, Swagger/OpenAPI, Postman, readme, SDK docs, technical writing and editing, technical reviews, user research, writing and maintaining code samples, user guides, user manuals, reference docs, information architecture, CI/CD workflows, style guides, content strategy and creation
+Docs-as-Code, open-source, API docs, Swagger/OpenAPI, Postman, readme, SDK docs, technical writing and editing, technical reviews, user research, writing and maintaining code samples, user guides, user manuals, reference docs, information architecture, CI/CD workflows, style guides, content strategy and creation, video editing, Information Architecture
 
 **Language:**   
-*English* (native)
+*English (native), Yoruba*
 
 ---
 ## **WORK EXPERIENCE** 									  
 
 **Wagtail,** United Kingdom				                                                          October 2022 \- March 2024  
-*Technical Writer for Google Season of Docs and Outreachy*
+*Technical Writer*
 
-* Conducted user research to identify pain points and improved developer and editor guide documentation based on findings.
-* Authored how-to guides and explanatory documentation for Wagtail Editors guide using the Diátaxis framework.
-* Authored hands-on tutorial series for experienced Wagtail developers that became a community deployment reference and was cited in official [release notes](https://docs.wagtail.org/en/latest/releases/6.0.html#new-developer-tutorial).
-* Collaborated with Wagtail organizers to adapt onboarding tutorials for open-source beginners, supporting Google Summer of Code, Google Season of Docs, Outreachy, and Coders of Colour programs.
-* Hired and mentored Outreachy interns, with one retained as a long-term contributor.
-* Contributed to the Wagtail blog using storytelling and technical clarity to boost engagement with major feature releases.
+* Improved the information architecture of the Editor’s guide documentation by authoring new sections and ensuring all content adhered to the recommendations of the Diátaxis framework, improving user navigation.
+* Conducted user research that identified the need to provide more resources to help new Wagtail developers learn how to implement advanced features of the CMS.
+* Authored a hands-on tutorial series, based on user research findings, that helped new developers convert the blog site they built in the Getting Started section of the documentation into a portfolio site. 
+* Collaborated with 4 core Wagtail engineers to adapt onboarding tutorials for open-source beginners by improving the structure, language and adding explanatory comments to the sample codes.
+* Authored how-to guides and a new Concepts section for the Editor’s guide documentation, helping Editors better understand how to add content to their Wagtail website.
+* Hired, mentor and managed an Outreachy intern who later became a long-term contributor.
+* Contributed to the Wagtail blog, informing the community about improvements to the documentation.
+
 
 **DocumentWrite, United States**						                              April 2023 \- September 2023  
 *Technical Writer*
@@ -47,19 +49,17 @@ Docs-as-Code, open-source, API docs, Swagger/OpenAPI, Postman, readme, SDK docs,
 **100Devs, United States**						                                         December 2021 \- October 2022  
 *Software Developer*
 
-* Built and maintained full-stack web apps with Node.js and React, delivering scalable backends and responsive user experiences across devices.
+* Built and maintained full-stack web apps with Node.js and React, delivering scalable websites with responsive user experiences across devices.
 
 **iGates, Nigeria**						                March 2021 \- December 2022  
 *Software Developer*
 
 * Owned documentation for an internal banking API powering card issuance, enabling smooth adoption across technical and non-technical teams.
-* Partnered with product, compliance, and legal teams to create integration guides and regulatory materials that met audit standards.
-* Wrote and reviewed compliance documentation to ensure systems and developer resources aligned with industry regulations.
+* Wrote and reviewed compliance documentation to ensure systems and developer resources aligned with industry regulations
 * Built the frontend for a card issuance application, ensuring seamless integration with the backend.
 
-
 ---
-## **OPEN-SOURCE VOLUNTEER EXPERIENCE**
+## **OPEN-SOURCE EXPERIENCE**
 
 **Stormbase**   	     	                                                                                               Oct 2024 \- present   
 *Technical Writer*		
@@ -68,7 +68,6 @@ Docs-as-Code, open-source, API docs, Swagger/OpenAPI, Postman, readme, SDK docs,
 * Authored a style guide and contribution guide, which improved contributor engagement and reduced PR review time.
 * Automated documentation deployment to ReadTheDocs via CI/CD pipelines, syncing docs with code updates without manual intervention.
 * Continuously refine and expand the documentation based on feedback to improve adoption.
-
 
 **Black Python Devs**       	     	                                                                                                    April 2024 \- present   
 *Documentation Lead*
@@ -79,21 +78,21 @@ Docs-as-Code, open-source, API docs, Swagger/OpenAPI, Postman, readme, SDK docs,
 
 **Canonical Open Documentation Academy**, United Kingdom (Remote)    	     	                                                                             February 2024 \- present   
 
-* Authored explanatory, reference, and how-to guide docs for the Ubuntu Packaging Guide, helping contributors get started more easily.
+* Authored reference and how-to guide docs for the Ubuntu Packaging Guide, helping contributors get started more easily.
 * Improved the structure of the Ubuntu public cloud documentation, making key topics easier to navigate and reference.
-* Improved LXD and Scapcraft documentation by addressing unclear sections and adding missing context.
+* Improved LXD and Scapcraft documentation by rewriting unclear sections and adding missing context,  improving accuracy and usability.
 
 **freeCodeCamp, United States**						                                       June 2022 \- March 2023  
 *Technical Writer*
 
-* Authored articles that were viewed by over 10,000 readers, helping self-taught developers understand core web development concepts.
+* Authored articles on web development that were viewed by over 10,000 readers, helping self-taught developers understand core web development concepts.
 
 ---
 ## **ACCOMPLISHMENTS**
 
 **freeCodeCamp**
 
-* Earned recognition as one of the top contributors for freeCodeCamp for 2022 and 2023.
+Earned recognition as one of the top contributors for freeCodeCamp for 2022 and 2023.
 
 ---
 ## **EDUCATION**						  
