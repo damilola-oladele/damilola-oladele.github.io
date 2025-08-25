@@ -55,7 +55,6 @@ Docs-as-Code, open-source, API docs, Swagger/OpenAPI, Postman, readme, SDK docs,
 * Owned documentation for an internal banking API powering card issuance, enabling smooth adoption across technical and non-technical teams.
 * Built the frontend for a card issuance application, ensuring seamless integration with the backend.
 
-
 ---
 ## **OPEN-SOURCE VOLUNTEER EXPERIENCE**
 
@@ -85,6 +84,33 @@ Docs-as-Code, open-source, API docs, Swagger/OpenAPI, Postman, readme, SDK docs,
 *Technical Writer*
 
 * Authored articles that were viewed by over 10,000 readers, helping self-taught developers understand core web development concepts.
+
+---
+## **PUBLIC SPEAKING AND CONTENT**
+
+**Terntribe Contributors' Corner \| In-person speaking engagement**
+
+
+* Presented on open source misconceptions in African innovation context
+* Discussed strategies for government, NGO, and educational support of open source initiatives
+
+**DocumentWrite Twitter Spaces \| Series host and presenter**
+
+* Hosted multiple sessions on technical writing and developer relations topics
+* Covered conference attendance strategies, career development, global audience writing, and DevRel vs. technical writing
+* Presented on social media navigation for technical writers and soft skills development
+
+**Freelance Coalition for Developing Countries (FCDC) \| Guest speaker**
+
+* Delivered presentation on breaking into technical writing without formal background
+* Discussed skills required for technical writing success and content creation strategies
+* Provided insights on monetizing technical writing skills for BIPOC freelancers
+* Recording available: [Twitter Spaces session](https://twitter.com/i/spaces/1BRJjZwkAXaJw?s=20)
+
+**YouTube Content Creation \| [Channel: damilola_oladele](https://youtube.com/@damilola_oladele)**
+
+* Created video tutorials on ReactJS concepts and programming fundamentals
+* Produced educational content for developer audiences
 
 ---
 ## **ACCOMPLISHMENTS**
