@@ -31,11 +31,11 @@ Docs-as-Code, open-source, API docs, Swagger/OpenAPI, Postman, readme, SDK docs,
 *Technical Writer for Google Season of Docs and Outreachy*
 
 * Conducted user research to identify pain points and improved developer and editor guide documentation based on findings.
-* Authored how-to guides and explanatory documentation for Wagtail Editors guide using the Diátaxis framework.
 * Authored hands-on tutorial series for experienced Wagtail developers that became a community deployment reference and was cited in official <a target="_blank" href="https://docs.wagtail.org/en/latest/releases/6.0.html#new-developer-tutorial">release notes</a>.
 * Collaborated with Wagtail organizers to adapt onboarding tutorials for open-source beginners, supporting Google Summer of Code, Google Season of Docs, Outreachy, and Coders of Colour programs.
 * Hired and mentored Outreachy interns, with one retained as a long-term contributor.
 * Contributed to the Wagtail blog using storytelling, boosting engagement on major feature releases.
+* Authored how-to guides and explanatory documentation for Wagtail Editors guide using the Diátaxis framework.
 
 **DocumentWrite, United States**						                              April 2023 \- September 2023  
 *Technical Writer*
