@@ -105,9 +105,9 @@ Docs-as-Code, open-source, API docs, Swagger/OpenAPI, Postman, readme, SDK docs,
 * Delivered presentation on breaking into technical writing without formal background
 * Discussed skills required for technical writing success and content creation strategies
 * Provided insights on monetizing technical writing skills for BIPOC freelancers
-* Recording available: [Twitter Spaces session](https://twitter.com/i/spaces/1BRJjZwkAXaJw?s=20)
+* Recording available: <a target="_blank" href="https://twitter.com/i/spaces/1BRJjZwkAXaJw?s=20">Twitter Spaces session</a>
 
-**YouTube Content Creation \| [Channel: damilola_oladele](https://youtube.com/@damilola_oladele)**
+<b>YouTube Content Creation | <a target="_blank" href="https://youtube.com/@damilola_oladele">Channel: damilola_oladele</a></b>
 
 * Created video tutorials on ReactJS concepts and programming fundamentals
 * Produced educational content for developer audiences
