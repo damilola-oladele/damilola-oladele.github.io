@@ -400,7 +400,7 @@ gap: 10px;
 </div>
 <div class="modal-section">
 <h3>Work Done</h3>
-<p>I own and maintain the Black Python Devs Maintainers Guide, where I streamlined documentation across the community’s programs, policies, and roles. Leading a volunteer team, I introduced a <a href="https://github.com/BlackPythonDevs/blackpythondevs/blob/main/style_guide.md" target="_blank">style guide</a> and editorial process that reduced review time, improved consistency, and made the guide easier to adopt across similar Python organizations.</p>
+<p>I own and maintain the Black Python Devs Maintainers Guide, where I organized documentation for the community’s programs, policies, and roles. I led a volunteer team to author content and develop a <a href="https://github.com/BlackPythonDevs/blackpythondevs/blob/main/style_guide.md" target="_blank">style guide</a> with an editorial process that cut review time, improved clarity, and made the docs easier to adopt across similar Python organizations.</p>
 </div>
 </div>
 </div>
