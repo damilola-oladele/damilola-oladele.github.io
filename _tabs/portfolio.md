@@ -215,7 +215,7 @@ gap: 10px;
 </div>
 </div>
 <div class="card">
-<a href="https://github.com/BlackPythonDevs/blackpythondevs" target="_blank">BBlack Python Devs Maintainers Guide</a>
+<a href="https://github.com/BlackPythonDevs/blackpythondevs" target="_blank">Black Python Devs Maintainers Guide</a>
 <div class="card-footer">
 <button class="learn-more-btn" data-modal-id="bpd-modal">Learn more</button>
 </div>
