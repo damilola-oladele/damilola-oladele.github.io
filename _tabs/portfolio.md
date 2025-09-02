@@ -373,7 +373,7 @@ gap: 10px;
 <div class="modal-body">
 <div class="modal-section">
 <h3>About the Project</h3>
-<p>The <a href="https://canonical-ubuntu-packaging-guide.readthedocs-hosted.com/en/latest/" target="_blank">Ubuntu Packaging Guide</a> is the official resource for learning about Ubuntu development and packaging. Through the guide, you will learn about the key players, processes, and tools in Ubuntu development, set up your development environment correctly, gain a clearer idea of how to join the community, and fix an actual Ubuntu bug as part of the tutorials.</p>
+<p>The <a href="https://canonical-ubuntu-packaging-guide.readthedocs-hosted.com/en/latest/" target="_blank">Ubuntu Packaging Guide</a> is the official resource for learning Ubuntu development and packaging. It covers the key players, processes, and tools, helps you set up your development environment, shows you how to join the community, and guides you through fixing an Ubuntu bug.</p>
 </div>
 <div class="modal-section">
 <h3>Work Done</h3>
@@ -400,7 +400,7 @@ gap: 10px;
 </div>
 <div class="modal-section">
 <h3>Work Done</h3>
-<p>I currently own and maintain the Black Python Devs Maintainers Guide. I led a volunteer team to produce clear and consistent documentation across the community's programs, policies, roles, and responsibilities. I review and edit documentation contributions to ensure clarity and accuracy. I developed a <a href="https://github.com/BlackPythonDevs/blackpythondevs/blob/main/style_guide.md" target="_blank">style guide</a> and editorial process that reduces documentation review time.</p>
+<p>I own and maintain the Black Python Devs Maintainers Guide, where I streamlined documentation across the community’s programs, policies, and roles. Leading a volunteer team, I introduced a <a href="https://github.com/BlackPythonDevs/blackpythondevs/blob/main/style_guide.md" target="_blank">style guide</a> and editorial process that reduced review time, improved consistency, and made the guide easier to adopt across similar Python organizations.</p>
 </div>
 </div>
 </div>
