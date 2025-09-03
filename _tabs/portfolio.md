@@ -276,15 +276,14 @@ gap: 10px;
 <div class="card-container" id="articles">
 <div class="card"><a href="https://damilola-oladele.github.io/posts/get_started_with_lxc/" target="_blank">Get started with LXC</a></div>
 <div class="card"><a href="https://damilola-oladele.github.io/posts/documentation-experience-in-open-source/" target="_blank">Why gaining documentation experience in open source is hard</a></div>
-<div class="card"><a href="https://wagtail.org/blog/the-lessons-i-learned-during-my-google-season-of-docs-program/" target="_blank">Lessons from Google Season of Docs</a></div>
-<div class="card"><a href="https://wagtail.org/blog/a-new-tutorial-series-for-the-new-year/" target="_blank">A new tutorial series for the new year</a></div>
-<div class="card"><a href="https://www.freecodecamp.org/news/how-to-stay-motivated-while-learning-to-code/" target="_blank">How to Stay Motivated While Learning to Code</a></div>
+<div class="card"><a href="https://www.freecodecamp.org/news/what-is-the-dom-explained-in-plain-english/" target="_blank">What is the DOM? The Document Object Model Explained in Plain English</a></div>
 <div class="card"><a href="https://www.freecodecamp.org/news/how-to-use-oop-in-python/" target="_blank">How to Use OOP in Python</a></div>
+<div class="card"><a href="https://www.freecodecamp.org/news/django-model-relationships/" target="_blank">How to Define Relationships Between Django Models</a></div>
+<div class="card"><a href="https://www.freecodecamp.org/news/how-to-stay-motivated-while-learning-to-code/" target="_blank">How to Stay Motivated While Learning to Code</a></div>
 <div class="card"><a href="https://damilola-oladele.github.io/posts/the-blockchain-trilemma-challenge/" target="_blank">The blockchain trilemma challenge</a></div>
 <div class="card"><a href="https://damilola-oladele.github.io/posts/what-are-smart-contracts-on-blockchain/" target="_blank">What are smart contracts on blockchain?</a></div>
 <div class="card"><a href="https://damilola-oladele.github.io/posts/juno-bringing-decentralization-to-starknet/" target="_blank">Juno: Bringing decentralization to Starknet</a></div>
-<div class="card"><a href="https://wordsmith0x.substack.com/p/a-step-by-step-guide-to-earning-crypto" target="_blank">A step-by-step guide to earning crypto by yapping</a></div>
-<div class="card"><a href="https://wordsmith0x.substack.com/p/what-is-yapping" target="_blank">What is yapping in crypto?</a></div>
+<div class="card"><a href="https://wagtail.org/blog/the-lessons-i-learned-during-my-google-season-of-docs-program/" target="_blank">The lessons I learned during my Google Season of Docs program</a></div>
 </div>
 <!-- Modals -->
 <div id="django-otp-modal" class="modal">

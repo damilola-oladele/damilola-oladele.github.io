@@ -99,3 +99,32 @@ Earned recognition as one of the top contributors for freeCodeCamp for 2022 and 
 Obafemi Awolowo University, Ile-Ife, Nigeria  
 Field of Study: Law  
 Degree: Bachelors of Laws (LLB)
+
+<style>
+.card {
+padding: 0px;
+transition: transform 0.2s, box-shadow 0.2s;
+border-color: #363639ff;
+}
+button {
+text-decoration: none;
+font-weight: bold;
+background: #2563eb;
+}
+.card:hover {
+transform: translateY(-5px);
+}
+</style>
+<div class="card">
+<button onclick="downloadPDF()">Download Resume as PDF</button>
+</div>
+<script>
+function downloadPDF() {
+const link = document.createElement("a");
+link.href = "../assets/pdf/damilola_oladele_technical_writer_resume.pdf"; // place PDF in assets
+link.download = "damilola_oladele_resume.pdf";
+document.body.appendChild(link);
+link.click();
+document.body.removeChild(link);
+}
+</script>
