@@ -101,18 +101,22 @@ Field of Study: Law
 Degree: Bachelors of Laws (LLB)
 
 <style>
-.card {
-padding: 0px;
-transition: transform 0.2s, box-shadow 0.2s;
-border-color: #363639ff;
-}
-button {
-text-decoration: none;
-font-weight: bold;
-background: #2563eb;
+.card button {
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+color: white;
+border: none;
+padding: 8px 16px;
+border-radius: 6px;
+cursor: pointer;
+font-size: 14px;
+font-weight: 500;
+transition: all 0.3s ease;
+box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 .card:hover {
-transform: translateY(-5px);
+transform: translateY(-2px);
+box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
 }
 </style>
 <div class="card">
