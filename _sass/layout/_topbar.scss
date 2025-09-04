@@ -79,6 +79,7 @@
 #sidebar-trigger,
 #search-trigger {
   display: none;
+  font-size: 2rem;
 
   @include bp.lt(bp.get(lg)) {
     display: block;
