@@ -52,11 +52,13 @@ My progress in June for Google Season of Docs 2023
 </a>
 </div>
 <div class="card"><a href="https://wagtail.org/blog/a-new-tutorial-series-for-the-new-year/" target="_blank">A new tutorial series for the new year</a></div>
+<div class="card"><a href="https://wagtail.org/blog/the-lessons-i-learned-during-my-google-season-of-docs-program/" target="_blank">The lessons I learned during my Google Season of Docs program</a></div>
 <div class="card">
 <a href="https://www.freecodecamp.org/news/objects-in-javascript-for-beginners/" target="_blank">
 Objects in JavaScript – A Beginner's Guide
 </a>
 </div>
+<div class="card"><a href="https://www.freecodecamp.org/news/how-to-create-a-csv-file-in-python/" target="_blank">How to Create a CSV File Using Python</a></div>
 <div class="card"><a href="https://wordsmith0x.substack.com/p/a-step-by-step-guide-to-earning-crypto" target="_blank">A step-by-step guide to earning crypto by yapping</a></div>
 <div class="card"><a href="https://wordsmith0x.substack.com/p/what-is-yapping" target="_blank">What is yapping in crypto?</a></div>
 </div>
