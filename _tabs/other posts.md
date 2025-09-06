@@ -39,7 +39,7 @@ border: 1px solid #ccc;
 border-radius: 8px;
 }
 </style>
-<input type="text" id="searchBoxArticles" placeholder="Search articles...">
+<input type="text" id="searchBoxArticles" placeholder="Search posts...">
 <div class="card-container" id="articles">
 <div class="card">
 <a href="https://wagtail.org/blog/our-first-google-season-of-docs-2023/" target="_blank">
