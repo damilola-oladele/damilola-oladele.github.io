@@ -4,7 +4,7 @@ description: I’ve always wanted to explore community management, and this year
 date: 2024-12-17 00:00:00 +0100
 categories: [Open Source]
 tags: [career, DPG, tech for good, open-source]
-pin: true
+pin: false
 image:
   path: /assets/img/cover-images/journey-into-community-management.png
   alt: Cover image showing the title of post.

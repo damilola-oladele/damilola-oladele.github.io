@@ -4,7 +4,7 @@ description: I've found that gaining documentation experience through open-sourc
 date: 2024-11-11 00:00:00 +0100
 categories: [Documentation]
 tags: [open-source, documentation]
-pin: true
+pin: false
 image:
   path: /assets/img/cover-images/documentation-experience-in-open-source.png
   alt: Open-source documentation.

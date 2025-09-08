@@ -4,7 +4,7 @@ description: Using the Diataxis tutorial approach was about finding a starting p
 date: 2024-11-25 00:00:00 +0100
 categories: [Documentation]
 tags: [career, documentation]
-pin: true
+pin: false
 image:
   path: /assets/img/cover-images/diataxis-for-youtube.png
   alt: Cover image showing the title of post.

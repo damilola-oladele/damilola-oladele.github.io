@@ -4,7 +4,7 @@ description: Linux containers (LXC) have revolutionized the way applications are
 date: 2024-06-28 00:00:00 +0100
 categories: [Software Engineering, Linux]
 tags: [lxc, lxd, ubuntu]
-pin: true
+pin: false
 image:
   path: /assets/img/cover-images/cover_image_of_an_article_on_lxc.png
   alt: A container with items in it.
