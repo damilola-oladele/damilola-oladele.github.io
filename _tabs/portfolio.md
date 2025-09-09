@@ -355,7 +355,7 @@ gap: 10px;
 </div>
 <div class="modal-section">
 <h3>Work Done</h3>
-<p>Made <a href="https://github.com/canonical/open-documentation-academy/issues?q=is%3Aissue%20state%3Aclosed%20assignee%3Aactivus-d" target="_blank">several contributions</a></p> through CODA across multiple Canonical projects, including the Public Cloud docs, Ubuntu Server docs, LXD docs, Scapcraft docs, and adding articles to the CODA website.
+<p>Made <a href="https://github.com/canonical/open-documentation-academy/issues?q=is%3Aissue%20state%3Aclosed%20assignee%3Aactivus-d" target="_blank">several contributions</a> through CODA across multiple Canonical projects, including the Public Cloud docs, Ubuntu Server docs, LXD docs, Scapcraft docs, and adding articles to the CODA website.</p>
 </div>
 </div>
 </div>
