@@ -51,7 +51,7 @@ This central role is reflected in how the writing aspect of a documentation proj
 
 While engineers often have an unmatched understanding of how a product works, their writing may assume too much prior knowledge or include excessive technical detail. This is where technical writers step in. They improve early drafts by adding necessary context, such as prerequisites, reorganizing information into a clearer structure, trimming unnecessary details, and ensuring the content is usable by the intended audience. Over time, technical writers develop deeper technical expertise, but their ability to edit, refine, and shape engineers’ contributions means documentation can progress in real time without waiting for that ramp-up.
 
-## Legal team's responsibilities
+## Legal teams' responsibilities
 
 While this isn't a common practice, documentation for products in critical or highly regulated sectors must be reviewed by legal teams to ensure compliance and limit liability. This is especially true in industries like healthcare, financial services, pharmaceuticals, aerospace, and government contracting, where documentation carries legal and regulatory weight.
 
