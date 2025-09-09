@@ -11,8 +11,6 @@ image:
 published: true
 ---
 
-# Documentation as a shared responsibility
-
 Most people agree that collaboration is a major factor in determining the success of a documentation project. But what I've noticed is that they rarely define what this means in practice. It's easy to assume that collaboration starts and ends when a technical writer jumps on a quick call with an engineer or subject matter expert at the start of a project and when they share their draft for technical review.
 
 In reality, good documentation is often the product of shared responsibility within an organization, and collaboration often involves multiple stakeholders: product managers, UI/UX designers, web developers, software engineers, legal teams, and sometimes editorial teams.
