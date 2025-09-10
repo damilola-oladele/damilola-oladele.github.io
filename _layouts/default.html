@@ -16,6 +16,12 @@ layout: compress
 <html lang="{{ page.lang | default: site.alt_lang | default: site.lang }}" {{ prefer_mode }}>
   {% include head.html %}
 
+  <head>
+  {% if jekyll.environment == 'production' and site.google_analytics %}
+    {% include analytics.html %}
+  {% endif %}
+  </head>
+
   <body>
     {% include sidebar.html lang=lang %}
 
