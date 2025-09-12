@@ -33,7 +33,7 @@ This growing importance stems from several key factors. First, modern documentat
 
 Second, UI/UX design focuses on the overall experience users have when interacting with a product, including how easy and enjoyable it is to use. Documentation is part of this user experience journey. A user who can't find information quickly, struggles to scan content effectively, or feels frustrated by poor information architecture will carry that negative experience back to the main product.
 
-There's also a crucial need for documentation to embody the branding of the organization or product for consistency. Users expect a seamless experience as they move between your product and its supporting materials. When documentation feels disconnected from the main product in terms of visual design, it creates cognitive friction and undermines trust. UI/UX designers ensure that documentation maintains visual consistency with brand guidelines, color schemes, typography choices, and overall aesthetic that users associate with the product experience.
+There's also a crucial need for documentation to reflect the organization's branding. When documentation feels disconnected from the visual design your users are already used to, it creates cognitive friction. UI/UX designers ensure that documentation maintains visual consistency with brand guidelines, color schemes, typography choices, and overall aesthetic that represents the organization's identity.
 
 ## Web developers' responsibilities
 
