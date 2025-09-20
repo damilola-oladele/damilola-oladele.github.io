@@ -56,7 +56,7 @@ background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
 <li>Built and maintained e-commerce web applications for small retail businesses using Node.js and React, improving accessibility through WCAG 2.1 AA compliance and increasing mobile usability with responsive designs that boosted customer engagement.</li>
 </ul>
 <p><strong>iGates, Nigeria</strong> March 2021 - December 2022<br>
-<em>Software Developer</em></p>
+<em>Software Developer and Technical Writer</em></p>
 <ul>
 <li>Owned and maintained documentation for an internal banking API powering card issuance, creating code samples, and reference guides that drove greater adoption by technical and non-technical teams.</li>
 <li>Developed the frontend for a debit and credit card issuance application using ReactJS and Tailwind, enabling faster onboarding for banking clients and reducing processing time for card requests through seamless backend integration.</li>
