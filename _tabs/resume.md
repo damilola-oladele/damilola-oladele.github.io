@@ -33,7 +33,7 @@ background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
 <em>English (native), Yoruba</em></p>
 <hr>
 <h2><strong>WORK EXPERIENCE</strong></h2>
-<p><strong>Wagtail,</strong> United Kingdom October 2022 - March 2024<br>
+<p><strong>Wagtail, United Kingdom</strong> October 2022 - March 2024<br>
 <em>Technical Writer</em></p>
 <ul>
 <li>Conducted user research that identified user pain points, leading to the creation of new resources that help new Wagtail developers implement advanced Wagtail features.</li>
@@ -70,13 +70,13 @@ background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
 <li>Authored a writing style guide and contribution guide, which improved contributor engagement and reduced PR review time.</li>
 <li>Automated documentation deployment to ReadTheDocs via CI/CD pipelines, syncing docs with code updates without manual intervention.</li>
 </ul>
-<p><strong>Black Python Devs</strong> April 2024 - present<br>
+<p><strong>Black Python Devs, United States</strong> April 2024 - present<br>
 <em>Documentation Lead</em></p>
 <ul>
 <li>Own and maintain the Black Python Devs Maintainers Guide, leading a volunteer team to review contributions and organize documentation for the community’s programs, policies, and roles.</li>
 <li>Developed a writing style guide and implemented a two-stage peer review process that cut documentation review time in half.</li>
 </ul>
-<p><strong>Canonical Open Documentation Academy,</strong> United Kingdom (Remote) February 2024 - present<br>
+<p><strong>Canonical Open Documentation Academy, United Kingdom</strong>February 2024 - present<br>
 <em>Technical Writer</em></p>
 <ul>
 <li>Authored documentation to address critical knowledge gaps for developers, including step-by-step guides for proposing package changes, Debian Policy compliance references, Linux Filesystem Hierarchy Standard guidance, and SRU/Sponsorship process documentation. This enables smoother onboarding for new Ubuntu contributors and serves as a reference for experienced contributors.</li>
