@@ -76,7 +76,7 @@ For instance, a technical writer might monitor support tickets or forums and not
 In some cases, they also help in directing users to the right resources to solve their issues since they are often the primary custodians of the organization's knowledge base.<br><br>
 
 
-Wrapping up, **_technical writers are multidisciplinary professionals who bridge disciplines to make complex information clear, accurate, and usable_**. They adapt their skills to fit organizational needs while keeping their core mission firmly in focus. Ferri-Benedetti captures this multidisciplinary nature perfectly in his article, <a href="https://passo.uno/posts/technical-writing-is-not-a-dead-end-job/" target="blank">Technical writing is not a dead-end job, it’s a landing pad</a>:
+Wrapping up, **_technical writers are multidisciplinary professionals who bridge disciplines to make complex information clear, accurate, and usable_**. They adapt their skills to fit organizational needs while keeping their core mission firmly in focus. Ferri-Benedetti captures this multidisciplinary nature perfectly in his article, <a href="https://passo.uno/posts/technical-writing-is-not-a-dead-end-job/" target="blank">Technical writing isn't a dead-end job, it’s a landing pad</a>:
 
 > …composite professions such as technical writing bridge the gap between discrete crafts and bring them together through hybridization.
 
