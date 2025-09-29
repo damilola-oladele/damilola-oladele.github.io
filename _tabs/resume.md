@@ -76,7 +76,7 @@ background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
 <li>Own and maintain the Black Python Devs Maintainers Guide, leading a volunteer team to review contributions and organize documentation for the community’s programs, policies, and roles.</li>
 <li>Developed a writing style guide and implemented a two-stage peer review process that cut documentation review time in half.</li>
 </ul>
-<p><strong>Canonical Open Documentation Academy, United Kingdom</strong>February 2024 - present<br>
+<p><strong>Canonical Open Documentation Academy, United Kingdom</strong> February 2024 - present<br>
 <em>Technical Writer</em></p>
 <ul>
 <li>Authored documentation to address critical knowledge gaps for developers, including step-by-step guides for proposing package changes, Debian Policy compliance references, Linux Filesystem Hierarchy Standard guidance, and SRU/Sponsorship process documentation. This enables smoother onboarding for new Ubuntu contributors and serves as a reference for experienced contributors.</li>
