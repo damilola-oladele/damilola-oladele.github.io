@@ -11,7 +11,7 @@ image:
 published: true
 ---
 
-AI has made writing easier than ever, but not necessarily better. The more we rely on it, the easier it becomes to outsource not just the words, but the thinking behind them. That is why the distinction between AI writing and AI-assisted writing matters more than many people realize.
+AI has made writing easier than ever, but not necessarily better. The more we rely on it, the easier it becomes to outsource not just the words, but the thinking behind them. That's why the distinction between AI writing and AI-assisted writing matters more than many people realize.
 
 AI writing means letting the tool handle the entire process. You provide a prompt, it generates the content, and you publish it with little or no revision. That approach outsources thinking and judgment to the tool.
 
@@ -25,7 +25,7 @@ Relying on AI to curate your early ideas and drafts is self sabotage because it 
 
 Letting AI generate your initial drafts also strips your ideas of the personal experiences and perspectives that readers may find valuable. This is even more important in technical writing, which isn’t just about conveying information. It’s about conveying complex information through the lens of someone who has used that information firsthand. When you outsource your ideation to AI, you lose the hard-won lessons and the surprising connections you've made while using that information. These human elements are often the difference between a forgettable document and one that readers bookmark.
 
-Another issue is factual inaccuracies and outdated information. AI models have a cutoff date for their knowledge and cannot access real-time data. As a result, they may generate statistics or references that are already outdated. In some cases, they invent information that doesn’t exist. These hallucinations can appear as plausible facts, but they are incorrect. Imagine including fabricated information, a non-existent function, or citing a non-existent standard in a technical guide.
+Another issue is factual inaccuracies and outdated information. AI models have a cutoff date for their knowledge and can't access real-time data. As a result, they may generate statistics or references that are already outdated. In some cases, they invent information that doesn’t exist. These hallucinations can appear as plausible facts, but they are incorrect. Imagine including fabricated information, a non-existent function, or citing a non-existent standard in a technical guide.
 
 When readers notice these errors, your integrity and reliability come into question, and once that trust is broken, it’s difficult to regain.
 
