@@ -59,7 +59,7 @@ Documentation should reflect the same principle. A great user experience begins 
 
 <ul>
   <li><a href="https://backlinko.com/iphone-users" target="_blank">iPhone Users and Sales Stats</a></li>
-  <li><a href="https://documentation.academy/events/community-hour-discussions/documenting-new-project/" target="_blank">Documentinnew project</a></li>
+  <li><a href="https://documentation.academy/events/community-hour-discussions/documenting-new-project/" target="_blank">Documenting new project</a></li>
   <li><a href="https://blogs.cornell.edu/info2040/2022/11/04/dominance-in-diffusion-the-rise-of-the-iphone/" target="_blank">Dominain Diffusion: The Rise of the iPhone</a></li>
   <li><a href="https://marcom.com/apples-marketing-8-key-strategies-and-famous-campaigns/" target="_blank">Apple's Marketing: 8 Strategies and Famous Campaigns</a></li>
   <li><a href="https://documentation.academy/events/community-hour-discussions/markup-languages/" target="_blank">Markup languages for documentation</a></li>
