@@ -352,7 +352,7 @@ gap: 10px;
 <div class="modal-body">
 <div class="modal-section">
 <h3>About the Project</h3>
-<p><a href="https://documentationacademy.org/" target="_blank">CODA</a> is a collaboration between Canonical’s documentation team and documentation newcomers, experts, and those in-between. Its goal is to help us all improve documentation, become better writers, and grow as open source contributors.</p>
+<p><a href="https://documentation.academy/" target="_blank">CODA</a> is a collaboration between Canonical’s documentation team and documentation newcomers, experts, and those in-between. Its goal is to help us all improve documentation, become better writers, and grow as open source contributors.</p>
 </div>
 <div class="modal-section">
 <h3>Work Done</h3>
