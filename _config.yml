@@ -241,4 +241,4 @@ plugins:
 #  Just copy the unique code from the HTML file name e.g. from googlef47733b3288357e4.html copy f47733b3288357e4
 #  For more info on the plugin, see https://github.com/erikw/jekyll-google_search_console_verification_file
 google_search_console:
-  verification_file_code: b2e99ad43c4f2b81
+  verification_file_code: 4e624e4dc7221fbe
