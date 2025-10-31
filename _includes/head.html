@@ -1,4 +1,13 @@
 <head>
+  <!-- Redirect from GitHub Pages to Netlify -->
+  <script>
+    if (window.location.hostname === 'damilola-oladele.github.io') {
+      const netlifyUrl = 'https://damilola-oladele.dev';
+      const currentPath = window.location.pathname + window.location.search + window.location.hash;
+      window.location.replace(netlifyUrl + currentPath);
+    }
+  </script>
+  
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e">
