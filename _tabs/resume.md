@@ -33,6 +33,16 @@ background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
 <em>English (native), Yoruba</em></p>
 <hr>
 <h2><strong>WORK EXPERIENCE</strong></h2>
+<p><strong>Hackmamba, United States</strong> November 2025 - present<br>
+<em>Technical Writer</em></p>
+<ul>
+<li>Own and maintain documentation.</li>
+</ul>
+<p><strong>MongoDB, United States</strong> October 2025 - present<br>
+<em>Technical Content Writer (freelance)</em></p>
+<ul>
+<li>Authored tutorials and articles on Django, Python, and MongoDB.</li>
+</ul>
 <p><strong>Wagtail, United Kingdom</strong> October 2022 - March 2024<br>
 <em>Technical Writer</em></p>
 <ul>
