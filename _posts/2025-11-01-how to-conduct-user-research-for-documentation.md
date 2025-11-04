@@ -1,6 +1,6 @@
 ---
 title: "How to conduct user research for documentation"
-description: A practical guide to conducting user research throughout the documentation lifecycle.
+description: A practical guide to conducting user research for documentation.
 date: 2025-11-03 00:00:00 +0100
 categories: [Documentation]
 tags: [documentation]
@@ -105,7 +105,7 @@ They work best for mature documentation that needs refinement. Once you have sub
 
 Focus groups also reveal needs that users might not express in surveys and interviews. One user's comment may trigger memories or thoughts in others.  A discussion about navigation might evolve into a discussion about terminology confusion.
 
-To get the most value, use a trained moderator to guide the session. Good moderators ask open-ended questions, listen actively, and encourage balanced participation. They should also keep discussions focused without steering users toward specific conclusions.
+To get the most value, use a trained moderator to guide the session. Good moderators ask open-ended questions, listen actively, and encourage balanced participation. They also keep discussions focused without steering users toward specific conclusions.
 
 It's also important to create a comfortable environment where users feel safe sharing honest opinions. Some users won't criticize documentation if they feel defensive. Emphasize that you want to hear about problems, not just praise. Also, ask for permission to record sessions so you can review them later and capture nuances such as tone, expressions, and group reactions.
 
@@ -115,7 +115,7 @@ Usability testing observes real users attempting tasks with your documentation. 
 
 Testing should involve real target users rather than colleagues or stakeholders. Colleagues are too familiar with the product to notice the same challenges as new users, while stakeholders approach documentation with business goals in mind. You need participants who reflect your actual audience and explore your documentation with genuine questions and needs.
 
-Also, keep test scenarios realistic and goal-oriented. Avoid tasks that users may never complete or attempt. Focus instead on the most most practical and important aspects of your documentation.
+Also, keep test scenarios realistic and goal-oriented. Avoid tasks that users may never complete or attempt. Focus instead on the most practical and important aspects of your documentation.
 
 ### Analyze user research data
 
@@ -143,7 +143,7 @@ The report also becomes a valuable reference for future work. Months later, you 
 
 Regarding the format, choose a report format that fits your organization's communication style. Written reports are best for detailed findings that stakeholders can reference repeatedly. Slide decks suit executive reviews that favor concise summaries. Wiki pages or shared documents make research accessible across the team.
 
-It's also important to include relevant research artifacts and deliverables in your report. Such artifacts include customer journey maps and user personas. These artifacts make abstract research concrete and actionable during planning.
+It's also important to include relevant research artifacts and deliverables in your report. Such artifacts include user journey maps and user personas.
 
 ### Take action on user research findings
 
