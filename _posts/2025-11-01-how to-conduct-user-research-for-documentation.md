@@ -12,7 +12,7 @@ image:
 published: true
 ---
 
-Most technical writers build documentation around assumptions. They assume users need detailed API references, want exhaustive tutorials, or will read every section in order. But assumptions often fail, and user behavior tells a different story.
+Many technical writers build documentation around assumptions. They assume users need detailed API references, want exhaustive tutorials, or will read every section in order. But assumptions often fail, and user behavior tells a different story.
 
 User research is the clearest way to uncover that behavior. So _what is user research?_ User research is the process of investigating user behaviors, needs, and motivations through observation and feedback. In documentation, this means studying how users navigate your content, what information they seek, and what barriers prevent them from finding answers.
 

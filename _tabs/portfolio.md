@@ -271,15 +271,15 @@ gap: 10px;
 <h2>Articles</h2>
 <input type="text" id="searchBoxArticles" placeholder="Search articles...">
 <div class="card-container" id="articles">
-<div class="card"><a href="https://damilola-oladele.github.io/posts/get_started_with_lxc/" target="_blank">Get started with LXC</a></div>
+<div class="card"><a href="https://damilola-oladele.dev/posts/get_started_with_lxc/" target="_blank">Get started with LXC</a></div>
 <div class="card"><a href="https://www.freecodecamp.org/news/unit-testing-in-python/" target="_blank">How to Write Unit Tests in Python – with Example Test Code</a></div>
-<div class="card"><a href="https://damilola-oladele.github.io/posts/the-blockchain-trilemma-challenge/" target="_blank">The blockchain trilemma challenge</a></div>
-<div class="card"><a href="https://damilola-oladele.github.io/posts/what-are-smart-contracts-on-blockchain/" target="_blank">What are smart contracts on blockchain?</a></div>
-<div class="card"><a href="https://damilola-oladele.github.io/posts/juno-bringing-decentralization-to-starknet/" target="_blank">Juno: Bringing decentralization to Starknet</a></div>
+<div class="card"><a href="https://damilola-oladele.dev/posts/the-blockchain-trilemma-challenge/" target="_blank">The blockchain trilemma challenge</a></div>
+<div class="card"><a href="https://damilola-oladele.dev/posts/what-are-smart-contracts-on-blockchain/" target="_blank">What are smart contracts on blockchain?</a></div>
+<div class="card"><a href="https://damilola-oladele.dev/posts/juno-bringing-decentralization-to-starknet/" target="_blank">Juno: Bringing decentralization to Starknet</a></div>
 <div class="card"><a href="https://www.freecodecamp.org/news/how-to-use-oop-in-python/" target="_blank">How to Use Object-Oriented Programming in Python – Explained With Examples</a></div>
 <div class="card"><a href="https://www.freecodecamp.org/news/django-model-relationships/" target="_blank">How to Define Relationships Between Django Models</a></div>
 <div class="card"><a href="https://www.freecodecamp.org/news/what-is-the-dom-explained-in-plain-english/" target="_blank">What is the DOM? The Document Object Model Explained in Plain English</a></div>
-<div class="card"><a href="https://damilola-oladele.github.io/posts/documentation-experience-in-open-source/" target="_blank">Why gaining documentation experience in open source is hard</a></div>
+<div class="card"><a href="https://damilola-oladele.dev/posts/documentation-experience-in-open-source/" target="_blank">Why gaining documentation experience in open source is hard</a></div>
 <div class="card"><a href="https://www.freecodecamp.org/news/how-to-stay-motivated-while-learning-to-code/" target="_blank">How to Stay Motivated While Learning to Code</a></div>
 </div>
 <!-- Modals -->
