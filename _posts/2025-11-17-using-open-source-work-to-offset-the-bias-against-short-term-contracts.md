@@ -1,5 +1,5 @@
 ---
-title: "Using open source work to offset the bias against short-term contracts"
+title: "Using open-source work to offset the bias against short-term contracts"
 description: Using open-source work to offset bias against short-term contracts.
 date: 2025-11-17 00:00:00 +0100
 categories: [Documentation]
