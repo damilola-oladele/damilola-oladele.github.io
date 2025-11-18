@@ -1,21 +1,47 @@
 ---
 layout: page
-# All the Tags of posts.
+# All the Tags of posts and OSS stories.
 ---
 
 <div id="tags" class="d-flex flex-wrap mx-xl-2">
   {% assign tags = '' | split: '' %}
+  
+  {% comment %} Collect all tags from posts {% endcomment %}
   {% for t in site.tags %}
     {% assign tags = tags | push: t[0] %}
+  {% endfor %}
+  
+  {% comment %} Collect all tags from oss_stories {% endcomment %}
+  {% for story in site.oss_stories %}
+    {% if story.tags %}
+      {% for tag in story.tags %}
+        {% unless tags contains tag %}
+          {% assign tags = tags | push: tag %}
+        {% endunless %}
+      {% endfor %}
+    {% endif %}
   {% endfor %}
 
   {% assign sorted_tags = tags | sort_natural %}
 
   {% for t in sorted_tags %}
+    {% comment %} Count posts with this tag {% endcomment %}
+    {% assign post_count = site.tags[t].size | default: 0 %}
+    
+    {% comment %} Count oss_stories with this tag {% endcomment %}
+    {% assign story_count = 0 %}
+    {% for story in site.oss_stories %}
+      {% if story.tags contains t %}
+        {% assign story_count = story_count | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+    
+    {% assign total_count = post_count | plus: story_count %}
+    
     <div>
       <a class="tag" href="{{ t | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
         {{ t -}}
-        <span class="text-muted">{{ site.tags[t].size }}</span>
+        <span class="text-muted">{{ total_count }}</span>
       </a>
     </div>
   {% endfor %}

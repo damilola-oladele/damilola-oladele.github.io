@@ -1,5 +1,5 @@
 ---
-title: "Using open-source work to offset the bias against short-term contracts"
+title: "Using open-source work to offset bias against short-term contracts"
 description: Using open-source work to offset bias against short-term contracts.
 date: 2025-11-17 00:00:00 +0100
 categories: [Documentation]
@@ -37,7 +37,7 @@ The question now is: how do you get long-term engagements when long-term contrac
 
 Working on open source projects offers a solution. While <a href="https://damilola-oladele.dev/posts/documentation-experience-in-open-source/" target="_blank" rel="noopener noreferrer">getting started with open source isn't easy</a>, it's often easier than finding a long-term contract. This is because many open-source projects have documentation problems. So most maintainers are eager to find experienced technical writers who can commit to helping out over an extended period.
 
-### Finding an open source project
+### Finding an open-source project
 
 Once you decide to pursue open-source work, the next step is finding the right project.
 
@@ -49,7 +49,7 @@ Some projects host their source code on GitHub or GitLab. You can reach out by c
 
 Understand that this process takes time and effort. You'll need to reach out to multiple projects to increase your chances of finding the right fit. Not every project will respond, and not every response will lead to a commitment. So be ready for many disappointments.
 
-### Selecting the right open source project
+### Selecting the right open-source project
 
 Any open-source project with documentation work is valuable, but some are easier to contribute to, and some are more valuable than others.
 
