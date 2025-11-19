@@ -18,7 +18,7 @@ tags: [documentation, python, community]
 pin: false
 hidden: false
 image:
-  path: assets/img/oss-stories/oss-stories.jpg
+  path: /assets/img/oss-stories/oss-stories.jpg
   alt: ""
 published: false
 ---
