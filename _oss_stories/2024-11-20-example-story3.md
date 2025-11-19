@@ -17,6 +17,9 @@ maintainer_url: "https://github.com/johndoe"
 tags: [documentation, python, community]
 pin: false
 hidden: false
+image:
+  path: assets/img/oss-stories/oss-stories.jpg
+  alt: ""
 published: false
 ---
 

@@ -4,7 +4,7 @@ date: 2024-11-19 10:00:00 +0100
 description: "An example story showcasing the structure for OSS documentation stories."
 
 # Project Information
-project_name: "Example Project two"
+project_name: "Example project two"
 project_url: "https://github.com/example/project"
 docs_url: "https://docs.example.com"
 
@@ -17,6 +17,9 @@ maintainer_url: "https://github.com/johndoe"
 tags: [documentation, python, community]
 pin: false
 hidden: false
+image:
+  path: assets/img/oss-stories/oss-stories.jpg
+  alt: ""
 published: true
 ---
 
