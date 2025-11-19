@@ -5,18 +5,47 @@ layout: page
 
 {% include lang.html %}
 
+{% comment %} Collect all posts with this tag (from jekyll-archives) {% endcomment %}
+{% assign all_posts = page.posts %}
+
+{% comment %} If page.posts is null/undefined, initialize as empty array {% endcomment %}
+{% unless all_posts %}
+  {% assign all_posts = '' | split: '' %}
+{% endunless %}
+
+{% comment %} Collect all oss_stories with this tag {% endcomment %}
+{% assign matching_stories = '' | split: '' %}
+{% for story in site.oss_stories %}
+  {% if story.tags contains page.title %}
+    {% assign matching_stories = matching_stories | push: story %}
+  {% endif %}
+{% endfor %}
+
+{% comment %} Calculate total count {% endcomment %}
+{% assign total_count = all_posts.size | plus: matching_stories.size %}
+
 <div id="page-tag">
   <h1 class="ps-lg-2">
     <i class="fa fa-tag fa-fw text-muted"></i>
     {{ page.title }}
-    <span class="lead text-muted ps-2">{{ page.posts | size }}</span>
+    <span class="lead text-muted ps-2">{{ total_count }}</span>
   </h1>
   <ul class="content ps-0">
-    {% for post in page.posts %}
+    {% comment %} First, list all regular posts {% endcomment %}
+    {% for post in all_posts %}
       <li class="d-flex justify-content-between px-md-3">
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
         <span class="dash flex-grow-1"></span>
         {% include datetime.html date=post.date class='text-muted small text-nowrap' lang=lang %}
+      </li>
+    {% endfor %}
+    
+    {% comment %} Then, list all OSS stories {% endcomment %}
+    {% for story in matching_stories %}
+      <li class="d-flex justify-content-between px-md-3">
+        <a href="{{ story.url | relative_url }}">{{ story.title }}</a>
+        <span class="dash flex-grow-1"></span>
+        {% include datetime.html date=story.date class='text-muted small text-nowrap' lang=lang %}
       </li>
     {% endfor %}
   </ul>

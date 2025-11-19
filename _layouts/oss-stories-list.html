@@ -1,0 +1,191 @@
+---
+layout: default
+refactor: true
+---
+
+<style>
+h2 {
+  margin-top: 40px;
+  color: #7f8186ff;
+}
+.oss-stories-header {
+  margin-bottom: 30px;
+}
+.oss-stories-header h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.oss-stories-header p {
+  color: #7f8186ff;
+  line-height: 1.6;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+.story-card {
+  background: inherit;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(25, 24, 24, 0.08);
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #363639ff;
+  text-decoration: none;
+  display: block;
+  height: 100%;
+}
+.story-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(43, 39, 39, 0.12);
+}
+.story-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: #2563eb;
+  font-size: 1.1rem;
+}
+.story-card:hover h3 {
+  text-decoration: underline;
+}
+.story-meta-badges {
+  margin-bottom: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.story-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.story-badge-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+.story-badge-secondary {
+  background: #363639ff;
+  color: #fff;
+}
+.story-badge i {
+  margin-right: 5px;
+}
+.story-description {
+  color: #7f8186ff;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+.story-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  padding-top: 12px;
+  border-top: 1px solid #363639ff;
+  font-size: 0.9rem;
+  color: #7f8186ff;
+}
+.story-tags {
+  font-size: 0.85rem;
+}
+.pin-indicator {
+  color: #667eea;
+  font-weight: 500;
+}
+.no-stories {
+  text-align: center;
+  margin-top: 50px;
+  color: #7f8186ff;
+  font-size: 1.1rem;
+}
+</style>
+
+{% include lang.html %}
+
+<!-- OSS Doc Stories Header -->
+<div class="oss-stories-header">
+  <h2>Open-Source Documentation Stories</h2>
+  <p>Showcasing open-source documentation maintainers and their journeys. Learn from their experiences, challenges, and triumphs in creating and maintaining open-source documentation.</p>
+</div>
+
+{% assign all_pinned = site.oss_stories | where: 'pin', 'true' | sort: 'date' | reverse %}
+{% assign all_normal = site.oss_stories | where_exp: 'item', 'item.pin != true and item.hidden != true' | sort: 'date' | reverse %}
+
+{% assign stories = '' | split: '' %}
+
+<!-- Get pinned stories first -->
+{% for story in all_pinned %}
+  {% assign stories = stories | push: story %}
+{% endfor %}
+
+<!-- Get normal stories -->
+{% for story in all_normal %}
+  {% assign stories = stories | push: story %}
+{% endfor %}
+
+<div class="card-container">
+  {% for story in stories %}
+    <a href="{{ story.url | relative_url }}" class="story-card">
+      <h3>{{ story.title }}</h3>
+      
+      <!-- Project and Maintainer Info -->
+      {% if story.project_name or story.maintainer_name %}
+        <div class="story-meta-badges">
+          {% if story.project_name %}
+            <span class="story-badge story-badge-primary">
+              <i class="fas fa-folder-open"></i>{{ story.project_name }}
+            </span>
+          {% endif %}
+          {% if story.maintainer_name %}
+            <span class="story-badge story-badge-secondary">
+              <i class="fas fa-user"></i>{{ story.maintainer_name }}
+            </span>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      <div class="story-description">
+        {% if story.description %}
+          {{ story.description }}
+        {% elsif story.excerpt %}
+          {{ story.excerpt | strip_html | truncate: 150 }}
+        {% endif %}
+      </div>
+
+      <div class="story-footer">
+        <div>
+          <i class="far fa-calendar fa-fw"></i>
+          {% include datetime.html date=story.date lang=lang %}
+          
+          <!-- tags -->
+          {% if story.tags.size > 0 %}
+            <span class="story-tags ms-2">
+              <i class="fas fa-tags fa-fw"></i>
+              {% for tag in story.tags limit: 2 %}
+                {{ tag }}{% unless forloop.last %}, {% endunless %}
+              {% endfor %}
+            </span>
+          {% endif %}
+        </div>
+
+        {% if story.pin %}
+          <div class="pin-indicator">
+            <i class="fas fa-thumbtack fa-fw"></i>
+            Pinned
+          </div>
+        {% endif %}
+      </div>
+    </a>
+  {% endfor %}
+</div>
+
+{% if stories.size == 0 %}
+  <div class="no-stories">
+    <p>Coming soon!</p>
+  </div>
+{% endif %}
