@@ -72,52 +72,92 @@ script_includes:
     {% endif %}
 
     <!-- Project and Maintainer Info Box -->
-    {% if page.project_name or page.maintainer_name %}
-      <div class="oss-story-info">
-        <div class="row">
-          {% if page.project_name %}
-            <div class="col-md-5 mb-2">
-              <h6><i class="fas fa-folder-open me-2"></i>Project</h6>
-              <p class="mb-1"><strong>{{ page.project_name }}</strong></p>
-              {% if page.project_url %}
-                <a href="{{ page.project_url }}" target="_blank" class="small">
-                  <i class="fas fa-external-link-alt me-1"></i>Visit Project
-                </a>
-              {% endif %}
-              {% if page.docs_url %}
-                <span class="mx-2">|</span>
-                <a href="{{ page.docs_url }}" target="_blank" class="small">
-                  <i class="fas fa-book me-1"></i>Documentation
-                </a>
-              {% endif %}
-            </div>
-          {% endif %}
-
-          {% if page.maintainer_name %}
-            <div class="col-md-3 mb-2">
-              <h6><i class="fas fa-user me-2"></i>Maintainer</h6>
-              <p class="mb-1"><strong>{{ page.maintainer_name }}</strong></p>
-              {% if page.maintainer_role %}
-                <p class="small text-muted mb-1">{{ page.maintainer_role }}</p>
-              {% endif %}
-              {% if page.maintainer_url %}
-                <a href="{{ page.maintainer_url }}" target="_blank" class="small">
-                  <i class="fas fa-link me-1"></i>Profile
-                </a>
-              {% endif %}
-            </div>
-          {% endif %}
-          
-          {% if page.maintainer_headshot %}
+    {% if page.maintainer_headshot %}
+      {% if page.project_name or page.maintainer_name %}
+        <div class="oss-story-info">
+          <div class="row">
+            {% if page.project_name %}
+              <div class="col-md-5 mb-2">
+                <h6><i class="fas fa-folder-open me-2"></i>Project</h6>
+                <p class="mb-1"><strong>{{ page.project_name }}</strong></p>
+                {% if page.project_url %}
+                  <a href="{{ page.project_url }}" target="_blank" class="small">
+                    <i class="fas fa-external-link-alt me-1"></i>Visit Project
+                  </a>
+                {% endif %}
+                {% if page.docs_url %}
+                  <span class="mx-2">|</span>
+                  <a href="{{ page.docs_url }}" target="_blank" class="small">
+                    <i class="fas fa-book me-1"></i>Documentation
+                  </a>
+                {% endif %}
+              </div>
+            {% endif %}
+            
+            {% if page.maintainer_name %}
+              <div class="col-md-3 mb-2">
+                <h6><i class="fas fa-user me-2"></i>Maintainer</h6>
+                <p class="mb-1"><strong>{{ page.maintainer_name }}</strong></p>
+                {% if page.maintainer_role %}
+                  <p class="small text-muted mb-1">{{ page.maintainer_role }}</p>
+                {% endif %}
+                {% if page.maintainer_url %}
+                  <a href="{{ page.maintainer_url }}" target="_blank" class="small">
+                    <i class="fas fa-link me-1"></i>Profile
+                  </a>
+                {% endif %}
+              </div>
+            {% endif %}
+            
             <div class="col-md-3 mb-2 d-flex align-items-center justify-content-start justify-content-md-center">
-                <img src="{{ page.maintainer_headshot }}" 
-                     alt="{{ page.maintainer_name | default: 'Maintainer' }}" 
-                     class="maintainer-headshot-large">
+              <img src="{{ page.maintainer_headshot }}" 
+                   alt="{{ page.maintainer_name | default: 'Maintainer' }}" 
+                   class="maintainer-headshot-large">
             </div>
-          {% endif %}
+          </div>
         </div>
-      </div>
+      {% endif %}
+    {% else %}
+      {% if page.project_name or page.maintainer_name %}
+        <div class="oss-story-info">
+          <div class="row justify-content-between">
+            {% if page.project_name %}
+              <div class="col-md-4 mb-2">
+                <h6><i class="fas fa-folder-open me-2"></i>Project</h6>
+                <p class="mb-1"><strong>{{ page.project_name }}</strong></p>
+                {% if page.project_url %}
+                  <a href="{{ page.project_url }}" target="_blank" class="small">
+                    <i class="fas fa-external-link-alt me-1"></i>Visit Project
+                  </a>
+                {% endif %}
+                {% if page.docs_url %}
+                  <span class="mx-2">|</span>
+                  <a href="{{ page.docs_url }}" target="_blank" class="small">
+                    <i class="fas fa-book me-1"></i>Documentation
+                  </a>
+                {% endif %}
+              </div>
+            {% endif %}
+            
+            {% if page.maintainer_name %}
+              <div class="col-md-4 mb-2">
+                <h6><i class="fas fa-user me-2"></i>Maintainer</h6>
+                <p class="mb-1"><strong>{{ page.maintainer_name }}</strong></p>
+                {% if page.maintainer_role %}
+                  <p class="small text-muted mb-1">{{ page.maintainer_role }}</p>
+                {% endif %}
+                {% if page.maintainer_url %}
+                  <a href="{{ page.maintainer_url }}" target="_blank" class="small">
+                    <i class="fas fa-link me-1"></i>Profile
+                  </a>
+                {% endif %}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
     {% endif %}
+
 
     <div class="post-meta text-muted">
       <!-- published date -->
