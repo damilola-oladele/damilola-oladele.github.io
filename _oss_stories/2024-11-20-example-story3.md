@@ -1,7 +1,7 @@
 ---
 title: "Example: Improving Documentation Journey"
 date: 2024-11-19 10:00:00 +0100
-description: "An example story showcasing the structure for OSS documentation stories."
+description: "An example story showcasing an OSS documentation story without maintainer's image."
 
 # Project Information
 project_name: "Example Project"
