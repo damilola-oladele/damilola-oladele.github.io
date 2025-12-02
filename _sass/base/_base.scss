@@ -259,30 +259,20 @@ main {
   &::before {
     content: '';
     position: absolute;
+    inset: 0;
     background: var(--shimmer-bg);
-    height: 100%;
-    width: 100%;
-    -webkit-animation: shimmer 1.3s infinite;
-    animation: shimmer 1.3s infinite;
-  }
-
-  @-webkit-keyframes shimmer {
-    0% {
-      transform: translateX(-100%);
-    }
-
-    100% {
-      transform: translateX(100%);
-    }
+    animation: shimmer 1.2s forwards; // ensure overlay disappears
   }
 
   @keyframes shimmer {
     0% {
       transform: translateX(-100%);
+      opacity: 1;
     }
 
     100% {
       transform: translateX(100%);
+      opacity: 0; // fade out
     }
   }
 }

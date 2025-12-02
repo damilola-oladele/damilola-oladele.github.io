@@ -35,7 +35,7 @@ The right balance of short-term and long-term engagements is best. This mix lets
 
 The question now is: how do you get long-term engagements when long-term contracts are scarce?
 
-Working on open source projects offers a solution. While <a href="https://damilola-oladele.dev/posts/documentation-experience-in-open-source/" target="_blank" rel="noopener noreferrer">getting started with open source isn't easy</a>, it's often easier than finding a long-term contract. This is because many open-source projects have documentation problems. So most maintainers are eager to find experienced technical writers who can commit to helping out over an extended period.
+Working on open source projects offers a solution. While <a href="https://damilola-oladele.dev/posts/documentation-experience-in-open-source/" target="_blank" rel="noopener noreferrer">gaining documentation experience in open source is hard</a>, it's often easier than finding a long-term contract. This is because many open-source projects have documentation problems. So most maintainers are eager to find experienced technical writers who can commit to helping out over an extended period.
 
 ### Finding an open-source project
 
