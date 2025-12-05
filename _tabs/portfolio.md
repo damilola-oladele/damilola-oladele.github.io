@@ -271,6 +271,8 @@ gap: 10px;
 <h2>Articles</h2>
 <input type="text" id="searchBoxArticles" placeholder="Search articles...">
 <div class="card-container" id="articles">
+<div class="card"><a href="https://www.datacamp.com/tutorial/how-to-integrate-apache-spark-with-django-and-mongodb" target="_blank">How to Integrate Apache Spark With Django and MongoDB</a></div>
+<div class="card"><a href="https://www.datacamp.com/tutorial/mongo-db-atlas-cli" target="_blank">MongoDB Atlas CLI: Managing Databases From the Command Line</a></div>
 <div class="card"><a href="https://damilola-oladele.dev/posts/get_started_with_lxc/" target="_blank">Get started with LXC</a></div>
 <div class="card"><a href="https://www.freecodecamp.org/news/unit-testing-in-python/" target="_blank">How to Write Unit Tests in Python – with Example Test Code</a></div>
 <div class="card"><a href="https://damilola-oladele.dev/posts/the-blockchain-trilemma-challenge/" target="_blank">The blockchain trilemma challenge</a></div>
