@@ -25,7 +25,7 @@ BPD addresses this gap head-on by creating space for developers who might otherw
 
 For the past 22 months, I’ve served as Documentation Lead for BPD. My responsibility is to coordinate the community’s documentation efforts around organizing information about its policies, programs, and operations.
 
-Recently, I authored the community [Black Python Devs Bylaws](https://github.com/BlackPythonDevs/blackpythondevs/tree/main/byelaws). These bylaws define how BPD operates, how decisions get made, and how members can participate in governance.
+Recently, I authored the [Black Python Devs Bylaws](https://github.com/BlackPythonDevs/blackpythondevs/tree/main/byelaws). These bylaws define how BPD operates, how decisions get made, and how members can participate in governance.
 
 Our documentation efforts for BPD extend beyond serving our own community. We aim to create a template that related Python communities around the world can adopt as a stepping stone to accelerate their establishment and organization. Many Python communities struggle with the same foundational challenges, including how to structure leadership, handle conflicts, ensure transparency in decision-making, and keep the community healthy over time.
 
