@@ -1,6 +1,6 @@
 ---
 title: "Received the first Black Python Devs Distinguished Service Award"
-description: Black Python Devs recognized my contributions with their inaugural Distinguished Service
+description: Black Python Devs recognized my contributions with their inaugural Distinguished Service Award
 date: 2025-12-14 00:00:00 +0100
 categories: [Open Source]
 tags: [career, open-source, community]
