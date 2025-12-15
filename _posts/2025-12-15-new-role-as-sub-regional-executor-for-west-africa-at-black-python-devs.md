@@ -7,7 +7,7 @@ tags: [career, open-source, community]
 pin: true
 image:
   path: /assets/img/cover-images/new-role-as-sub-regional-executor-for-west-africa-at-black-python-devs.jpg
-  alt: Cover image showing the words “Black Python Devs” in bold text.
+  alt: Cover image showing the words “New position as Sub-Regional Executor for West Africa” in bold text.
 published: true
 ---
 
