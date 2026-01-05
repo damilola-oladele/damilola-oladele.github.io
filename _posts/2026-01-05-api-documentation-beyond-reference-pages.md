@@ -105,4 +105,4 @@ A conceptual explanation of idempotency in your API documentation might describe
 
 Both components serve your documentation, but they work in different ways. The glossary helps users quickly look up unfamiliar terms while reading. Conceptual explanations help users develop a deeper understanding before attempting implementation.<br><br>
 
-In conclusion, API references are a great place to start, but they fall short of what is required for effective API documentation. On their own, reference pages describe what exists, but they do little to encourage adoption or help developers succeed during integration. Consequently, effective API documentation requires bringing together multiple complementary components.
+In conclusion, API references are a great place to start, but they fall short of what is required for effective API documentation. On their own, API references describe what exists, but they do little to encourage adoption or help developers succeed during integration. Consequently, effective API documentation requires bringing together multiple complementary components.
