@@ -15,7 +15,7 @@ There is a common belief that developers prefer to dive straight into the API re
 
 This assumption has led many teams to believe that once an API reference exists, they've reached a minimum viable product for their documentation. In some organizations, it also explains why API documentation is left entirely to engineers, with little attention paid to structure, onboarding, or the overall learning experience.
 
-While API references are important, they are just one component of a complete API documentation experience. Like other forms of product documentation, effective API documentation requires thinking beyond a list of endpoints and fields. A complete API documentation experience combines several components, each serving a distinct purpose in how developers and product teams discover, understand, and use it.
+While API references are important, they are just one component of a complete API documentation experience. Like other forms of product documentation, a complete API documentation experience combines several components, each serving a distinct purpose in how developers and product teams discover, understand, and use it.
 
 ## Product overview
 
