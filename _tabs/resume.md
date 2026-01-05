@@ -36,13 +36,12 @@ background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
 <p><strong>MongoDB, United States</strong> October 2025 - present<br>
 <em>Technical Content Writer (freelance)</em></p>
 <ul>
-<li>Authored tutorials and articles on Django, Python, and MongoDB.</li>
+<li>Authored tutorials, articles, and case studies on Django, Python, and MongoDB, educating developers across multiple platforms.</li>
 </ul>
 <p><strong>Kredete</strong> August 2025 - present<br>
 <em>Technical Writer (contract)</em></p>
 <ul>
-<li>Built Gravv's fintech API documentation from scratch, including comprehensive OpenAPI specifications, developer guides, and endpoint references that enabled developers to integrate customer management, payment collection, wallet management, and card issuance features.</li>
-<li>Own and maintain documentation across the entire platform, implementing information architecture improvements that improve content navigation and conducting regular audits to ensure accuracy as the API evolves.</li>
+<li>Build and maintain documentation for two fintech products, including OpenAPI specifications, developer guides, and tutorials, enabling developers to integrate customer management, payment, wallet, and card issuance features.</li>
 </ul>
 <p><strong>Wagtail, United Kingdom</strong> October 2022 - March 2024<br>
 <em>Technical Writer</em></p>
@@ -74,18 +73,22 @@ background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
 </ul>
 <hr>
 <h2><strong>OPEN-SOURCE EXPERIENCE</strong></h2>
+<p>
+<strong>Black Python Devs, United States</strong><br>
+<em>Sub-Regional Executor, West Africa</em> Nov 2024 - present<br>
+<em>Documentation Lead</em> April 2024 - present
+</p>
+<ul>
+<li>Support Python communities and leaders across West Africa, connecting developers with speaking, mentoring, and open-source contribution opportunities.</li>
+<li>Own and maintain the Black Python Devs Maintainers Guide, leading a volunteer team to review contributions and organize documentation for the community’s programs, policies, and roles.</li>
+<li>Developed a writing style guide and implemented a two-stage peer review process that cut documentation review time in half.</li>
+</ul>
 <p><strong>Stormbase</strong> Oct 2024 - present<br>
 <em>Technical Writer</em></p>
 <ul>
-<li>Created and maintain the Django OTP WebAuthn project documentation, continuously adding configuration guides, API reference documentation, and code samples to improve developer onboarding and drive adoption.</li>
+<li>Created and now maintain the Django OTP WebAuthn project documentation, continuously adding configuration guides, API reference documentation, and code samples to improve developer onboarding and drive adoption.</li>
 <li>Authored a writing style guide and contribution guide, which improved contributor engagement and reduced PR review time.</li>
 <li>Automated documentation deployment to ReadTheDocs via CI/CD pipelines, syncing docs with code updates without manual intervention.</li>
-</ul>
-<p><strong>Black Python Devs, United States</strong> April 2024 - present<br>
-<em>Documentation Lead</em></p>
-<ul>
-<li>Own and maintain the Black Python Devs Maintainers Guide, leading a volunteer team to review contributions and organize documentation for the community’s programs, policies, and roles.</li>
-<li>Developed a writing style guide and implemented a two-stage peer review process that cut documentation review time in half.</li>
 </ul>
 <p><strong>Canonical Open Documentation Academy, United Kingdom</strong> February 2024 - present<br>
 <em>Technical Writer</em></p>
@@ -101,13 +104,15 @@ background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
 </ul>
 <hr>
 <h2><strong>ACCOMPLISHMENTS</strong></h2>
-<p><strong>freeCodeCamp</strong></p>
-<p>Earned recognition as one of the top contributors for freeCodeCamp for 2022 and 2023.</p>
+<ul>
+<li>Received the first Black Python Devs Distinguished Service Award for extraordinary
+commitment and outstanding contributions to community leadership, documentation, and member
+support.</li>
+<li>Earned recognition as one of the top contributors for freeCodeCamp for 2022 and 2023.</li>
+</ul>
 <hr>
 <h2><strong>EDUCATION</strong></h2>
-<p>Obafemi Awolowo University, Ile-Ife, Nigeria<br>
-Field of Study: Law<br>
-Degree: Bachelor of Laws (LLB)</p>
+<p><em>Bachelor of Laws (LLB)</em> | Obafemi Awolowo University, Ile-Ife, Nigeria</p>
 <div class="card">
 <button id="downloadBtn">Download Resume as PDF</button>
 </div>

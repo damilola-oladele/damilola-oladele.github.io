@@ -1,7 +1,7 @@
 ---
 title: "New position as Sub-Regional Executor for West Africa at Black Python Devs"
 description: I'm taking on a new leadership position coordinating with Python communities across West Africa.
-date: 2025-12-14 00:00:00 +0100
+date: 2025-12-15 00:00:00 +0100
 categories: [Open Source]
 tags: [career, open-source, community]
 pin: true
