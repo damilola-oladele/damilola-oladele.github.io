@@ -2,7 +2,7 @@ name: Build and Deploy Jekyll Site
 
 on:
   push:
-    branches: ["production"]
+    branches: ["github-pages"]
   workflow_dispatch:
 
 permissions:
@@ -32,7 +32,7 @@ jobs:
       - name: Build with Jekyll
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
-          JEKYLL_ENV: production
+          JEKYLL_ENV: github-pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 

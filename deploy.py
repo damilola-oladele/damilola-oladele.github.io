@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 """
 Git Deployment Automation Script
-Automates the workflow of pushing changes from main to production branch.
+Automates the workflow of staging, committing, and pushing changes to the main branch.
 
 DESCRIPTION:
-    This script automates the repetitive Git workflow for deploying changes from
-    the 'main' development branch to the 'production' branch on GitHub. It provides
-    an interactive command-line interface with clear status messages at every step.
+    This script automates the repetitive Git workflow for deploying changes to
+    the 'main' branch on GitHub. It provides an interactive command-line interface
+    with clear status messages at every step.
 
 PREREQUISITES:
     - Python 3.6 or higher
     - Git installed and configured
-    - A Git repository with 'main' and 'production' branches
+    - A Git repository with 'main' branch
     - Remote repository configured as 'origin'
 
 INSTALLATION:
@@ -48,21 +48,17 @@ WORKFLOW:
        - Stages all changes with 'git add .'
        - Prompts for a single commit message
        - Commits all changes together
-       - Proceeds directly to publishing
+       - Proceeds directly to pushing
        
        Option B: Individual Staging
        - Interactive loop for staging specific files/patterns
        - Enter file paths like: src/file.js or patterns like: docs/*
        - Prompts for commit message for each staged group
        - Repeats until you're done staging
-       - Asks if you want to publish now or later
+       - Asks if you want to push now or later
     
-    4. PUBLISHING FLOW
-       - Switches to 'production' branch
-       - Resets 'production' to match 'main' exactly
-       - Pushes 'production' branch to remote
-       - Pushes 'main' branch to remote
-       - Switches back to 'main' branch
+    4. PUSHING TO REMOTE
+       - Pushes 'main' branch to remote repository
        - Displays deployment complete message
 
 EXAMPLES:
@@ -81,7 +77,7 @@ EXAMPLES:
     Enter file path(s) or pattern(s) to stage: docs/*
     Enter commit message for these files: Update documentation
     Do you want to continue staging and committing more files? (yes/no): no
-    Do you wish to Publish Now? (yes/no): yes
+    Do you wish to Push Now? (yes/no): yes
 
 INTERRUPTING THE SCRIPT:
     Press Ctrl+C at any time to safely exit the script.
@@ -96,16 +92,15 @@ ERROR HANDLING:
     All errors will stop the script with a descriptive message.
 
 NOTES:
-    - The script uses 'git reset --hard' on production, which is destructive
-    - Always ensure your 'main' branch is in the desired state before publishing
-    - The production branch will be force-synced to match main exactly
-    - All staged changes must be committed before publishing
+    - All staged changes must be committed before pushing
+    - Always ensure your commits are correct before pushing
+    - The script pushes directly to the remote 'main' branch
 
 AUTHOR:
     Created for automating Git deployment workflows
 
 VERSION:
-    1.0.0
+    2.0.0 - Simplified for single branch deployment
 """
 
 import subprocess
@@ -251,55 +246,22 @@ def stage_individual_and_commit():
             break
     
     print("\n=== Staging Complete ===")
-    if ask_yes_no("Do you wish to Publish Now?"):
+    if ask_yes_no("Do you wish to Push Now?"):
         return True
     else:
-        print("✓ Quit to publish later. Exiting.")
+        print("✓ Changes committed locally. You can push later with 'git push'. Exiting.")
         sys.exit(0)
 
 
-def publish_to_production():
-    """Step 4: Publish changes to production branch."""
-    print("\n=== Starting Deployment to Production ===")
+def push_to_remote():
+    """Step 4: Push changes to remote main branch."""
+    print("\n=== Pushing to Remote ===")
     
-    # Checkout production
-    success, _, error = run_command("git checkout production")
-    if success:
-        print("✓ SUCCESS: Switched to 'production' branch.")
-    else:
-        print(f"❌ ERROR: Failed to switch to 'production' branch. {error}")
-        sys.exit(1)
-    
-    # Reset production to match main
-    success, _, error = run_command("git reset --hard main")
-    if success:
-        print("✓ SUCCESS: Synchronized 'production' with 'main'.")
-    else:
-        print(f"❌ ERROR: Failed to reset 'production' branch. {error}")
-        sys.exit(1)
-    
-    # Push production
-    success, _, error = run_command("git push origin production")
-    if success:
-        print("✓ SUCCESS: Pushed 'production' branch to remote.")
-    else:
-        print(f"❌ ERROR: Failed to push 'production' branch. {error}")
-        sys.exit(1)
-    
-    # Push main
     success, _, error = run_command("git push origin main")
     if success:
         print("✓ SUCCESS: Pushed 'main' branch to remote.")
     else:
         print(f"❌ ERROR: Failed to push 'main' branch. {error}")
-        sys.exit(1)
-    
-    # Return to main
-    success, _, error = run_command("git checkout main")
-    if success:
-        print("✓ SUCCESS: Switched back to 'main' branch.")
-    else:
-        print(f"❌ ERROR: Failed to switch back to 'main' branch. {error}")
         sys.exit(1)
     
     print("\n🎉 DEPLOYMENT COMPLETE! 🎉")
@@ -320,10 +282,10 @@ def main():
     # Step 3: Staging and committing
     if ask_yes_no("\nDo you want to stage all changes at once?"):
         stage_all_and_commit()
-        publish_to_production()
+        push_to_remote()
     else:
         if stage_individual_and_commit():
-            publish_to_production()
+            push_to_remote()
 
 
 if __name__ == "__main__":
