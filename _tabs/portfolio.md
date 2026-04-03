@@ -271,6 +271,9 @@ gap: 10px;
 <h2>Articles</h2>
 <input type="text" id="searchBoxArticles" placeholder="Search articles...">
 <div class="card-container" id="articles">
+<div class="card"><a href="https://www.datacamp.com/tutorial/how-to-set-up-multi-factor-authentication-in-mongodb-atlas" target="_blank">How to Set Up Multi-Factor Authentication in MongoDB Atlas</a></div>
+<div class="card"><a href="https://www.geeksforgeeks.org/mongodb/how-to-implement-data-masking-in-mongodb/" target="_blank">How to Implement Data Masking in MongoDB</a></div>
+<div class="card"><a href="https://dev.to/mongodb/how-to-use-mongodbs-text-search-16cj" target="_blank">How to Use MongoDB’s Text Search</a></div>
 <div class="card"><a href="https://www.datacamp.com/tutorial/how-to-integrate-apache-spark-with-django-and-mongodb" target="_blank">How to Integrate Apache Spark With Django and MongoDB</a></div>
 <div class="card"><a href="https://www.datacamp.com/tutorial/mongo-db-atlas-cli" target="_blank">MongoDB Atlas CLI: Managing Databases From the Command Line</a></div>
 <div class="card"><a href="https://damilola-oladele.dev/posts/get_started_with_lxc/" target="_blank">Get started with LXC</a></div>

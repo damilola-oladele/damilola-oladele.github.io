@@ -35,14 +35,10 @@ background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
 <h2><strong>WORK EXPERIENCE</strong></h2>
 <p><strong>MongoDB, United States</strong> October 2025 - present<br>
 <em>Technical Content Writer (freelance)</em></p>
-<ul>
-<li>Authored tutorials, articles, and case studies on Django, Python, and MongoDB, educating developers across multiple platforms.</li>
-</ul>
+<p>Authored tutorials, articles, and case studies on Django, Python, and MongoDB, educating developers across multiple platforms.</p>
 <p><strong>Kredete</strong> August 2025 - present<br>
 <em>Technical Writer (contract)</em></p>
-<ul>
-<li>Build and maintain documentation for two fintech products, including OpenAPI specifications, developer guides, and tutorials, enabling developers to integrate customer management, payment, wallet, and card issuance features.</li>
-</ul>
+<p>Built from scratch and currently maintaining documentation for two fintech products, including OpenAPI specifications, developer guides, and tutorials, enabling developers to integrate customer management, payment, wallet, and card issuance features.</p>
 <p><strong>Wagtail, United Kingdom</strong> October 2022 - March 2024<br>
 <em>Technical Writer</em></p>
 <ul>
@@ -99,9 +95,7 @@ background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
 </ul>
 <p><strong>freeCodeCamp, United States</strong> June 2022 - March 2023<br>
 <em>Technical Writer</em></p>
-<ul>
-<li>Authored tutorials on Django, Python, and JavaScript that were read by over 10,000 learners, helping self-taught developers understand core web development and programming concepts.</li>
-</ul>
+<p>Authored tutorials on Django, Python, and JavaScript that were read by over 10,000 learners, helping self-taught developers understand core web development and programming concepts.</p>
 <hr>
 <h2><strong>ACCOMPLISHMENTS</strong></h2>
 <ul>
