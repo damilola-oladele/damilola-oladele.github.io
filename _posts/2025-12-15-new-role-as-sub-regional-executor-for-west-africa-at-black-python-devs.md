@@ -19,8 +19,6 @@ This role excites me because of the strong foundation laid by the previous leade
 
 In this new role, I will coordinate with local Python communities and leaders across West Africa. The goal is to continue advancing Black Python Devs’ mission to provide guidance, mentorship, and career support for Black Pythonistas globally.
 
-{% include coming-soon-alert.html %}
-
 I will not be working alone, and I am excited to collaborate with other newly elected members of the leadership team. My priorities include identifying active Python communities across West Africa, building relationships with local leaders and organizers, understanding the specific challenges Python developers face in the region, and creating programs that address those needs. I will also work to connect West African Python developers with opportunities for speaking, mentoring, and contributing to open-source projects.
 
 The work begins now. If you are a Python developer or community organizer in West Africa, I would love to hear from you. Let’s build something meaningful together.

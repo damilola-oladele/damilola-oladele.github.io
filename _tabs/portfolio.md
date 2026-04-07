@@ -196,7 +196,7 @@ gap: 10px;
 }
 }
 </style>
-<h2>Project / Documentation Work</h2>
+<h2>Documentation Projects</h2>
 <input type="text" id="searchBox" placeholder="Search projects...">
 <div class="card-container" id="projects">
 <div class="card">
@@ -268,7 +268,7 @@ gap: 10px;
 </div>
 </div>
 </div>
-<h2>Articles</h2>
+<h2>Tutorials and Articles</h2>
 <input type="text" id="searchBoxArticles" placeholder="Search articles...">
 <div class="card-container" id="articles">
 <div class="card"><a href="https://www.datacamp.com/tutorial/how-to-set-up-multi-factor-authentication-in-mongodb-atlas" target="_blank">How to Set Up Multi-Factor Authentication in MongoDB Atlas</a></div>

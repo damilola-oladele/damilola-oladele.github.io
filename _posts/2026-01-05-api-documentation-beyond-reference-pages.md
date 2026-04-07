@@ -23,8 +23,6 @@ An API is one of the ways customers use your product. It exposes the product's c
 
 This part of the API documentation serves as the entry point that orients users to your API’s purpose, value, and relevance.
 
-{% include coming-soon-alert.html %}
-
 When an individual or organization considers adopting an API, they need to quickly determine what it does, what problems it solves, and whether it fits their use case. The product overview answers these questions by highlighting key features and clarifying what differentiates the product from alternatives. Without this context, even the most detailed API reference may fail to lead to adoption.
 
 For instance, if you are documenting an analytics API, the product overview might explain that it enables teams to collect, query, and analyze event data from applications. It could describe capabilities such as real-time metrics, custom event tracking, and user segmentation, while emphasizing benefits like scalable data ingestion or flexible querying that set it apart from alternatives.

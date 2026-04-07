@@ -15,8 +15,6 @@ In November 2025, I received an email from [Black Python Devs (BPD)](https://bla
 
 This recognition comes from the community I hold closest to my heart and deeply relate to in mission and purpose. The BPD is a space where I see my own experiences reflected, where the challenges I face are understood without explanation, and where the mission speaks directly to the work I believe needs to be done in the Python ecosystem.
 
-{% include coming-soon-alert.html %}
-
 If you haven’t heard of BPD, it’s a community extending the ecosystem of Python communities to Black and colored communities around the world. The goal is to become the largest community of Black Python developers globally and establish itself as a source for diverse leaders in the greater Python community.
 
 Jay founded the community after observing a concerning pattern. The same handful of Black developers appeared at major conferences, took on leadership positions, and dealt with identical challenges while on the path to burnout. So the Python ecosystem needed broader representation, more voices, and sustainable pathways for Black developers to lead without burning out in the process.
