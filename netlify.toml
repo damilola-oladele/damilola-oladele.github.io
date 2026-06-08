@@ -5,13 +5,6 @@
 [build.environment]
   RUBY_VERSION = "3.3.4"
   PYTHON_VERSION = "3.11"
-  # Cache the downloaded model between Netlify builds to avoid re-downloading
-  # ~500 MB of model weights on every deploy.
   HF_HOME = "/opt/build/cache/huggingface"
   SENTENCE_TRANSFORMERS_HOME = "/opt/build/cache/huggingface"
-
-[[plugins]]
-  package = "@netlify/plugin-cache"
-
-  [plugins.inputs]
-    paths = ["/opt/build/cache/huggingface"]
+  
