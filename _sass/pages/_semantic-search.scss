@@ -1,0 +1,82 @@
+// _sass/addon/semantic-search.scss
+//
+// Styles for the semantic search input and mode toggle.
+// Drop this file into _sass/addon/ and @forward it from
+// _sass/addon/custom.scss (or wherever you keep local overrides).
+
+// ── Semantic search input ─────────────────────────────────────────────────────
+//
+// Mirror every rule from #search-input so the two inputs are visually
+// identical. We can't just rename the original because search-display.js
+// and SimpleJekyllSearch both target #search-input by ID.
+
+#semantic-search-input {
+  background: center;
+  border: 0;
+  border-radius: 0;
+  padding: 0.18rem 0.3rem;
+  color: var(--text-color);
+  height: auto;
+  // flex-grow pushes the input to fill available space inside the search bar,
+  // matching how #search-input behaves (it gets flex:1 from Bootstrap's
+  // .form-control inside a flex container).
+  flex: 1;
+
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+
+  @media (min-width: 1200px) {
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+// ── Widen the search bar in semantic mode ─────────────────────────────────────
+//
+// The original `search` element is capped at $search-max-width (200px).
+// Semantic queries tend to be longer phrases, so we override that cap
+// when the semantic input is visible.
+
+search:has(#semantic-search-input:not([style*="display:none"]):not([style*="display: none"])) {
+  max-width: 380px;
+}
+
+// ── Mode toggle layout ────────────────────────────────────────────────────────
+//
+// Keep the toggle compact and vertically centred inside the search bar.
+// The label is hidden on small screens to save space.
+
+#search-mode-toggle {
+  flex-shrink: 0;
+  white-space: nowrap;
+
+  .form-check-label {
+    font-size: 0.75rem;
+    line-height: 1;
+    cursor: pointer;
+
+    // Hide the label text on narrow screens; the toggle alone is enough.
+    @media (max-width: 1399px) {
+      display: none;
+    }
+  }
+
+  .form-check-input {
+    cursor: pointer;
+    // Slightly smaller than default so it doesn't dominate the search bar.
+    width: 2rem;
+    height: 1rem;
+  }
+}
+
+// ── Status line ───────────────────────────────────────────────────────────────
+//
+// Sits just below the topbar. Inherits the site's text-muted colour so it
+// works in both light and dark mode without extra rules.
+
+#semantic-search-status {
+  font-size: 0.8rem;
+  padding: 0.2rem 0;
+  border-bottom: 1px solid var(--search-border-color);
+}
