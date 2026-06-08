@@ -25,3 +25,9 @@ package-lock.json
 !.vscode/settings.json
 !.vscode/extensions.json
 !.vscode/tasks.json
+
+# Semantic search
+assets/js/data/semantic-index.json
+
+# Python environment
+.venv

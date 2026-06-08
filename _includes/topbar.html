@@ -61,6 +61,11 @@
 
     <search id="search" class="align-items-center ms-3 ms-lg-0">
       <i class="fas fa-search fa-fw fa-24px"></i>
+      <!--
+        #search-input must keep its id — search-display.js and SimpleJekyllSearch
+        both target it directly. In semantic mode we blank it and hide it visually,
+        but never remove it from the DOM.
+      -->
       <input
         class="form-control"
         id="search-input"
@@ -69,9 +74,134 @@
         autocomplete="off"
         placeholder="{{ site.data.locales[include.lang].search.hint | capitalize }}..."
       >
+      <!--
+        Semantic input sits immediately after #search-input and is hidden by default.
+        It is revealed (and #search-input hidden) when the toggle is switched on.
+      -->
+      <input
+        class="form-control"
+        id="semantic-search-input"
+        type="search"
+        aria-label="semantic search"
+        autocomplete="off"
+        placeholder="Search by meaning…"
+        style="display:none;"
+      >
+      <!-- Semantic search mode toggle -->
+      <div id="search-mode-toggle" class="d-flex align-items-center ms-2" title="Toggle semantic search">
+        <label class="form-check-label me-1 small text-muted" for="semantic-toggle">
+          Semantic
+        </label>
+        <div class="form-check form-switch mb-0">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            role="switch"
+            id="semantic-toggle"
+            aria-label="Enable semantic search"
+          >
+        </div>
+      </div>
     </search>
+
     <button type="button" class="btn btn-link text-decoration-none" id="search-cancel">
       {{- site.data.locales[include.lang].search.cancel -}}
     </button>
   </div>
 </header>
+
+<!-- Status line shown below topbar during model load or search -->
+<div
+  id="semantic-search-status"
+  class="text-center text-muted small py-1"
+  style="display:none;"
+  aria-live="polite"
+></div>
+
+<script type="module">
+  import SemanticSearch from '{{ "/assets/js/semantic-search.js" | relative_url }}';
+
+  const toggle         = document.getElementById('semantic-toggle');
+  const keywordInput   = document.getElementById('search-input');
+  const semanticInput  = document.getElementById('semantic-search-input');
+  const searchPanel    = document.getElementById('search');
+  const resultWrapper  = document.getElementById('search-result-wrapper');
+  const hints          = document.getElementById('search-hints');
+
+  // ── Helpers ──────────────────────────────────────────────────────────────────
+
+  // search-display.js shows #search-result-wrapper when #search-input receives
+  // input. In semantic mode we need to replicate that visibility logic ourselves.
+  function showResultWrapper() {
+    if (resultWrapper) {
+      resultWrapper.classList.remove('d-none');
+      document.querySelectorAll('#main-wrapper>.container>.row')
+        .forEach(el => el.classList.add('d-none'));
+    }
+    if (hints) hints.classList.add('d-none');
+  }
+
+  // ── Debounce ─────────────────────────────────────────────────────────────────
+
+  function debounce(fn, delay) {
+    let timer;
+    return (...args) => {
+      clearTimeout(timer);
+      timer = setTimeout(() => fn(...args), delay);
+    };
+  }
+
+  const debouncedSearch = debounce((query) => SemanticSearch.search(query), 300);
+
+  // ── Semantic input events ─────────────────────────────────────────────────────
+
+  semanticInput.addEventListener('focus', () => searchPanel.classList.add('input-focus'));
+  semanticInput.addEventListener('focusout', () => searchPanel.classList.remove('input-focus'));
+
+  semanticInput.addEventListener('input', () => {
+    if (semanticInput.value !== '') {
+      showResultWrapper();
+      debouncedSearch(semanticInput.value);
+    } else {
+      // Empty query — clear results, show hints (mirrors search-display.js behaviour)
+      const results = document.getElementById('search-results');
+      if (results) results.innerHTML = '';
+      if (hints) hints.classList.remove('d-none');
+    }
+  });
+
+  // ── Toggle ────────────────────────────────────────────────────────────────────
+
+  toggle.addEventListener('change', () => {
+    const isOn = toggle.checked;
+
+    if (isOn) {
+      keywordInput.style.display = 'none';
+      semanticInput.style.display = '';
+      semanticInput.focus();
+      // Start loading the model and index immediately so they are ready to use
+      SemanticSearch.init();
+    } else {
+      semanticInput.style.display = 'none';
+      semanticInput.value = '';
+      keywordInput.style.display = '';
+      keywordInput.focus();
+      // Clear any semantic results and status
+      const results = document.getElementById('search-results');
+      if (results) results.innerHTML = '';
+      document.getElementById('semantic-search-status').style.display = 'none';
+      if (hints) hints.classList.remove('d-none');
+    }
+  });
+
+  // ── Cancel button — also reset semantic state ─────────────────────────────────
+  // search-display.js already handles hiding the result wrapper on cancel.
+  // We just need to clean up the semantic-specific state.
+  document.getElementById('search-cancel')?.addEventListener('click', () => {
+    semanticInput.value = '';
+    toggle.checked = false;
+    semanticInput.style.display = 'none';
+    keywordInput.style.display = '';
+    document.getElementById('semantic-search-status').style.display = 'none';
+  });
+</script>

@@ -5,7 +5,7 @@ order: 2
 ---
 <style>
 .card button {
-background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+background-color: #0d6efd;
 color: white;
 border: none;
 padding: 8px 16px;
@@ -19,7 +19,10 @@ box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 .card:hover {
 transform: translateY(-2px);
 box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+}
+.card button:hover{
+box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+background: linear-gradient(135deg, #d2603a);
 }
 </style>
 <h2><strong>TECHNICAL SKILLS</strong></h2>
