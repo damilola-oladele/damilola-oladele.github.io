@@ -24,7 +24,7 @@
   - [Suppressing SimpleJekyllSearch interference](#suppressing-simplejekyllsearch-interference)
   - [User messaging](#user-messaging)
   - [Styling](#styling)
-  - [Model preloading](#model-preloading)
+  - [Model preloading strategy](#model-preloading)
   - [Model caching on Netlify](#model-caching-on-netlify)
 - [Design rationale](#design-rationale)
   - [Why static over server-based](#why-static-over-server-based)
@@ -153,18 +153,26 @@ Jekyll then builds the site. Because `semantic-index.json` is written into `asse
 
 When the search bar is focused and the user types a query, the existing Simple Jekyll Search implementation handles the lookup against `assets/js/data/search.json`. This path is unchanged.
 
-**Background preload**
+**Search bar preload**
 
-As soon as the browser finishes rendering the page and becomes idle, `SemanticSearch.init()` is called automatically in the background using `requestIdleCallback` (with a `setTimeout` fallback for Safari). This starts downloading the model and index before the user has opened search or touched the toggle. The download happens asynchronously and does not block the page in any way.
+As soon as the user clicks the search icon to open the search bar, `SemanticSearch.init()` is called in the background before the user has touched the toggle. The download starts immediately but nothing waits on it — the page continues responding normally. By the time the user notices the Semantic toggle and flips it, the model is likely already loaded or well into downloading.
 
-By the time a visitor opens the search bar and flips the semantic toggle, the model is likely already loaded or well into downloading, which significantly reduces or eliminates the perceived wait time.
+This is triggered by a click listener on `#search-trigger`:
+
+```javascript
+document.getElementById('search-trigger')?.addEventListener('click', () => {
+  SemanticSearch.init();
+});
+```
+
+The `init()` guard (`if (isReady || isLoading) return`) ensures that if the toggle is flipped while the download is already in progress, the second call to `init()` exits immediately without starting a duplicate download.
 
 **Semantic mode (opt-in)**
 
 When the user activates the semantic mode toggle:
 
 1. The keyword search input is hidden and replaced with the semantic search input.
-2. If the background preload has already completed, the semantic input is immediately active. If it is still in progress, a status line below the topbar displays a loading message.
+2. If the search bar preload has already completed, the semantic input is immediately active. If it is still in progress, a status line below the topbar displays a loading message.
 3. Once both the model and `semantic-index.json` are ready, the status line is cleared.
 4. When the user types a query, a placeholder message is written into the results container immediately to prevent Simple Jekyll Search from filling it with its own "no results" message.
 5. Transformers.js encodes the query string into a 384-dimensional vector using `bge-small-en-v1.5`.
@@ -332,7 +340,9 @@ The key rules are:
 
 The model download is the only source of latency in semantic search. Once the model is loaded into memory, query embedding takes well under a second. The challenge is the initial ~24 MB download on first use.
 
-To address this, `SemanticSearch.init()` is called automatically as soon as the browser finishes rendering the page and enters an idle state:
+**Approach tried first: idle preload on page load**
+
+The first approach used `requestIdleCallback` to start the model download automatically as soon as the browser became idle after page load:
 
 ```javascript
 if ('requestIdleCallback' in window) {
@@ -342,13 +352,27 @@ if ('requestIdleCallback' in window) {
 }
 ```
 
-`requestIdleCallback` is a browser API that defers work until the main thread is free — after the page has rendered, scripts have run, and the user is not interacting. The model download starts in the background without competing with page rendering or any user interaction.
+The intent was that by the time a visitor opened the search bar and flipped the toggle, the model would already be loaded. In theory, `requestIdleCallback` defers work until the main thread is free, so the download should not compete with the page.
 
-Safari does not support `requestIdleCallback`, so a `setTimeout` of 2000ms is used as a fallback. This gives the page enough time to finish loading before the download begins.
+In practice this introduced a noticeable regression. On slower connections the ~24 MB model download competed with the page regardless of when it started, making the initial page experience sluggish for all visitors — including those who never use semantic search. The approach was removed.
 
-The `init()` guard (`if (isReady || isLoading) return`) ensures that if the toggle is flipped while the background download is already in progress, the second call to `init()` exits immediately without starting a duplicate download. The two calls share the same state variables inside the `SemanticSearch` closure.
+**Current approach: preload on search bar open**
 
-The tradeoff is that the model downloads for every visitor on every page load, including those who never use semantic search. On a low-traffic personal blog this is acceptable. On a high-traffic site, option 2 — preloading only when the user opens the search bar — would be the more conservative choice.
+The model download now starts only when the user clicks the search icon to open the search bar:
+
+```javascript
+document.getElementById('search-trigger')?.addEventListener('click', () => {
+  SemanticSearch.init();
+});
+```
+
+This is a strong signal of intent — a user who opens the search bar is likely to interact with search. The download starts in the background immediately, and by the time the user notices the Semantic toggle and flips it, the model is often already loaded or well into downloading.
+
+Crucially, the page load experience is completely unaffected. Visitors who never open search never trigger the download at all.
+
+The `init()` guard (`if (isReady || isLoading) return`) ensures that if the toggle is flipped while the download is already in progress, the second `init()` call from the toggle handler exits immediately without starting a duplicate download.
+
+The remaining tradeoff is that users on very slow connections who open search and immediately flip the toggle may still see the loading message briefly. This is acceptable — the alternative of downloading on every page load imposes a cost on all visitors, whereas the current approach only affects the subset who actively open search.
 
 ### Model caching on Netlify
 
