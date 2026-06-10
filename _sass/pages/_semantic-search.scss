@@ -38,7 +38,8 @@
 // Semantic queries tend to be longer phrases, so we override that cap
 // when the semantic input is visible.
 
-search:has(#semantic-search-input:not([style*="display:none"]):not([style*="display: none"])) {
+// Widen the default search bar for both keyword and semantic modes
+search {
   max-width: 380px;
 }
 
