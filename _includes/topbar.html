@@ -205,13 +205,11 @@
     document.getElementById('semantic-search-status').style.display = 'none';
   });
 
-  // Preload the model and index in the background as soon as the page is idle.
-  // requestIdleCallback ensures the browser finishes rendering the page first
-  // before starting the download. Falls back to setTimeout on Safari which
-  // does not support requestIdleCallback.
-  if ('requestIdleCallback' in window) {
-    requestIdleCallback(() => SemanticSearch.init());
-  } else {
-    setTimeout(() => SemanticSearch.init(), 2000);
-  }
+  // Begin loading the model as soon as the user opens the search bar.
+  // This runs asynchronously in the background — the model download starts
+  // but nothing waits on it. By the time the user notices the toggle and
+  // flips it, the model may already be ready.
+  document.getElementById('search-trigger')?.addEventListener('click', () => {
+    SemanticSearch.init();
+  });
 </script>
