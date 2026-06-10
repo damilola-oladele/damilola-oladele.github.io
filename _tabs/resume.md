@@ -39,7 +39,7 @@ background: linear-gradient(135deg, #d2603a);
 <p><strong>MongoDB, United States</strong> October 2025 - present<br>
 <em>Technical Content Writer (freelance)</em></p>
 <p>Authored tutorials, articles, and case studies on Django, Python, and MongoDB, educating developers across multiple platforms.</p>
-<p><strong>Kredete</strong> August 2025 - present<br>
+<p><strong>Kredete</strong> September 2025 - present<br>
 <em>Technical Writer (contract)</em></p>
 <p>Built from scratch and currently maintaining documentation for two fintech products, including OpenAPI specifications, developer guides, and tutorials, enabling developers to integrate customer management, payment, wallet, and card issuance features.</p>
 <p><strong>Wagtail, United Kingdom</strong> October 2022 - March 2024<br>
@@ -82,7 +82,7 @@ background: linear-gradient(135deg, #d2603a);
 <li>Own and maintain the Black Python Devs Maintainers Guide, leading a volunteer team to review contributions and organize documentation for the community’s programs, policies, and roles.</li>
 <li>Developed a writing style guide and implemented a two-stage peer review process that cut documentation review time in half.</li>
 </ul>
-<p><strong>Stormbase</strong> Oct 2024 - present<br>
+<p><strong>Stormbase</strong> October 2024 - December 2025<br>
 <em>Technical Writer</em></p>
 <ul>
 <li>Created and now maintain the Django OTP WebAuthn project documentation, continuously adding configuration guides, API reference documentation, and code samples to improve developer onboarding and drive adoption.</li>

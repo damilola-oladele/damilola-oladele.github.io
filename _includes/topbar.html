@@ -72,7 +72,7 @@
         type="search"
         aria-label="search"
         autocomplete="off"
-        placeholder="{{ site.data.locales[include.lang].search.hint | capitalize }}..."
+        placeholder="Search by keyword..."
       >
       <!--
         Semantic input sits immediately after #search-input and is hidden by default.
@@ -203,5 +203,13 @@
     semanticInput.style.display = 'none';
     keywordInput.style.display = '';
     document.getElementById('semantic-search-status').style.display = 'none';
+  });
+
+  // Begin loading the model as soon as the user opens the search bar.
+  // This runs asynchronously in the background — the model download starts
+  // but nothing waits on it. By the time the user notices the toggle and
+  // flips it, the model may already be ready.
+  document.getElementById('search-trigger')?.addEventListener('click', () => {
+    SemanticSearch.init();
   });
 </script>
