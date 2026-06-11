@@ -1,7 +1,7 @@
 ---
 title: "My first AI integration: adding semantic search to my blog"
 description: How I added an opt-in semantic search mode to my static Jekyll blog.
-date: 2026-06-10 00:00:00 +0100
+date: 2026-06-11 00:00:00 +0100
 categories: [Software Engineering]
 tags: [ai, jekyll, semantic-search]
 pin: false
