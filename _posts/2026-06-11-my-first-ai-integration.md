@@ -11,9 +11,9 @@ image:
 published: true
 ---
 
-Recently, I've been learning about AI integrations. Reading and watching tutorials only takes you so far, so I've been on the lookout for practical experience. I wanted a real project where I could ship something and learn from the challenges of building. 
+Recently, I've been learning about AI integrations. Reading and watching tutorials only takes you so far, so I've been looking for a project where I could build something real, ship it, and learn from the process. 
 
-That opportunity came recently when I wrote a tutorial on implementing semantic search. The post is yet to be published, but writing it left me wanting to build the thing myself rather than just describe it.
+That opportunity came recently when I wrote a tutorial on implementing semantic search. The post is yet to be published, but writing it left me wanting to build the thing myself rather than just write about it.
 
 If you're unfamiliar with semantic search, the difference between it and a traditional keyword search is simple. Traditional keyword search looks for exact word matches. Semantic search tries to understand the meaning behind a query and compares that meaning to the content it searches. As a result, a query can match a post even when they share no words, as long as they are about the same underlying idea.
 
