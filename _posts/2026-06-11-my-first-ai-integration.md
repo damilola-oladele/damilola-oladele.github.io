@@ -73,8 +73,6 @@ The choice of embedding model mattered here too. A larger model gives better res
 
 One rule is non-negotiable: the same model has to run at build time and in the browser, because vectors from different models live in different number spaces and can't be compared.
 
-One tradeoff remains. A reader on a very slow connection who opens search and immediately flips the toggle may still see a brief loading message. I accept that, because the wait happens only once. After the model loads, it stays in memory for the rest of that page, so repeated searches return fast without reloading it. The browser also caches the download itself, so the model doesn't download again on later visits unless the reader clears their browser data. The alternative, downloading on every page load, would charge every visitor for a feature some of them might never use.<br><br
-
----
+One tradeoff remains. A reader on a very slow connection who opens search and immediately flips the toggle may still see a brief loading message. I accept that, because the wait happens only once. After the model loads, it stays in memory for the rest of that page, so repeated searches return fast without reloading it. The browser also caches the download itself, so the model doesn't download again on later visits unless the reader clears their browser data. The alternative, downloading on every page load, would charge every visitor for a feature some of them might never use.<br><br>
 
 The hard part of an AI integration is rarely the AI itself. The real work sits in the constraints around it: cost, speed, and the experience you refuse to break. You can try the result on <a href="https://damilola-oladele.dev" target="_blank" rel="noopener noreferrer">my blog</a> by opening the search bar and turning on semantic search using the toggle. For now, I'm looking forward to finding other AI integrations I can experiment with.
