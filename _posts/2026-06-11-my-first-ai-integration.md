@@ -35,7 +35,7 @@ My blog is static. It has no backend, no database, no paid API, and Netlify serv
 
 The common integration approach is to route queries through a server. A small serverless function receives the query, runs it through a model, and returns ranked results. But a server, even a serverless one, brings problems. It adds infrastructure to maintain, introduces latency from cold starts, and may cost money as traffic grows. None of that fits a free, static blog.
 
-So I dropped the server idea and committed to a fully static approach. The next question was where to do the heavy work of turning text into <a href="https://www.geeksforgeeks.org/data-science/vectors-for-ml/" target="_blank"></a>vectors. This step is called embedding. An embedding is a list of numbers that captures the meaning of a piece of text, and you compare two embeddings to measure how similar they are.
+So I dropped the server idea and committed to a fully static approach. The next question was where to do the heavy work of turning text into <a href="https://www.geeksforgeeks.org/data-science/vectors-for-ml/" target="_blank">vectors</a>. This step is called embedding. An embedding is a list of numbers that captures the meaning of a piece of text, and you compare two embeddings to measure how similar they are.
 
 I considered two places to do it: in the browser at runtime, or ahead of time when the site builds.
 
