@@ -212,4 +212,8 @@
   document.getElementById('search-trigger')?.addEventListener('click', () => {
     SemanticSearch.init();
   });
+
+  document.getElementById('search-input')?.addEventListener('focus', () => {
+    SemanticSearch.init();
+  });
 </script>
