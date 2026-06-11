@@ -11,15 +11,15 @@ image:
 published: true
 ---
 
-Lately, I've been learning a lot about AI integrations. Reading and watching tutorials only takes you so far, so I've been on the lookout for practical experience. I wanted a real project where I could ship something and learn from the challenges of building. 
+Recently, I've been learning about AI integrations. Reading and watching tutorials only takes you so far, so I've been looking for a project where I could build something real, ship it, and learn from the process. 
 
-That opportunity came recently when I wrote a post on how to implement semantic search. The post is yet to be published, but writing it left me wanting to build the thing myself rather than just describe it.
+That opportunity came recently when I wrote a tutorial on implementing semantic search. The post is yet to be published, but writing it left me wanting to build the thing myself rather than just write about it.
 
 If you're unfamiliar with semantic search, the difference between it and a traditional keyword search is simple. Traditional keyword search looks for exact word matches. Semantic search tries to understand the meaning behind a query and compares that meaning to the content it searches. As a result, a query can match a post even when they share no words, as long as they are about the same underlying idea.
 
 After some thought, I decided to practice on my own blog, which is a <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> site.
 
-The blog previously used <a href="https://github.com/christian-fei/simple-jekyll-search" target="_blank">Simple Jekyll Search</a> exclusively. It's a lightweight keyword-matching library that searches against a pre-generated `search.json` file. This falls short when a reader searches by meaning rather than exact words. For example, a query like "how to write manuals that developers actually read" would return no results, even though several of my posts relate to that topic. The exact wording doesn't match:
+The blog previously used <a href="https://github.com/christian-fei/simple-jekyll-search" target="_blank">Simple Jekyll Search</a> exclusively. It's a lightweight keyword-matching library that searches against a pre-generated `search.json` file. This falls short when a reader searches by meaning rather than exact words. For example, a query like "how to write manuals that developers actually read" would return no results, even though several of my posts relate to that topic:
 
 ![No results returned from the query "how to write manuals that developers actually read" in keyword search](../assets/img/2026-06-11-my-first-ai-integration/no-results-from-keyword-search.png)
 
@@ -65,14 +65,14 @@ While the toggle solved the regression for keyword users, it left a smaller prob
 
 My first solution was to preload the model when the page went idle. The browser would start downloading the model in the background after the page finished loading. The assumption was that the model would be ready by the time a reader opened search and turned on semantic search using the toggle. Unfortunately, this introduced a regression. On slower connections, the model download competed with the page load no matter when it started. So browsing the blog felt sluggish, even for readers who might not use the search feature. That defeated the purpose of having a fast static site, so I removed it.
 
-The solution I settled on preloads the model only when the reader signals intent by clicking the search icon or focusing on the search input field. Someone who opens search is likely to use it. The download starts quietly in the background at that moment. By the time the reader notices the toggle and flips it, the model is often ready or close to it. Readers who never open search never trigger the download at all, so the page load stays untouched.
+The solution I settled on preloads the model only when the reader signals intent by clicking the search icon or focusing on the search input field. Someone who opens search is likely to use it. The download starts quietly in the background at that moment. By the time the reader notices the toggle and clicks it, the model is often ready or close to it. Readers who never open search never trigger the download at all, so the page load stays untouched.
 
-A small guard prevents duplicate downloads. If the reader flips the toggle while the download is still running, the code sees it's already in progress and does nothing new.
+A small guard prevents duplicate downloads. If the reader clicks the toggle while the download is still running, the code sees it's already in progress and does nothing new.
 
 The choice of embedding model mattered here too. A larger model gives better results, but it would be too heavy for a browser. I chose the <a href="https://huggingface.co/BAAI/bge-small-en-v1.5" target="_blank">bge-small-en-v1.5</a> embedding model, which is about 24 MB in its quantized form and performs well for its size. My blog is English-only, so I gained nothing from a larger multilingual model. The model is also free and open source.
 
 One rule is non-negotiable: the same model has to run at build time and in the browser, because vectors from different models live in different number spaces and can't be compared.
 
-One tradeoff remains. A reader on a very slow connection who opens search and immediately flips the toggle may still see a brief loading message. I accept that, because the wait happens only once. After the model loads, it stays in memory for the rest of that page, so repeated searches return fast without reloading it. The browser also caches the download itself, so the model doesn't download again on later visits unless the reader clears their browser data. The alternative, downloading on every page load, would charge every visitor for a feature some of them might never use.<br><br>
+One tradeoff remains. A reader on a very slow connection who opens search and immediately clicks the toggle may still see a brief loading message. I accept that, because the wait happens only once. After the model loads, it stays in memory for the rest of that page, so repeated searches return fast without reloading it. The browser also caches the download itself, so the model doesn't download again on later visits unless the reader clears their browser data.<br><br>
 
 The hard part of an AI integration is rarely the AI itself. The real work sits in the constraints around it: cost, speed, and the experience you refuse to break. You can try the result on <a href="https://damilola-oladele.dev" target="_blank" rel="noopener noreferrer">my blog</a> by opening the search bar and turning on semantic search using the toggle. For now, I'm looking forward to finding other AI integrations I can experiment with.
