@@ -38,14 +38,14 @@
 
 This document describes the design and implementation of semantic search on [damilola-oladele.dev](https://damilola-oladele.dev), a personal blog built on the Jekyll Chirpy theme and hosted on Netlify.
 
-The blog previously used Simple Jekyll Search exclusively — a lightweight keyword-matching library that searches against a pre-generated `search.json` file. This works well for exact term lookups but falls short when a reader searches by meaning rather than exact words. For example, a query like "how open source projects handle contributor fatigue" would return no results even if several posts address that topic, because none of the exact words match.
+The blog previously used Simple Jekyll Search exclusively (a lightweight keyword-matching library that searches against a pre-generated `search.json` file). This works well for exact term lookups but falls short when a reader searches by meaning rather than exact words. For example, a query like "how open source projects handle contributor fatigue" would return no results even if several posts address that topic, because none of the exact words match.
 
 Semantic search solves this by understanding the intent and meaning behind a query. It compares the conceptual similarity between the query and each post, rather than matching character strings.
 
 The feature was designed with two core constraints:
 
 - **Zero running cost.** The blog is static with no backend, no database, and no paid API. The solution must stay entirely within that model.
-- **No UX regression.** Simple Jekyll Search is fast and reliable. Replacing it outright would make the common case — searching for a post by title or a specific term — noticeably slower. The solution must preserve the existing experience.
+- **No UX regression.** Simple Jekyll Search is fast and reliable. Replacing it outright would make the common case (searching for a post by title or a specific term) noticeably slower. The solution must preserve the existing experience.
 
 To satisfy both constraints, semantic search was added as an opt-in mode alongside the existing keyword search, rather than replacing it. A toggle in the search bar lets users switch between the two modes. Keyword search remains the default.
 
@@ -151,7 +151,7 @@ The runtime flow describes what happens in the visitor's browser. It has three p
 
 When the search bar is focused and the user types a query, the existing Simple Jekyll Search implementation handles the lookup against `assets/js/data/search.json`. This path is unchanged.
 
-- **Search bar preload:** As soon as the user clicks the search icon to open the search bar, `SemanticSearch.init()` is called in the background before the user has touched the toggle. The download starts immediately but nothing waits on it — the page continues responding normally. By the time the user notices the Semantic toggle and flips it, the model is likely already loaded or well into downloading.
+- **Search bar preload:** As soon as the user clicks the search icon to open the search bar, `SemanticSearch.init()` is called in the background before the user has touched the toggle. The download starts immediately but nothing waits on it and the page continues responding normally. By the time the user notices the Semantic toggle and flips it, the model is likely already loaded or well into downloading.
 
 This is triggered by a click listener on `#search-trigger`:
 
@@ -275,7 +275,7 @@ The input string for each post is constructed as:
 {title}. {title}. {tags}. {body}
 ```
 
-The title is repeated twice to give it additional weight in the resulting embedding vector, which improves retrieval relevance for title-matching queries. Tags are included in the embedded string so that tag-based queries surface relevant posts — previously tags were stored in the index but not embedded.
+The title is repeated twice to give it additional weight in the resulting embedding vector, which improves retrieval relevance for title-matching queries. Tags are included in the embedded string so that tag-based queries surface relevant posts. Previously, tags were stored in the index but not embedded.
 
 ### URL derivation
 
@@ -297,7 +297,7 @@ The Chirpy theme's `search-display.js` module manages the visibility of the sear
 
 To avoid breaking this existing behaviour, `#search-input` is never removed from the DOM. In semantic mode it is hidden with `display: none` and replaced visually by `#semantic-search-input`. The semantic input replicates the result-wrapper visibility logic from `search-display.js` in its own `input` event listener, since `search-display.js` will not fire for a different input element.
 
-The cancel button handler in `topbar.html` is extended to also reset semantic state — clearing the semantic input value, unchecking the toggle, and restoring keyword mode — since `search-display.js`'s cancel handler only knows about keyword search.
+The cancel button handler in `topbar.html` is extended to also reset semantic state. This means clearing the semantic input value, unchecking the toggle, and restoring keyword mode, since `search-display.js`'s cancel handler only knows about keyword search.
 
 ### Suppressing SimpleJekyllSearch interference
 
@@ -348,7 +348,7 @@ if ('requestIdleCallback' in window) {
 
 The intent was that by the time a visitor opened the search bar and flipped the toggle, the model would already be loaded. In theory, `requestIdleCallback` defers work until the main thread is free, so the download should not compete with the page.
 
-In practice this introduced a noticeable regression. On slower connections the ~24 MB model download competed with the page regardless of when it started, making the initial page experience sluggish for all visitors — including those who never use semantic search. The approach was removed.
+In practice this introduced a noticeable regression. On slower connections the ~24 MB model download competed with the page regardless of when it started, making the initial page experience sluggish for all visitors, including those who never use semantic search. The approach was removed.
 
 **Current approach preloads on search bar open:** The model download now starts only when the user clicks the search icon to open the search bar:
 
@@ -358,19 +358,19 @@ document.getElementById('search-trigger')?.addEventListener('click', () => {
 });
 ```
 
-This is a strong signal of intent — a user who opens the search bar is likely to interact with search. The download starts in the background immediately, and by the time the user notices the Semantic toggle and flips it, the model is often already loaded or well into downloading.
+This is a strong signal of intent since a user who opens the search bar is likely to interact with search. The download starts in the background immediately, and by the time the user notices the Semantic toggle and flips it, the model is often already loaded or well into downloading.
 
 Crucially, the page load experience is completely unaffected. Visitors who never open search never trigger the download at all.
 
 The `init()` guard (`if (isReady || isLoading) return`) ensures that if the toggle is flipped while the download is already in progress, the second `init()` call from the toggle handler exits immediately without starting a duplicate download.
 
-The remaining tradeoff is that users on very slow connections who open search and immediately flip the toggle may still see the loading message briefly. This is acceptable — the alternative of downloading on every page load imposes a cost on all visitors, whereas the current approach only affects the subset who actively open search.
+The remaining tradeoff is that users on very slow connections who open search and immediately flip the toggle may still see the loading message briefly. This is acceptable because the alternative of downloading on every page load imposes a cost on all visitors, whereas the current approach only affects the subset who actively open search.
 
 ### Model caching on Netlify
 
 `HF_HOME` and `SENTENCE_TRANSFORMERS_HOME` are set in `netlify.toml` to point to `/opt/build/cache/huggingface`. This is Netlify's build cache directory.
 
-The `@netlify/plugin-cache` plugin was initially added to persist this directory between builds, but it requires either installation via `package.json` or via the Netlify UI. Since the project does not use `package.json` for this purpose, the plugin entry was removed from `netlify.toml`. The environment variables remain — they set the download location correctly — but the cache directory is not guaranteed to persist between builds. The model will re-download on each build until caching is configured separately.
+The `@netlify/plugin-cache` plugin was initially added to persist this directory between builds, but it requires either installation via `package.json` or via the Netlify UI. Since the project does not use `package.json` for this purpose, the plugin entry was removed from `netlify.toml`. The environment variables remain (they set the download location correctly), but the cache directory is not guaranteed to persist between builds. The model will re-download on each build until caching is configured separately.
 
 ## Design rationale
 
@@ -380,7 +380,7 @@ This section explains the reasoning behind the main design decisions. Each one w
 
 The blog has no backend and no database. All content lives in flat Markdown files, and the site is compiled to static HTML at build time by Jekyll. Netlify serves these files from a CDN.
 
-Introducing a server — even a serverless function — to handle semantic search queries would add infrastructure dependencies, latency from cold starts, and potential cost. It would also introduce a point of failure: if the function is down or slow, search breaks.
+Introducing a server, even a serverless function, to handle semantic search queries would add infrastructure dependencies, latency from cold starts, and potential cost. It would also introduce a point of failure: if the function is down or slow, search breaks.
 
 The static approach keeps the entire system simple. `semantic-index.json` is just a file on a CDN. Once it is downloaded by the browser, all search operations happen locally with no network dependency. This is more reliable and faster at query time than any server-based alternative.
 
@@ -388,13 +388,13 @@ The static approach keeps the entire system simple. `semantic-index.json` is jus
 
 Simple Jekyll Search returns results in under 50 milliseconds for a query against a small JSON file. It is the right tool for a reader who knows what they are looking for and types a specific title, term, or phrase.
 
-Semantic search, by contrast, requires the browser to load a ~24 MB model before it can process any query. On a fast connection this takes a few seconds; on a slow connection it could take longer. Making every visitor wait for this load — even those who just want to find a specific post by name — would be a clear UX regression with no benefit for that use case.
+Semantic search, by contrast, requires the browser to load a ~24 MB model before it can process any query. On a fast connection this takes a few seconds; on a slow connection it could take longer. Making every visitor wait for this load, even those who just want to find a specific post by name, would be a clear UX regression with no benefit for that use case.
 
 The toggle allows each mode to be used where it is genuinely better. Keyword search handles the common case efficiently. Semantic search is available for exploratory queries where the reader cannot articulate exactly what they want, or where the relevant posts use different vocabulary from the query. Neither mode is a fallback for the other; they are complementary.
 
 ### Why build-time embedding over runtime
 
-Embedding a blog post is computationally expensive relative to embedding a short search query. Running the embedding model once at build time — on Netlify's build server, which has dedicated CPU and no user waiting on the result — is significantly more efficient than doing it in the browser.
+Embedding a blog post is computationally expensive relative to embedding a short search query. Running the embedding model once at build time (on Netlify's build server, which has dedicated CPU and no user waiting on the result) is significantly more efficient than doing it in the browser.
 
 If post embeddings were generated at runtime (in the browser), every visitor would need to download and run the model against all post content before searching. That would multiply both the data transfer and the computation cost by the number of visitors, for no additional benefit. The posts do not change between page loads, so their embeddings do not need to be recomputed on each visit.
 
@@ -413,7 +413,7 @@ Larger and more powerful models such as `bge-m3` or `Qwen3-Embedding` would prod
 
 ### Why Python for the build script
 
-Python's machine learning ecosystem — particularly `sentence-transformers` — is the most mature and well-documented option for running embedding models outside the browser. The library handles model download, caching, batching, and encoding with a straightforward API. It has extensive documentation and community resources.
+Python's machine learning ecosystem, particularly `sentence-transformers`, is the most mature and well-documented option for running embedding models outside the browser. The library handles model download, caching, batching, and encoding with a straightforward API. It has extensive documentation and community resources.
 
 Node.js could also run embedding models via `@xenova/transformers`, and the existing `package.json` already establishes a Node.js environment on Netlify. However, using `@xenova/transformers` server-side is less common and less documented than the Python equivalent. The additional complexity is not justified when Python is available and better suited.
 
