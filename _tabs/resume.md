@@ -36,35 +36,34 @@ background: linear-gradient(135deg, #d2603a);
 <em>English (native), Yoruba</em></p>
 <hr>
 <h2><strong>WORK EXPERIENCE</strong></h2>
-<p><strong>MongoDB, United States</strong> October 2025 - present<br>
-<em>Technical Content Writer (freelance)</em></p>
-<p>Authored tutorials, articles, and case studies on Django, Python, and MongoDB, educating developers across multiple platforms.</p>
-<p><strong>Kredete</strong> September 2025 - present<br>
-<em>Technical Writer (contract)</em></p>
-<p>Built from scratch and currently maintaining documentation for two fintech products, including OpenAPI specifications, developer guides, and tutorials, enabling developers to integrate customer management, payment, wallet, and card issuance features.</p>
-<p><strong>Wagtail, United Kingdom</strong> October 2022 - March 2024<br>
+<p><strong>Kredete, Mitek, and MongoDB, United States</strong>  September 2025 - present<br>
+<em>Technical Writer, Independent Contractor</em></p>
+<ul><li>Built from scratch and maintained product documentation and tutorials for Kredete's Gravv fintech product, enabling developers to implement customer management, payments, wallets, and card issuance.</li>
+<li>Authored technical tutorials and case studies on Django, Python, MongoDB, and AI integrations for the MongoDB company, helping developers implement scalable database solutions.</li>
+<li>Authored technical tutorials and case studies on Django, Python, MongoDB, and AI integrations for the MongoDB company, helping developers implement scalable database solutions.</li></ul>
+<p><strong>Wagtail, United Kingdom</strong>  October 2022 - March 2024<br>
 <em>Technical Writer</em></p>
 <ul>
 <li>Conducted user research that identified user pain points, leading to the creation of new resources that help new Wagtail developers implement advanced Wagtail features.</li>
 <li>Authored a hands-on tutorial series, based on user research findings, that addressed common onboarding pain points. The tutorials guide new developers in transforming the blog site from the Getting Started section into a portfolio site, teaching them how to implement advanced Wagtail features.</li>
 <li>Collaborated with 4 core Wagtail engineers to improve the Getting Started tutorial with simplified language, step-by-step instructions, and descriptive comments in the sample code, helping new developers successfully build their first Wagtail site.</li>
-<li>Authored 9 how-to guides on using the Wagtail CMS to add, review, and approve content, and created a new Concepts section explaining its UI components to help Editors better understand the CMS.</li>
+<li>Authored 9 how-to guides on using the Wagtail CMS to add, review, and approve content, and created a new Concepts section explaining its UI components to help editors better understand the CMS.</li>
 <li>Hired, mentored, and managed an Outreachy intern who later became a long-term contributor.</li>
 <li>Contributed to the Wagtail blog, informing the community about improvements to the documentation.</li>
 </ul>
-<p><strong>DocumentWrite, United States</strong> April 2023 - September 2023<br>
+<p><strong>DocumentWrite, United States</strong>  April 2023 - September 2023<br>
 <em>Technical Writer</em></p>
 <ul>
 <li>Authored the CoreAI internal engineering documentation to onboard new engineers, covering company infrastructure setup and workflows, which reduced development time and improved cross-team collaboration.</li>
 <li>Audited the 8base documentation and identified 25 inaccuracies and information architecture defects, leading to improved content navigation, greater accuracy, and shorter onboarding time.</li>
 <li>Hosted and spoke on X (Twitter) Spaces sessions that brought together technical writers, founders, and developers, equipping them with practical documentation practices.</li>
 </ul>
-<p><strong>100Devs, United States</strong> December 2021 - October 2022<br>
+<p><strong>100Devs, United States</strong>  December 2021 - October 2022<br>
 <em>Software Developer</em></p>
 <ul>
 <li>Built and maintained e-commerce web applications for small retail businesses using Node.js and React, improving accessibility through WCAG 2.1 AA compliance and increasing mobile usability with responsive designs that boosted customer engagement.</li>
 </ul>
-<p><strong>iGates, Nigeria</strong> March 2021 - December 2022<br>
+<p><strong>iGates, Nigeria</strong>  March 2021 - December 2022<br>
 <em>Software Developer and Technical Writer</em></p>
 <ul>
 <li>Owned and maintained documentation for an internal banking API powering card issuance, creating code samples, and reference guides that drove greater adoption by technical and non-technical teams.</li>
@@ -73,8 +72,8 @@ background: linear-gradient(135deg, #d2603a);
 <hr>
 <h2><strong>OPEN-SOURCE EXPERIENCE</strong></h2>
 <p>
-<strong>Black Python Devs, United States</strong><br>
-<em>Sub-Regional Executor, West Africa</em> Nov 2024 - present<br>
+<strong>Black Python Devs, United States</strong>    Nov 2024 - present<br>
+<em>Sub-Regional Executor, West Africa</em><br>
 <em>Documentation Lead</em> April 2024 - present
 </p>
 <ul>
@@ -82,21 +81,21 @@ background: linear-gradient(135deg, #d2603a);
 <li>Own and maintain the Black Python Devs Maintainers Guide, leading a volunteer team to review contributions and organize documentation for the community’s programs, policies, and roles.</li>
 <li>Developed a writing style guide and implemented a two-stage peer review process that cut documentation review time in half.</li>
 </ul>
-<p><strong>Stormbase</strong> October 2024 - December 2025<br>
+<p><strong>Stormbase</strong>  October 2024 - present<br>
 <em>Technical Writer</em></p>
 <ul>
 <li>Created and now maintain the Django OTP WebAuthn project documentation, continuously adding configuration guides, API reference documentation, and code samples to improve developer onboarding and drive adoption.</li>
 <li>Authored a writing style guide and contribution guide, which improved contributor engagement and reduced PR review time.</li>
 <li>Automated documentation deployment to ReadTheDocs via CI/CD pipelines, syncing docs with code updates without manual intervention.</li>
 </ul>
-<p><strong>Canonical Open Documentation Academy, United Kingdom</strong> February 2024 - present<br>
+<p><strong>Canonical Open Documentation Academy, United Kingdom</strong>  February 2024 - present<br>
 <em>Technical Writer</em></p>
 <ul>
 <li>Authored documentation to address critical knowledge gaps for developers, including step-by-step guides for proposing package changes, Debian Policy compliance references, Linux Filesystem Hierarchy Standard guidance, and SRU/Sponsorship process documentation. This enables smoother onboarding for new Ubuntu contributors and serves as a reference for experienced contributors.</li>
-<li>Updated Snapcraft's Go/golang quickstart guide from core18 to core22, helping snap developers to create current, compatible applications with the latest supported platform.</li>
+<li>Updated Snapcraft's Go/Golang quickstart guide from core18 to core22, helping snap developers to create current, compatible applications with the latest supported platform.</li>
 <li>Created issue form templates for the Ubuntu Server documentation repository to capture detailed feedback from readers, implementing field validation that prevents submission of incomplete or blank issues and improves feedback quality for maintainers.</li>
 </ul>
-<p><strong>freeCodeCamp, United States</strong> June 2022 - March 2023<br>
+<p><strong>freeCodeCamp, United States</strong>  June 2022 - March 2023<br>
 <em>Technical Writer</em></p>
 <p>Authored tutorials on Django, Python, and JavaScript that were read by over 10,000 learners, helping self-taught developers understand core web development and programming concepts.</p>
 <hr>
