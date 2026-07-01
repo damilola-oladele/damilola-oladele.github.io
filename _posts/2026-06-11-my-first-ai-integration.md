@@ -27,7 +27,7 @@ Semantic search fixes this gap:
 
 ![results returned from the query "how to write manuals that developers actually read" in semantic search](../assets/img/2026-06-11-my-first-ai-integration/results-found-for-semantic-search.png)
 
-But adding semantic search to a blog like mine came with two main constraints. The solution had to cost nothing to run, and it couldn't make the existing search experience worse. The rest of this post is about how I worked within both.
+But adding semantic search to a blog like mine came with two main constraints. The solution had to cost nothing to run, and it couldn't make the existing search experience worse. The rest of this post covers how I worked within both constraints.
 
 ## The first constraint: zero running cost
 
