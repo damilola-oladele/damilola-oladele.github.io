@@ -271,6 +271,8 @@ gap: 10px;
 <h2>Tutorials and Articles</h2>
 <input type="text" id="searchBoxArticles" placeholder="Search articles...">
 <div class="card-container" id="articles">
+<div class="card"><a href="https://pub.towardsai.net/a-field-guide-to-agentic-eval-frameworks-langfuse-langsmith-and-what-to-measure-4768179fada0" target="_blank">A Field Guide to Agentic Eval Frameworks: Langfuse, LangSmith, and What to Measure</a></div>
+<div class="card"><a href="https://www.datacamp.com/tutorial/how-to-implement-semantic-search-in-mongodb" target="_blank">How to Implement Semantic Search in MongoDB</a></div>
 <div class="card"><a href="https://www.datacamp.com/tutorial/how-to-set-up-multi-factor-authentication-in-mongodb-atlas" target="_blank">How to Set Up Multi-Factor Authentication in MongoDB Atlas</a></div>
 <div class="card"><a href="https://www.geeksforgeeks.org/mongodb/how-to-implement-data-masking-in-mongodb/" target="_blank">How to Implement Data Masking in MongoDB</a></div>
 <div class="card"><a href="https://dev.to/mongodb/how-to-use-mongodbs-text-search-16cj" target="_blank">How to Use MongoDB’s Text Search</a></div>
