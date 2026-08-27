@@ -32,3 +32,4 @@ assets/js/data/semantic-index.json
 
 # Python environment
 .venv
+__pycache__/
