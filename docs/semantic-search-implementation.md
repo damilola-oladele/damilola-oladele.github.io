@@ -16,6 +16,7 @@
   - [Frontmatter parsing](#frontmatter-parsing)
   - [Tag normalisation](#tag-normalisation)
   - [Draft and unpublished filtering](#draft-and-unpublished-filtering)
+  - [External link embedding](#external-link-embedding)
   - [Body truncation](#body-truncation)
   - [Input string construction](#input-string-construction)
   - [URL derivation](#url-derivation)
@@ -125,7 +126,8 @@ The `generate_embeddings.py` script does the following:
 7. Truncates the body to 5,000 characters to stay within the model's effective context window.
 8. Constructs an input string by concatenating the title (doubled for weight), tags, and truncated body.
 9. Passes each input string through `bge-small-en-v1.5` using `sentence-transformers` to produce a 384-dimensional L2-normalised vector.
-10. Writes the results as a JSON array to `assets/js/data/semantic-index.json`.
+10. Parses `_tabs/portfolio.md` (Tutorials and Articles) and `_tabs/other-posts.md` (Other Posts) for hand-curated external links, embeds their title and description, and merges them into the same index (see [External link embedding](#external-link-embedding) below).
+11. Writes the results as a JSON array to `assets/js/data/semantic-index.json`.
 
 Each entry in `semantic-index.json` has the following shape:
 
@@ -140,6 +142,8 @@ Each entry in `semantic-index.json` has the following shape:
 ```
 
 Tags are stored as a space-separated string rather than an array. This matches the format used by the browser-side rendering logic.
+
+External link entries (see below) use this same shape, with `date` left as an empty string and `tags` set to a single category slug (`tutorials-and-articles` or `other-posts`) rather than the post's actual tags.
 
 Jekyll then builds the site. Because `semantic-index.json` is written into `assets/js/data/` before `bundle exec jekyll build` runs, Jekyll picks it up as a static asset and includes it in the `_site/` output. It is served from the CDN alongside all other static assets.
 
@@ -195,6 +199,10 @@ project root
 │
 ├── _includes/
 │   └── topbar.html                   modified: semantic input, toggle, status line
+│
+├── _tabs/
+│   ├── portfolio.md                  modified: card-description text + styles added
+│   └── other-posts.md                modified: card-description text + styles added
 │
 ├── _sass/
 │   └── pages/
@@ -262,6 +270,25 @@ This ensures the browser-side rendering code can always split on spaces without 
 ### Draft and unpublished filtering
 
 Posts where `published: false` or `draft: true` in frontmatter are skipped. Without this filter, content that the author has explicitly excluded from the site would still appear in semantic search results.
+
+### External link embedding
+
+Not everything worth surfacing in search lives in `_posts/`. The Portfolio page's "Tutorials and Articles" section and the "Other Posts" page both curate links to writing published elsewhere (DataCamp, freeCodeCamp, Wagtail's blog, dev.to, and so on). These were invisible to semantic search until each card was given a machine-readable description.
+
+Each card in those two sections now carries a `<p class="card-description">` element alongside its title link, e.g.:
+
+```html
+<div class="card">
+<a href="https://www.freecodecamp.org/news/how-to-use-oop-in-python/" target="_blank">How to Use Object-Oriented Programming in Python – Explained With Examples</a>
+<p class="card-description">Learn Object-Oriented Programming in Python using classes, attributes, methods, encapsulation, and inheritance to write organized, maintainable code.</p>
+</div>
+```
+
+This description is visible in the UI (styled via `.card-description` in each page's inline `<style>` block) and doubles as the embedding source, so writing one no longer means writing it twice.
+
+At build time, `generate_embeddings.py` parses `_tabs/portfolio.md` and `_tabs/other-posts.md` with a small `html.parser.HTMLParser` subclass (`CardExtractor`) rather than regex, tracking `<div>` nesting depth to find cards nested specifically inside the `<div class="card-container" id="articles">` block of each file. This deliberately excludes the Documentation Projects and Public Speaking sections of the Portfolio page — those aren't embedded. Each qualifying card's title, `href`, and description text are extracted, tagged with a category slug (`tutorials-and-articles` or `other-posts`), and embedded the same way a post is: `{title}. {title}. {tag}. {description}`.
+
+**Deduplication against internal posts.** Some external cards link back to `damilola-oladele.dev/posts/...` (e.g. "Get started with LXC"). If that path matches a post already embedded from `_posts/`, the card is skipped — the post's own body already produces a richer embedding for the same URL, and embedding it twice would let it occupy two of the five result slots for a single query. The two "yapping" articles are the opposite case: their `_posts/` source files exist but are marked `published: false` (the author cross-posted to Substack instead of publishing on the blog), so they're absent from the normal post loop and are embedded solely via their Other Posts card, using the local frontmatter's `description` field as source text since the Substack URLs return 404.
 
 ### Body truncation
 

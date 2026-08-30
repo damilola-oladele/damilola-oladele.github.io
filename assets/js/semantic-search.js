@@ -124,9 +124,13 @@ const SemanticSearch = (() => {
         ? `<div class="me-sm-4"><i class="far fa-calendar fa-fw"></i>${escapeHtml(dateStr)}</div>`
         : '';
 
+      // External links (curated portfolio/other-posts entries) open in a new
+      // tab, matching how they behave everywhere else on the site.
+      const linkAttrs = /^https?:\/\//i.test(url) ? ' target="_blank" rel="noopener"' : '';
+
       article.innerHTML = `
         <header>
-          <h2><a href="${escapeHtml(url)}">${escapeHtml(title)}</a></h2>
+          <h2><a href="${escapeHtml(url)}"${linkAttrs}>${escapeHtml(title)}</a></h2>
           <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">
             ${dateHtml}
             ${renderTagsHtml(tags)}
