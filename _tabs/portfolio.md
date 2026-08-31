@@ -242,7 +242,7 @@ gap: 10px;
 </div>
 </div>
 </div>
-<h2>Public Speaking and Content</h2>
+<h2>Public Speaking and Other Content</h2>
 <input type="text" id="searchBoxSpeaking" placeholder="Search ...">
 <div class="card-container" id="speaking">
 <div class="card">
