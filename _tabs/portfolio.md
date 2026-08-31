@@ -34,6 +34,12 @@ color: #2563eb;
 .card a:hover {
 text-decoration: underline;
 }
+.card-description {
+color: #7f8186ff;
+font-size: 0.9em;
+margin-top: 8px;
+margin-bottom: 0;
+}
 .card-footer {
 margin-top: 15px;
 display: flex;
@@ -118,7 +124,7 @@ transform: translateY(0);
 }
 }
 .modal-header {
-background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+background-color: #2563eb;;
 color: white;
 padding: 25px 30px;
 border-radius: 16px 16px 0 0;
@@ -236,7 +242,7 @@ gap: 10px;
 </div>
 </div>
 </div>
-<h2>Public Speaking and Content</h2>
+<h2>Public Speaking and Other Content</h2>
 <input type="text" id="searchBoxSpeaking" placeholder="Search ...">
 <div class="card-container" id="speaking">
 <div class="card">
@@ -271,23 +277,74 @@ gap: 10px;
 <h2>Tutorials and Articles</h2>
 <input type="text" id="searchBoxArticles" placeholder="Search articles...">
 <div class="card-container" id="articles">
-<div class="card"><a href="https://pub.towardsai.net/a-field-guide-to-agentic-eval-frameworks-langfuse-langsmith-and-what-to-measure-4768179fada0" target="_blank">A Field Guide to Agentic Eval Frameworks: Langfuse, LangSmith, and What to Measure</a></div>
-<div class="card"><a href="https://www.datacamp.com/tutorial/how-to-implement-semantic-search-in-mongodb" target="_blank">How to Implement Semantic Search in MongoDB</a></div>
-<div class="card"><a href="https://www.datacamp.com/tutorial/how-to-set-up-multi-factor-authentication-in-mongodb-atlas" target="_blank">How to Set Up Multi-Factor Authentication in MongoDB Atlas</a></div>
-<div class="card"><a href="https://www.geeksforgeeks.org/mongodb/how-to-implement-data-masking-in-mongodb/" target="_blank">How to Implement Data Masking in MongoDB</a></div>
-<div class="card"><a href="https://dev.to/mongodb/how-to-use-mongodbs-text-search-16cj" target="_blank">How to Use MongoDB’s Text Search</a></div>
-<div class="card"><a href="https://www.datacamp.com/tutorial/how-to-integrate-apache-spark-with-django-and-mongodb" target="_blank">How to Integrate Apache Spark With Django and MongoDB</a></div>
-<div class="card"><a href="https://www.datacamp.com/tutorial/mongo-db-atlas-cli" target="_blank">MongoDB Atlas CLI: Managing Databases From the Command Line</a></div>
-<div class="card"><a href="https://damilola-oladele.dev/posts/get_started_with_lxc/" target="_blank">Get started with LXC</a></div>
-<div class="card"><a href="https://www.freecodecamp.org/news/unit-testing-in-python/" target="_blank">How to Write Unit Tests in Python – with Example Test Code</a></div>
-<div class="card"><a href="https://damilola-oladele.dev/posts/the-blockchain-trilemma-challenge/" target="_blank">The blockchain trilemma challenge</a></div>
-<div class="card"><a href="https://damilola-oladele.dev/posts/what-are-smart-contracts-on-blockchain/" target="_blank">What are smart contracts on blockchain?</a></div>
-<div class="card"><a href="https://damilola-oladele.dev/posts/juno-bringing-decentralization-to-starknet/" target="_blank">Juno: Bringing decentralization to Starknet</a></div>
-<div class="card"><a href="https://www.freecodecamp.org/news/how-to-use-oop-in-python/" target="_blank">How to Use Object-Oriented Programming in Python – Explained With Examples</a></div>
-<div class="card"><a href="https://www.freecodecamp.org/news/django-model-relationships/" target="_blank">How to Define Relationships Between Django Models</a></div>
-<div class="card"><a href="https://www.freecodecamp.org/news/what-is-the-dom-explained-in-plain-english/" target="_blank">What is the DOM? The Document Object Model Explained in Plain English</a></div>
-<div class="card"><a href="https://damilola-oladele.dev/posts/documentation-experience-in-open-source/" target="_blank">Why gaining documentation experience in open source is hard</a></div>
-<div class="card"><a href="https://www.freecodecamp.org/news/how-to-stay-motivated-while-learning-to-code/" target="_blank">How to Stay Motivated While Learning to Code</a></div>
+<div class="card">
+<a href="https://pub.towardsai.net/a-field-guide-to-agentic-eval-frameworks-langfuse-langsmith-and-what-to-measure-4768179fada0" target="_blank">A Field Guide to Agentic Eval Frameworks: Langfuse, LangSmith, and What to Measure</a>
+<p class="card-description">A comparison of agentic AI evaluation frameworks, including Langfuse and LangSmith, and a look at what to actually measure when evaluating AI agents.</p>
+</div>
+<div class="card">
+<a href="https://www.datacamp.com/tutorial/how-to-implement-semantic-search-in-mongodb" target="_blank">How to Implement Semantic Search in MongoDB</a>
+<p class="card-description">Learn to build semantic search in MongoDB with Python by generating vector embeddings, creating search indexes, and running similarity queries with the free nomic-embed-text-v1 model.</p>
+</div>
+<div class="card">
+<a href="https://www.datacamp.com/tutorial/how-to-set-up-multi-factor-authentication-in-mongodb-atlas" target="_blank">How to Set Up Multi-Factor Authentication in MongoDB Atlas</a>
+<p class="card-description">Learn how to set up multi-factor authentication in MongoDB Atlas using authenticator apps, security keys, biometrics, and email verification to protect your database.</p>
+</div>
+<div class="card">
+<a href="https://www.geeksforgeeks.org/mongodb/how-to-implement-data-masking-in-mongodb/" target="_blank">How to Implement Data Masking in MongoDB</a>
+<p class="card-description">Learn how to implement four data protection techniques in MongoDB with Python: views, aggregation pipelines, static masking, and tokenization.</p>
+</div>
+<div class="card">
+<a href="https://dev.to/mongodb/how-to-use-mongodbs-text-search-16cj" target="_blank">How to Use MongoDB’s Text Search</a>
+<p class="card-description">Learn to implement MongoDB’s built-in full-text search, covering search indexes, multi-field and fuzzy queries, term exclusion, compound queries, and relevance scoring in Python.</p>
+</div>
+<div class="card">
+<a href="https://www.datacamp.com/tutorial/how-to-integrate-apache-spark-with-django-and-mongodb" target="_blank">How to Integrate Apache Spark With Django and MongoDB</a>
+<p class="card-description">Learn to integrate Django, MongoDB, and Apache Spark to build a data pipeline for processing and analyzing large-scale transaction data with PySpark.</p>
+</div>
+<div class="card">
+<a href="https://www.datacamp.com/tutorial/mongo-db-atlas-cli" target="_blank">MongoDB Atlas CLI: Managing Databases From the Command Line</a>
+<p class="card-description">Learn how to manage MongoDB databases from the command line using Atlas CLI for deployment, cluster management, user configuration, and backups.</p>
+</div>
+<div class="card">
+<a href="https://damilola-oladele.dev/posts/get_started_with_lxc/" target="_blank">Get started with LXC</a>
+<p class="card-description">Linux containers (LXC) offer lightweight virtualization and efficient resource use; this guide covers installation and getting started.</p>
+</div>
+<div class="card">
+<a href="https://www.freecodecamp.org/news/unit-testing-in-python/" target="_blank">How to Write Unit Tests in Python – with Example Test Code</a>
+<p class="card-description">Learn to write independent tests using Python’s built-in unittest framework to verify individual code components work as expected.</p>
+</div>
+<div class="card">
+<a href="https://damilola-oladele.dev/posts/the-blockchain-trilemma-challenge/" target="_blank">The blockchain trilemma challenge</a>
+<p class="card-description">The blockchain trilemma suggests that any blockchain can fully achieve only two out of three goals: decentralization, security, and scalability.</p>
+</div>
+<div class="card">
+<a href="https://damilola-oladele.dev/posts/what-are-smart-contracts-on-blockchain/" target="_blank">What are smart contracts on blockchain?</a>
+<p class="card-description">A smart contract works like digital escrow: two parties agree on a deal, the contract holds the funds, and releases them once conditions are met.</p>
+</div>
+<div class="card">
+<a href="https://damilola-oladele.dev/posts/juno-bringing-decentralization-to-starknet/" target="_blank">Juno: Bringing decentralization to Starknet</a>
+<p class="card-description">To mitigate the centralization risk posed by Starknet, Nethermind developed Juno, a Go implementation of Starknet’s full-node client.</p>
+</div>
+<div class="card">
+<a href="https://www.freecodecamp.org/news/how-to-use-oop-in-python/" target="_blank">How to Use Object-Oriented Programming in Python – Explained With Examples</a>
+<p class="card-description">Learn Object-Oriented Programming in Python using classes, attributes, methods, encapsulation, and inheritance to write organized, maintainable code.</p>
+</div>
+<div class="card">
+<a href="https://www.freecodecamp.org/news/django-model-relationships/" target="_blank">How to Define Relationships Between Django Models</a>
+<p class="card-description">Learn how to define relationships between Django models using OneToOneField, ForeignKey, and ManyToManyField.</p>
+</div>
+<div class="card">
+<a href="https://www.freecodecamp.org/news/what-is-the-dom-explained-in-plain-english/" target="_blank">What is the DOM? The Document Object Model Explained in Plain English</a>
+<p class="card-description">Explains the Document Object Model (DOM), the web interface that lets developers programmatically create, navigate, and modify the structure of web documents.</p>
+</div>
+<div class="card">
+<a href="https://damilola-oladele.dev/posts/documentation-experience-in-open-source/" target="_blank">Why gaining documentation experience in open source is hard</a>
+<p class="card-description">Gaining documentation experience through open-source contributions is easier said than done; this post explains why.</p>
+</div>
+<div class="card">
+<a href="https://www.freecodecamp.org/news/how-to-stay-motivated-while-learning-to-code/" target="_blank">How to Stay Motivated While Learning to Code</a>
+<p class="card-description">Proven strategies for staying motivated while learning to code, including daily habits, learning communities, active recall, spaced repetition, and self-care.</p>
+</div>
 </div>
 <!-- Modals -->
 <div id="django-otp-modal" class="modal">
