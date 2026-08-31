@@ -6,6 +6,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Damilola Oladele's personal blog (`damilola-oladele.dev`) — a Jekyll site built on the [Chirpy theme](https://github.com/cotes2020/jekyll-theme-chirpy). The bulk of the repository is upstream Chirpy theme code (Ruby/Jekyll layouts, includes, SCSS, JS build pipeline); the personal content lives in `_posts/`, `_data/`, `_tabs/`, and `_oss_stories/`. One custom feature — opt-in semantic search — has been added on top of the stock theme.
 
+## Writing blog posts
+
+Follow this style guide when drafting or editing anything in `_posts/` — voice, tone, structure, grammar/mechanics, banned words and phrases, and front matter conventions are all defined there:
+
+- @blog-writing-style-reference.md
+
 ## Common commands
 
 Ruby/Jekyll (requires Bundler; `.ruby-version` pins the Ruby version):
@@ -42,6 +48,74 @@ python scripts/generate_embeddings.py   # regenerates assets/js/data/semantic-in
 
 ## Architecture
 
+### System overview
+
+The site is a static blog built in layers. Content and source files never reach a browser directly — everything passes through a build step first, and two different, asymmetric pipelines turn that source into what actually gets deployed.
+
+```mermaid
+flowchart TD
+    subgraph Content["Content sources"]
+        posts["_posts/*.md (blog posts)"]
+        tabs["_tabs/*.md (nav pages: portfolio, other-posts, ...)"]
+        oss["_oss_stories/*.md"]
+        data["_data/*.yml (authors, locales, share, origin/CDN config)"]
+    end
+
+    subgraph FrontendSrc["Front-end source (Node, manual step)"]
+        js["_javascript/*.js"]
+        scss["_sass/**/*.scss"]
+    end
+
+    js -- "npm run build:js (rollup)" --> dist["assets/js/dist/*.min.js<br/>committed to git"]
+    scss -- "npm run build:css (purgecss)" --> css["assets/css/*.css<br/>committed to git"]
+
+    subgraph PyBuild["Python step (Netlify build only)"]
+        gen["scripts/generate_embeddings.py"]
+    end
+
+    posts --> gen
+    tabs -- "CardExtractor parses Tutorials/Articles + Other Posts cards" --> gen
+    gen --> semidx["assets/js/data/semantic-index.json<br/>gitignored, Netlify-only"]
+
+    posts --> searchjson["assets/js/data/search.json<br/>Liquid-generated every Jekyll build"]
+
+    subgraph JekyllBuild["bundle exec jekyll build"]
+        layouts["_layouts/ + _includes/"]
+    end
+
+    posts --> JekyllBuild
+    tabs --> JekyllBuild
+    oss --> JekyllBuild
+    data --> JekyllBuild
+    dist --> JekyllBuild
+    css --> JekyllBuild
+    searchjson --> JekyllBuild
+
+    JekyllBuild --> site["_site/ (static HTML/CSS/JS)"]
+
+    site -- "Netlify: pip install && generate_embeddings.py && jekyll build" --> netlify["damilola-oladele.dev"]
+    site -- "GitHub Actions: jekyll build only, push to github-pages branch" --> ghpages["*.github.io (redirects to Netlify)"]
+
+    subgraph Browser["Browser runtime"]
+        kw["SimpleJekyllSearch (keyword)<br/>reads search.json"]
+        sem["semantic-search.js + Transformers.js (CDN)<br/>reads semantic-index.json"]
+    end
+
+    netlify --> Browser
+```
+
+**Layers, top to bottom:**
+
+- **Content** — `_posts/` (blog posts), `_tabs/` (nav pages, including the hand-authored Portfolio/Other Posts link cards), `_oss_stories/` (custom collection), `_data/` (site-wide YAML: authors, locale strings, share config, CDN origin config).
+- **Front-end source** — `_javascript/` (ES modules, see `_javascript/modules/{components,layouts}/`) and `_sass/` (partials forwarded through `main.scss` → `base`/`components`/`layout`/`pages`). Neither compiles automatically on deploy; see the callout below.
+- **Search indices** — two independent, differently-generated JSON files: `search.json` is a Liquid-templated source file that Jekyll regenerates from `site.posts` on every build (both deploy paths); `semantic-index.json` is produced only by the Python script, only on Netlify.
+- **Templating** — `_layouts/` (page skeletons: `default`, `post`, `page`, `home`, `archives`, `category`/`categories`, `tag`/`tags`, `oss-story`/`oss-stories-list`, `compress`) and `_includes/` (partials composed into those layouts — `head.html` for meta/SEO/resource hints, `sidebar.html`/`topbar.html` for navigation and search UI, `footer.html`, `search-loader.html`/`search-results.html` for keyword search wiring).
+- **Build** — Ruby/Jekyll compiles Markdown + Liquid + Sass into `_site/`. Node (rollup/purgecss) and Python (`generate_embeddings.py`) are separate, independently-triggered build steps that feed committed or generated artifacts into that Jekyll build rather than being part of it.
+- **Deploy** — Netlify (primary, custom domain) and GitHub Pages (secondary, immediately redirects to Netlify via a script in `head.html`) — see the next section for how they diverge.
+- **Runtime** — the browser runs two independent search implementations side by side (see "Semantic search" below).
+
+**Critical gotcha:** neither deploy path runs `npm run build`. `assets/js/dist/*.min.js`, `assets/css/*.css` (compiled via Jekyll's own Sass processor from `assets/css/jekyll-theme-chirpy.scss`, but *purged* only by the manual `npm run build:css` step), and `_sass/vendors/_bootstrap.scss` are committed straight to git rather than generated during deploy. Editing `_javascript/` or `_sass/` and pushing without first running `npm run build` locally and committing the output will not change the live site — the deploy will succeed, but silently serve the old bundle.
+
 ### Two independent deploy paths
 
 - **Netlify (primary/production)** — `netlify.toml` build command is `pip install -r requirements.txt && python scripts/generate_embeddings.py && bundle exec jekyll build`. This is what generates the semantic search index before Jekyll builds. `netlify-original.toml` is kept as a reference of the pre-semantic-search build command (plain `bundle exec jekyll build`).
@@ -66,7 +140,7 @@ Full design write-up: `docs/semantic-search-implementation.md`. Read it before t
 - `_config.yml` is the single site config (site metadata, comments provider, analytics, PWA, collections). The `defaults:` block sets per-collection front-matter defaults (e.g. all `posts` get `permalink: /posts/:title/` — don't change this without updating every existing post link).
 - `_posts/*.md` are the actual blog content — standard Jekyll date-prefixed filenames, front matter drives title/description/date/categories/tags/cover image/`published`.
 - `_tabs/*.md` define top-level nav pages (Archives, Categories, Tags, Portfolio, Resume, Other Posts, OSS Doc Stories); `_oss_stories/` is a custom Jekyll collection (see `_plugins/oss_stories_tags.rb` and the `oss_stories` collection config in `_config.yml`) for open-source contribution write-ups, rendered via `_layouts/oss-story.html` / `oss-stories-list.html`.
-- `_includes/` and `_layouts/` are the theme's Liquid partials/templates; `_javascript/` (source) builds to `assets/js/dist/` via rollup (`rollup.config.js`), and `_sass/` compiles to compressed CSS via Jekyll's Sass pipeline plus a purgecss pass (`purgecss.js`) at build time.
+- `_includes/` and `_layouts/` are the theme's Liquid partials/templates; `_javascript/` (source) builds to `assets/js/dist/` via rollup (`rollup.config.js`), and `_sass/` compiles via Jekyll's own Sass pipeline at deploy time, with a separate purgecss pass (`purgecss.js`) that only runs when `npm run build:css` is invoked manually (see "Critical gotcha" in System overview above — this is not automatic).
 - `_data/` holds YAML data used across the site (authors, contact info, locale strings, social share config).
 - Front-end code style: `.editorconfig`, `.stylelintrc.json` (SCSS), `eslint.config.js` (JS — currently minimal), `.markdownlint.json` for Markdown; a Husky `commit-msg` hook + commitlint enforce Conventional Commits (`@commitlint/config-conventional`), since this repo still carries the upstream semantic-release tooling (`tools/release.sh`, `package.json` `release` config) even though this fork doesn't publish to RubyGems.
 

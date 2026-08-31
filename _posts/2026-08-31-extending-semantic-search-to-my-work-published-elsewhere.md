@@ -25,7 +25,7 @@ The Portfolio and Other Posts pages work differently. Each link there is a hand-
 
 Also, every blog post already has a body of text to embed. These HTML cards didn't, so I needed some text that could serve as their representation in the search index. The simplest option would have been to embed the title alone, but a title is only a handful of words. That produces a sparse representation with little for a query to match against. Instead, I gave each card a short description summarizing what the linked content actually covers. The description gives semantic search more context to work with, making related searches more likely to surface the right link. Readers also see the same description directly on the card, right under the title.
 
-![placeholder: a portfolio card showing the new description text under its title](../assets/img/2026-08-31-extending-semantic-search-to-my-work-published-elsewhere/card-description.png)
+![a portfolio card showing the new description text under its title](../assets/img/2026-08-31-extending-semantic-search-to-my-work-published-elsewhere/card-description.png)
 
 Generating the descriptions only took a few minutes. I used Claude Code to read each linked article with its `WebFetch` tool and draft a description from what it found.
 
