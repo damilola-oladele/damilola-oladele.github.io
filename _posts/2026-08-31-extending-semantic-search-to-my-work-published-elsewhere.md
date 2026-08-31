@@ -11,7 +11,7 @@ image:
 published: true
 ---
 
-In an earlier post, I explained <a href="/posts/my-first-ai-integration/" target="_blank">how I added opt-in semantic search to this blog</a>. That version only understood posts written in Markdown and stored in the blog's own folder. It had no way to reach content I'd published somewhere else. Several of those links already appear on my <a href="/portfolio/">Portfolio</a> and the <a href="/other-posts/">Other Posts</a> pages.
+In an earlier post, I explained <a href="/posts/my-first-ai-integration/" target="_blank">how I added opt-in semantic search to this blog</a>. That version only understood posts written in Markdown and stored in the blog's source code. It had no way to reach content I'd published somewhere else. Several of those links already appear on my <a href="/portfolio/">Portfolio</a> and the <a href="/other-posts/">Other Posts</a> pages.
 
 Let's say a reader searches for “how to secure data in a document database.” A tutorial I wrote for GeeksforGeeks on data masking in MongoDB answers that question, but semantic search had no way to know it existed.
 
