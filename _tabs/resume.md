@@ -36,12 +36,11 @@ background: linear-gradient(135deg, #d2603a);
 <em>English (native), Yoruba</em></p>
 <hr>
 <h2><strong>WORK EXPERIENCE</strong></h2>
-<p><strong>Kredete, Mitek, and MongoDB, United States</strong>  September 2025 - present<br>
+<p><strong>MongoDB, Kredete, and Hackmamba United States</strong>  September 2025 - present<br>
 <em>Technical Writer, Independent Contractor</em></p>
-<ul><li>Built from scratch and maintained product documentation and tutorials for Kredete's Gravv fintech product, enabling developers to implement customer management, payments, wallets, and card issuance.</li>
+<ul><li>Authored technical tutorials and case studies on AI, Django, Python, abd MongoDB for the MongoDB company, helping developers implement scalable database solutions.</li><li>Built from scratch and maintained product documentation and tutorials for Kredete's Gravv fintech product, enabling developers to implement customer management, payments, wallets, and card issuance.</li>
 <li>Worked with a team of technical writers to build documentation for MiVIP's identity verification platform,
-enabling Mitek customers to implement identity verification solutions across different workflows.</li>
-<li>Authored technical tutorials and case studies on Django, Python, MongoDB, and AI integrations for the MongoDB company, helping developers implement scalable database solutions.</li></ul>
+enabling Mitek customers to implement identity verification solutions across different workflows.</li></ul>
 <p><strong>Wagtail, United Kingdom</strong>  October 2022 - March 2024<br>
 <em>Technical Writer</em></p>
 <ul>
@@ -102,6 +101,7 @@ enabling Mitek customers to implement identity verification solutions across dif
 <hr>
 <h2><strong>ACCOMPLISHMENTS</strong></h2>
 <ul>
+<li>Received MongoDB's Creator of the Month award for August 2026.</li>
 <li>Received the first Black Python Devs Distinguished Service Award for extraordinary
 commitment and outstanding contributions to community leadership, documentation, and member
 support.</li>
