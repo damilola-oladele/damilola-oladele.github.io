@@ -278,6 +278,10 @@ gap: 10px;
 <input type="text" id="searchBoxArticles" placeholder="Search articles...">
 <div class="card-container" id="articles">
 <div class="card">
+<a href="https://dev.to/mongodb/how-to-build-an-ai-pdf-analyzer-with-mongodb-rag-and-ollama-47j6" target="_blank">How to Build an AI PDF Analyzer With MongoDB, RAG, and Ollama</a>
+<p class="card-description">Learn to build a command-line PDF analyzer that combines MongoDB vector search, retrieval-augmented generation (RAG), and Ollama to summarize documents and answer questions grounded in their content, running entirely locally.</p>
+</div>
+<div class="card">
 <a href="https://pub.towardsai.net/a-field-guide-to-agentic-eval-frameworks-langfuse-langsmith-and-what-to-measure-4768179fada0" target="_blank">A Field Guide to Agentic Eval Frameworks: Langfuse, LangSmith, and What to Measure</a>
 <p class="card-description">A comparison of agentic AI evaluation frameworks, including Langfuse and LangSmith, and a look at what to actually measure when evaluating AI agents.</p>
 </div>
