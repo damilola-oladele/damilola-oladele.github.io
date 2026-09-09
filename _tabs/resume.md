@@ -38,7 +38,7 @@ background: linear-gradient(135deg, #d2603a);
 <h2><strong>WORK EXPERIENCE</strong></h2>
 <p><strong>MongoDB, Kredete, and Hackmamba United States</strong>  September 2025 - present<br>
 <em>Technical Writer, Independent Contractor</em></p>
-<ul><li>Authored technical tutorials and case studies on AI, Django, Python, abd MongoDB for the MongoDB company, helping developers implement scalable database solutions.</li><li>Built from scratch and maintained product documentation and tutorials for Kredete's Gravv fintech product, enabling developers to implement customer management, payments, wallets, and card issuance.</li>
+<ul><li>Authored technical tutorials and case studies on AI, Django, Python, and MongoDB for the MongoDB company, helping developers implement scalable database solutions.</li><li>Built from scratch and maintained product documentation and tutorials for Kredete's Gravv fintech product, enabling developers to implement customer management, payments, wallets, and card issuance.</li>
 <li>Worked with a team of technical writers to build documentation for MiVIP's identity verification platform,
 enabling Mitek customers to implement identity verification solutions across different workflows.</li></ul>
 <p><strong>Wagtail, United Kingdom</strong>  October 2022 - March 2024<br>
