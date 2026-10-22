@@ -278,6 +278,10 @@ gap: 10px;
 <input type="text" id="searchBoxArticles" placeholder="Search articles...">
 <div class="card-container" id="articles">
 <div class="card">
+<a href="https://dev.to/mongodb/how-to-create-a-vector-search-index-in-mongodb-285f" target="_blank">How to Create a Vector Search Index in MongoDB</a>
+<p class="card-description">Learn to generate Voyage AI embeddings in Python, store them in MongoDB Atlas, configure a Vector Search index (dimensions, similarity, and quantization), and verify it with $vectorSearch queries and a local Ollama model.</p>
+</div>
+<div class="card">
 <a href="https://dev.to/mongodb/how-to-build-an-ai-pdf-analyzer-with-mongodb-rag-and-ollama-47j6" target="_blank">How to Build an AI PDF Analyzer With MongoDB, RAG, and Ollama</a>
 <p class="card-description">Learn to build a command-line PDF analyzer that combines MongoDB vector search, retrieval-augmented generation (RAG), and Ollama to summarize documents and answer questions grounded in their content, running entirely locally.</p>
 </div>
