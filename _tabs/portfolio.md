@@ -278,6 +278,10 @@ gap: 10px;
 <input type="text" id="searchBoxArticles" placeholder="Search articles...">
 <div class="card-container" id="articles">
 <div class="card">
+<a href="https://dev.to/mongodb/how-to-deploy-your-first-agent-to-mongodb-atlas-agent-engine-1j0n" target="_blank">How to Deploy Your First Agent to MongoDB Atlas Agent Engine</a>
+<p class="card-description">Learn to set up the agentengine CLI, build and test a Hello World agent locally with Docker, and deploy it to Atlas Agent Engine with its secrets and cluster network access configured.</p>
+</div>
+<div class="card">
 <a href="https://dev.to/mongodb/how-to-create-a-vector-search-index-in-mongodb-285f" target="_blank">How to Create a Vector Search Index in MongoDB</a>
 <p class="card-description">Learn to generate Voyage AI embeddings in Python, store them in MongoDB Atlas, configure a Vector Search index (dimensions, similarity, and quantization), and verify it with $vectorSearch queries and a local Ollama model.</p>
 </div>
